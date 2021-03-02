@@ -1,0 +1,14 @@
+title: "Boson Protocol"
+copyright_year: "2021"
+description: "Connecting smart contracts with real world commerce and its data"
+author: "Boson Protocol Team"
+
+plugins:
+  - "jekyll-purgecss"
+  - "jekyll-tidy"
+
+css_dir: "dist"
+
+exclude:
+  - "ts"
+  - "css"

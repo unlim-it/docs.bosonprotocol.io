@@ -1,0 +1,13 @@
+---
+:backends:
+  - "overrides"
+  - "env"
+  - "yaml"
+:logger: "noop"
+:yaml:
+  :datadir: "config"
+:hierarchy:
+  - "roles/%{role}"
+  - "deployments/%{deployment_group}-%{deployment_type}-%{deployment_label}"
+  - "secrets/website/%{deployment_group}-%{deployment_type}-%{deployment_label}"
+  - "defaults"
