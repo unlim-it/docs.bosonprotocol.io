@@ -27,7 +27,6 @@ namespace :bootstrap do
   RakeTerraform.define_command_tasks(
     configuration_name: 'bootstrap',
     argument_names: [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ]
@@ -51,7 +50,6 @@ namespace :website do
   RakeTerraform.define_command_tasks(
     configuration_name: 'website',
     argument_names: [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ]
@@ -86,7 +84,6 @@ namespace :content do
     desc 'Build webpack content for deployment identifier, by default ' +
            'bsn-local-default'
     task :build, [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ] => [:'dependencies:install'] do |_, args|
@@ -110,7 +107,6 @@ namespace :content do
     desc 'Run webpack on change for deployment identifier, by default ' +
            'bsn-local-default'
     task :serve, [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ] => [:'dependencies:install'] do |_, args|
@@ -137,7 +133,6 @@ namespace :content do
     desc 'Build jekyll content for deployment identifier, by default ' +
            'bsn-local-default'
     task :build, [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ] => [:'dependencies:install'] do |_, args|
@@ -160,7 +155,6 @@ namespace :content do
     desc 'Serve jekyll website on localhost:4000 for deployment identifier, ' +
            'by default bsn-local-default'
     task :serve, [
-      :deployment_group,
       :deployment_type,
       :deployment_label
     ] => [:'dependencies:install'] do |_, args|
@@ -185,7 +179,6 @@ namespace :content do
   desc 'Build content for deployment identifier, by default ' +
          'bsn-local-default'
   task :build, [
-    :deployment_group,
     :deployment_type,
     :deployment_label
   ] => [:clean] do |_, args|
@@ -197,7 +190,6 @@ namespace :content do
 
   desc 'Publish content for deployment identifier'
   task :publish, [
-    :deployment_group,
     :deployment_type,
     :deployment_label
   ] do |_, args|
@@ -219,7 +211,6 @@ namespace :content do
 
   desc 'Invalidate content caches for deployment identifier'
   task :invalidate, [
-    :deployment_group,
     :deployment_type,
     :deployment_label
   ] do |_, args|
@@ -250,7 +241,6 @@ namespace :content do
   end
 
   task :deploy, [
-    :deployment_group,
     :deployment_type,
     :deployment_label
   ] do |_, args|
@@ -262,7 +252,6 @@ end
 
 def default_deployment_identifier(args)
   args.with_defaults(
-    deployment_group: "bsn",
     deployment_type: "local",
     deployment_label: "default")
 end

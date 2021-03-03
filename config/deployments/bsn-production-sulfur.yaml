@@ -5,13 +5,12 @@ environment: "production"
 parent_role_arn: "%{hiera('bsn_parent_account_admin_role')}"
 
 parent_domain_name: "bosonprotocol.io"
-primary_domain_name: "bsn-production-holmium.%{hiera('parent_domain_name')}"
+primary_domain_name: "bsn-production-lutetium.%{hiera('parent_domain_name')}"
 certificate_domain_name: "%{hiera('primary_domain_name')}"
 
 primary_address: "%{hiera('component')}-%{deployment_label}.%{hiera('primary_domain_name')}"
 other_addresses:
-  - "www.%{hiera('parent_domain_name')}"
-  - "%{hiera('parent_domain_name')}"
+  - "docs.%{hiera('parent_domain_name')}"
 
 # State
 parent_common_state_bucket_name: "bsn-aws-parent-account-bsn-parent-default"
@@ -19,7 +18,7 @@ parent_common_state_key: "common/deployment-state/default.tfstate"
 parent_common_state_bucket_region: "%{hiera('region')}"
 parent_common_state_bucket_is_encrypted: "true"
 
-common_state_bucket_name: "bsn-aws-application-account-bsn-production-holmium"
+common_state_bucket_name: "bsn-aws-application-account-bsn-production-lutetium"
 common_state_key: "common/deployment-state/default.tfstate"
 common_state_bucket_region: "%{hiera('region')}"
 common_state_bucket_is_encrypted: "true"

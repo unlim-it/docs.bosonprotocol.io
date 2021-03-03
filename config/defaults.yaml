@@ -4,7 +4,7 @@ region: "eu-west-2"
 development_group: "bsn"
 
 component: "website"
-deployment_identifier: "%{deployment_group}-%{deployment_type}-%{deployment_label}"
+deployment_identifier: "%{deployment_type}-%{deployment_label}"
 
 storage_bucket_name: "%{hiera('development_group')}-%{hiera('component')}-%{hiera('deployment_identifier')}-storage"
 website_bucket_name: "%{hiera('development_group')}-%{hiera('component')}-%{hiera('deployment_identifier')}-content"
@@ -12,8 +12,8 @@ website_bucket_name: "%{hiera('development_group')}-%{hiera('component')}-%{hier
 content_work_directory: "build/content"
 
 admin_role_name: "cross-account-admin-role"
-atmc_parent_account_id: "879281328474"
-atmc_parent_account_admin_role: "arn:aws:iam::%{hiera('atmc_parent_account_id')}:role/%{hiera('admin_role_name')}"
+bsn_parent_account_id: "915981965568"
+bsn_parent_account_admin_role: "arn:aws:iam::%{hiera('bsn_parent_account_id')}:role/%{hiera('admin_role_name')}"
 
 non_standard_mime_types:
   font/woff2:

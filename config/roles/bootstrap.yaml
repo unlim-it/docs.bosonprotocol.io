@@ -2,7 +2,6 @@
 vars:
   region: "%{hiera('region')}"
 
-  deployment_group: "%{deployment_group}"
   deployment_type: "%{deployment_type}"
   deployment_label: "%{deployment_label}"
   deployment_identifier: "%{hiera('deployment_identifier')}"

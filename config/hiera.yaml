@@ -8,6 +8,6 @@
   :datadir: "config"
 :hierarchy:
   - "roles/%{role}"
-  - "deployments/%{deployment_group}-%{deployment_type}-%{deployment_label}"
-  - "secrets/website/%{deployment_group}-%{deployment_type}-%{deployment_label}"
+  - "deployments/%{deployment_type}-%{deployment_label}"
+  - "secrets/website/%{deployment_type}-%{deployment_label}"
   - "defaults"
