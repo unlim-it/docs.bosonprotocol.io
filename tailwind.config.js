@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   theme: {
     inset: {
@@ -7,7 +9,44 @@ module.exports = {
       '4': '1rem',
       '7': '1.75rem'
     },
+    colors: {
+      'transparent': 'transparent',
+      'current': 'currentColor',
+      'black': '#161B21',
+      'white': colors.white,
+      'gray': colors.coolGray,
+      'indigo': colors.indigo,
+      'red': colors.red,
+      'yellow': colors.amber,
+      'green': colors.emerald,
+      'blue': colors.blue,
+      'purple': colors.purple,
+      'pink': colors.pink
+    },
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      'brand-teal': '#71E7DE',
+      'brand-green': '#8AF0C5'
+    }),
+    minWidth: {
+      0: '0px',
+      12: '3rem',
+      full: '100%',
+      min: 'min-content',
+      max: 'max-content',
+    },
     extend: {
+      colors: {
+        'icon-gray': '#364353',
+        'rule-gray': '#C3CDD8',
+        'control-gray-light': '#EFF2F4',
+        'control-gray-dark': '#708096',
+        'navigation-gray-light': '#FCFCFC',
+        'navigation-gray-dark': '#EFF2F4',
+        'brand-purple': '#6061C6',
+        'brand-teal': '#71E7DE',
+        'brand-green': '#8AF0C5'
+      },
       typography: {
         DEFAULT: {
           css: {

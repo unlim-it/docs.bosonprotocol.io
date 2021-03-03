@@ -13,11 +13,8 @@ function sendFeedbackEvent(feedback: Feedback) {
 
 function disableFeedbackWidget() {
   $(".feedback-button")
-    .removeClass("bg-gray-200")
-    .addClass("bg-gray-100")
-  $(".feedback-button > a")
-    .removeClass("text-gray-700")
-    .addClass(["text-gray-400", "cursor-default"])
+    .removeClass("active")
+    .addClass("inactive")
   $("#feedback-buttons")
     .off("click", "a#feedback-helpful")
     .off("click", "a#feedback-unhelpful")

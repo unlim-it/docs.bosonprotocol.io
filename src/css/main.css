@@ -11,5 +11,25 @@
         @apply block;
     }
 
+    .active {
+        @apply bg-gradient-to-b;
+        @apply from-control-gray-light;
+        @apply to-control-gray-light;
+        @apply hover:from-brand-green;
+        @apply hover:to-brand-teal;
+    }
 
+    .active a {
+        @apply text-control-gray-dark;
+        @apply hover:text-white;
+    }
+
+    .inactive {
+        @apply bg-gray-100;
+    }
+
+    .inactive a {
+        @apply text-gray-400;
+        @apply cursor-default;
+    }
 }

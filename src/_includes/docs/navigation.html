@@ -1,34 +1,89 @@
 <nav
-    class="hidden md:block md:w-60 md:px-4 md:py-8 lg:w-72 lg:px-8 lg:py-12 text-gray-600 text-sm sm:text-base lg:text-lg">
+    class="hidden min-h-screen h-full text-icon-gray bg-navigation-gray-light border-r border-navigation-gray-dark md:block md:w-72 md:px-6 md:py-6">
+  <div class="flex items-center justify-start flex-wrap w-full mb-8">
+    <a href="/">
+      <img src="/images/logo-horizontal-transparent.png"
+           alt="Boson Protocol"
+           class="hidden md:inline h-6 object-contain object-left"/>
+    </a>
+  </div>
   <ul>
-    <li class="py-1">
-      <a class="hover:text-black" href="/">
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/">
         Introduction
       </a>
     </li>
-    <li class="py-1">
-      <a class="hover:text-black" href="/getting-started">
-        Getting Started
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/protocol-overview">
+        Protocol Overview
+      </a>
+      <ul class="ml-4">
+        <li class="pt-3 pb-1.5">
+          <a class="hover:text-black font-light" href="/how-boson-works">
+            How Boson works
+          </a>
+        </li>
+        <li class="py-1.5">
+          <a class="hover:text-black font-light" href="/ecosystem-participants">
+            Ecosystem participants
+          </a>
+        </li>
+        <li class="py-1.5">
+          <a class="hover:text-black font-light" href="/smart-contracts">
+            Smart contracts
+          </a>
+        </li>
+        <li class="py-1.5">
+          <a class="hover:text-black font-light" href="/smart-contracts">
+            Glossary
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a class="hover:text-black font-semibold" href="/core-concepts">
+        Core concepts
+      </a>
+      <ul class="ml-4">
+        <li class="pt-3 pb-1.5">
+          <a class="hover:text-black font-light" href="/core-exchange-mechanism">
+            Core exchange mechanism
+          </a>
+        </li>
+        <li class="py-1.5">
+          <a class="hover:text-black font-light" href="/twinning-nfts">
+            Twinning NFTs
+          </a>
+        </li>
+        <li class="py-1.5">
+          <a class="hover:text-black font-light" href="/others">
+            Others?
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/advanced-topics">
+        Advanced topics
       </a>
     </li>
-    <li class="py-1">
-      <a class="hover:text-black" href="/concepts">
-        Concepts
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/governance">
+        Governance
       </a>
     </li>
-    <li class="py-1">
-      <a class="hover:text-black" href="/tutorials">
-        Tutorials
+  </ul>
+  <hr class="border-rule-gray my-6" />
+  <p class="uppercase font-semibold my-2">Developer guides</p>
+  <ul>
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/javascript-sdk">
+        JavaScript SDK
       </a>
     </li>
-    <li class="py-1">
-      <a class="hover:text-black" href="/reference">
-        Reference
-      </a>
-    </li>
-    <li class="py-1">
-      <a class="hover:text-black" href="/contributing">
-        Contributing
+    <li class="py-1.5">
+      <a class="hover:text-black font-semibold" href="/smart-contract-integration">
+        Smart contract integration
       </a>
     </li>
   </ul>
