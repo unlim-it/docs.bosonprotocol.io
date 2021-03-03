@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  purge: false,
   theme: {
     inset: {
       '0': 0,
