@@ -1,6 +1,6 @@
 resource "aws_cloudfront_distribution" "website_cdn" {
   enabled      = true
-  price_class  = "PriceClass_200"
+  price_class  = "PriceClass_All"
   http_version = "http1.1"
 
   origin {
