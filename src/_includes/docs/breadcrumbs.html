@@ -1,15 +1,16 @@
 <div id="breadcrumbs mb-8">
   {% assign crumbs = page.url |  split: '/' %}
-  <a href="/" class="text-control-gray-dark hover:text-brand-purple">Home</a>
+  <a href="/" class="text-control-gray-dark font-normal hover:text-brand-purple">Home</a>
   {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
-  <span class="text-black">/</span> {{ page.short_title }}
+  <span class="text-control-gray-dark font-normal">/</span>
+  <span class="text-black font-medium">{{ page.short_title }}</span>
   {% else %}
-  <span class="text-control-gray-dark">/</span>
-  <span class="text-control-gray-dark hover:text-brand-purple"
+  <span class="text-control-gray-dark font-normal">/</span>
+  <a class="text-control-gray-dark font-normal hover:text-brand-purple"
      href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/'  }}{% endfor %}">
     {{ crumb | replace:'-',' ' | capitalize }}
-  </span>
+  </a>
   {% endif %}
   {% endfor %}
   <hr class="border-icon-gray my-2 sm:my-3 md:my-4"/>

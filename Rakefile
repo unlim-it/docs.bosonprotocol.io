@@ -252,6 +252,6 @@ end
 
 def default_deployment_identifier(args)
   args.with_defaults(
-    deployment_type: "local",
+    deployment_type: "bsn-local",
     deployment_label: "default")
 end
