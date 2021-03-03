@@ -3,7 +3,7 @@ region: "eu-west-2"
 
 development_group: "bsn"
 
-component: "website"
+component: "docs-website"
 deployment_identifier: "%{deployment_type}-%{deployment_label}"
 
 storage_bucket_name: "%{hiera('development_group')}-%{hiera('component')}-%{hiera('deployment_identifier')}-storage"

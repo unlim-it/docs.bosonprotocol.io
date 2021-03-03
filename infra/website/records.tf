@@ -1,5 +1,5 @@
 resource "aws_route53_record" "public_primary_address" {
-  zone_id = data.terraform_remote_state.specific_common.outputs.domains[var.primary_domain_name].public_zone_id
+  zone_id = data.terraform_remote_state.specific_common.outputs.public_zone_id
   name = var.primary_address
   type = "A"
 
@@ -11,7 +11,7 @@ resource "aws_route53_record" "public_primary_address" {
 }
 
 resource "aws_route53_record" "private_primary_address" {
-  zone_id = data.terraform_remote_state.specific_common.outputs.domains[var.primary_domain_name].private_zone_id
+  zone_id = data.terraform_remote_state.specific_common.outputs.private_zone_id
   name = var.primary_address
   type = "A"
 
@@ -27,7 +27,7 @@ resource "aws_route53_record" "public_website_cdn_alias" {
 
   count = length(var.other_addresses)
 
-  zone_id = data.terraform_remote_state.parent_common.outputs.domains[var.parent_domain_name].public_zone_id
+  zone_id = data.terraform_remote_state.parent_common.outputs.public_zone_id
   name = var.other_addresses[count.index]
   type = "A"
 
@@ -43,7 +43,7 @@ resource "aws_route53_record" "private_website_cdn_alias" {
 
   count = length(var.other_addresses)
 
-  zone_id = data.terraform_remote_state.parent_common.outputs.domains[var.parent_domain_name].private_zone_id
+  zone_id = data.terraform_remote_state.parent_common.outputs.private_zone_id
   name = var.other_addresses[count.index]
   type = "A"
 
