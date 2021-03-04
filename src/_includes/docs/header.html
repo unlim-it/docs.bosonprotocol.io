@@ -1,40 +1,47 @@
 <div class="w-full h-9 mb-8 relative flex justify-between">
-  <div class="menu-toggle h-9 w-9 relative md:hidden">
-    <input id="menu-state"
-           class="block absolute left-0 top-0 h-9 w-9 z-10 appearance-none cursor-pointer outline-none"
-           type="checkbox"/>
-    <div id="menu-icon"
-         class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-1.5 bg-control-gray-light rounded-sm">
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+  <div class="flex-1 flex justify-between sm:justify-start">
+    <div class="menu-toggle h-9 w-9 sm:mr-4 relative md:hidden">
+      <input id="menu-state"
+             class="block absolute left-0 top-0 h-9 w-9 z-10
+                  appearance-none cursor-pointer outline-none"
+             type="checkbox"/>
+      <div id="menu-icon"
+           class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-1.5
+                bg-control-gray-light rounded-sm">
+        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+      </div>
+    </div>
+    <div class="search-button h-9 w-9 relative">
+      <input id="search-state"
+             class="block absolute left-0 top-0 h-9 w-9 z-10
+                  appearance-none cursor-pointer outline-none"
+             type="checkbox"/>
+      <div id="search-icon"
+           class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-2.5
+                bg-control-gray-light rounded-sm">
+        <img src="/images/search.png"
+             class="object-contain object-center"
+             alt="Search Icon"/>
+      </div>
     </div>
   </div>
-  <div class="search-button h-9 w-9 relative">
-    <input id="search-state"
-           class="block absolute left-0 top-0 h-9 w-9 z-10 appearance-none cursor-pointer outline-none"
-           type="checkbox"/>
-    <div id="search-icon"
-         class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-2.5 bg-control-gray-light rounded-sm">
-      <img src="/images/search.png"
-           class="object-contain object-center"/>
-    </div>
-  </div>
-  <div class="flex items-center justify-center flex-wrap w-auto">
+  <div class="flex-1 hidden items-center justify-center sm:flex md:hidden">
     <a href="/">
       <img src="/images/logo-horizontal-transparent.png"
            alt="Boson Protocol"
-           class="hidden sm:block md:hidden h-10 object-contain object-center"/>
+           class="h-8 object-contain object-center"/>
     </a>
   </div>
-  <div
-      class="hidden sm:flex w-full flex-grow justify-end items-center mt-4 md:mt-0 text-black">
+  <div class="hidden text-black justify-end items-center
+              sm:flex sm:flex-1 md:flex-auto">
     <a href="https://bosonprotocol.io"
-       class="block text-base font-medium py-2 hover:text-gray-900 md:mr-6 md:py-0">
+       class="block text-base font-medium sm:mr-4 md:mr-6">
       Boson Protocol
     </a>
     <a href="/contact"
-       class="block text-base font-medium py-2 hover:text-gray-900 md:py-0 lg:mr-6">
+       class="block text-base font-medium lg:mr-6">
       Contact
     </a>
     <a href="https://github.com/bosonprotocol"
