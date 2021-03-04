@@ -1,8 +1,8 @@
 <nav class="min-h-screen w-60 flex-shrink-0 text-icon-gray
             bg-navigation-gray-light border-r border-navigation-gray-dark
-            transition-transform transform-gpu shadow-inner-right
-            px-6 py-6 md:w-72 md:shadow-none">
-  <div class="flex items-center justify-start flex-wrap w-full mb-8">
+            transition-transform transform-gpu shadow-inner-right py-6
+            md:w-72 md:shadow-none">
+  <div class="flex items-center justify-start flex-wrap w-full ml-6 mb-8">
     <a href="/">
       <img src="/images/logo-horizontal-transparent.png"
            alt="Boson Protocol"
@@ -10,105 +10,51 @@
     </a>
   </div>
   <ul>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/">
-        Introduction
+    {% for item in site.data.navigation.main %}
+    <li>
+      <a class="px-6 py-1.5 block font-semibold
+               {% if item.url == page.url %}bg-navigation-gray-dark text-brand-purple hover:text-brand-purple{% else %}hover:text-black{% endif %}"
+         href="{{ item.url }}">
+        {{ item.title }}
       </a>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/protocol-overview">
-        Protocol Overview
-      </a>
-      <ul class="ml-4">
-        <li class="pt-3 pb-1.5">
-          <a class="hover:text-black font-normal" href="/protocol-overview/how-boson-works">
-            How Boson works
+      <ul>
+        {% for child in item.children %}
+        <li>
+          <a class="pl-10 pr-6 py-1.5 block
+                    {% if child.url == page.url %}bg-navigation-gray-dark text-brand-purple font-semibold hover:text-brand-purple{% else %}font-normal hover:text-black{% endif %}"
+             href="{{ child.url == page.url }}">
+            {{ child.title }}
           </a>
         </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/protocol-overview/ecosystem-participants">
-            Ecosystem participants
-          </a>
-        </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/protocol-overview/smart-contracts">
-            Smart contracts
-          </a>
-        </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/protocol-overview/glossary">
-            Glossary
-          </a>
-        </li>
+        {% endfor %}
       </ul>
     </li>
-    <li class="">
-      <a class="hover:text-black font-semibold" href="/core-concepts">
-        Core concepts
-      </a>
-      <ul class="ml-4">
-        <li class="pt-3 pb-1.5">
-          <a class="hover:text-black font-normal" href="/core-concepts/core-exchange-mechanism">
-            Core exchange mechanism
-          </a>
-        </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/core-concepts/ecosystem-value-flows">
-            Ecosystem value flows
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/advanced-topics">
-        Advanced topics
-      </a>
-      <ul class="ml-4">
-        <li class="pt-3 pb-1.5">
-          <a class="hover:text-black font-normal" href="/advanced-topics/gas-fees">
-            Gas fees
-          </a>
-        </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/advanced-topics/token-engineering">
-            Token engineering
-          </a>
-        </li>
-        <li class="py-1.5">
-          <a class="hover:text-black font-normal" href="/advanced-topics/research">
-            Research
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/governance">
-        Governance
-      </a>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/roadmap">
-        Roadmap
-      </a>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/faqs">
-        FAQs
-      </a>
-    </li>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/contributing">
-        Contributing
-      </a>
-    </li>
+    {% endfor %}
   </ul>
-  <hr class="border-rule-gray my-6" />
-  <p class="uppercase font-semibold my-2">Developer guides</p>
+  {% for category in site.data.navigation.categories %}
+  <hr class="border-rule-gray m-6" />
+  <p class="uppercase font-semibold mx-6 my-2">{{ category.title }}</p>
   <ul>
-    <li class="py-1.5">
-      <a class="hover:text-black font-semibold" href="/smart-contract-integration">
-        Smart contract integration
+    {% for item in category.items %}
+    <li>
+      <a class="px-6 py-1.5 block font-semibold
+               {% if item.url == page.url %}bg-navigation-gray-dark text-brand-purple hover:text-brand-purple{% else %}hover:text-black{% endif %}"
+         href="{{ item.url }}">
+        {{ item.title }}
       </a>
+      <ul>
+        {% for child in item.children %}
+        <li>
+          <a class="pl-10 pr-6 py-1.5 block
+                    {% if child.url == page.url %}bg-navigation-gray-dark text-brand-purple font-semibold hover:text-brand-purple{% else %}font-normal hover:text-black{% endif %}"
+             href="{{ child.url == page.url }}">
+            {{ child.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </li>
+    {% endfor %}
   </ul>
+  {% endfor %}
 </nav>

@@ -16,6 +16,7 @@ vendor/
 build/
 dist/
 src/dist/
+!src/_data
 src/_data/manifest.yml
 
 # OS
