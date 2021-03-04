@@ -37,6 +37,11 @@
         @apply leading-relaxed;
     }
 
+    .prose blockquote {
+        @apply rounded-sm;
+        @apply shadow-lg;
+    }
+
     @screen md {
         .prose p {
             @apply leading-loose;

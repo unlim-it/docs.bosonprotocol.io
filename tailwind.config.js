@@ -75,6 +75,9 @@ module.exports = {
       max: 'max-content',
     },
     extend: {
+      boxShadow: {
+        lg: '0 4px 20px 0px rgba(39, 43, 48, 0.1)',
+      },
       colors: {
         'icon-gray': '#364353',
         'rule-gray': '#C3CDD8',
@@ -89,7 +92,7 @@ module.exports = {
         'brand-teal': '#71E7DE',
         'brand-green': '#8AF0C5'
       },
-      typography: {
+      typography: theme => ({
         DEFAULT: {
           css: {
             maxWidth: '80ch',
@@ -116,7 +119,11 @@ module.exports = {
               fontWeight: '500'
             },
             blockquote: {
-              fontWeight: '400'
+              fontWeight: '400',
+              fontStyle: 'normal',
+              color: theme('colors.icon-gray'),
+              borderLeftWidth: '0.25rem',
+              borderLeftColor: theme('colors.brand-teal'),
             },
             thead: {
               fontWeight: '500'
@@ -126,10 +133,16 @@ module.exports = {
             },
             'code::after': {
               content: 'none',
+            },
+            'blockquote p:first-of-type::before': {
+              content: 'none',
+            },
+            'blockquote p:last-of-type::after': {
+              content: 'none',
             }
           }
         }
-      }
+      })
     }
   },
   plugins: [
