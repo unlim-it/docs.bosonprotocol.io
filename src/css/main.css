@@ -42,6 +42,10 @@
         @apply shadow-lg;
     }
 
+    .prose blockquote p {
+        @apply p-2
+    }
+
     @screen md {
         .prose p {
             @apply leading-loose;
