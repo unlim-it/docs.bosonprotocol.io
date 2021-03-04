@@ -77,6 +77,7 @@ module.exports = {
     extend: {
       boxShadow: {
         lg: '0 4px 20px 0px rgba(39, 43, 48, 0.1)',
+        'inner-right': 'inset -4px 0 20px -4px rgba(39, 43, 48, 0.1)'
       },
       colors: {
         'icon-gray': '#364353',

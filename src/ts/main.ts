@@ -28,6 +28,12 @@ function feedbackClickHandler(feedback: Feedback) {
   }
 }
 
+function navigationToggleHandler() {
+  $("body")
+    .toggleClass("drawer-closed")
+    .toggleClass("drawer-open")
+}
+
 $.when($.ready).then(function () {
   $("#feedback-buttons")
     .on("click",
@@ -36,4 +42,8 @@ $.when($.ready).then(function () {
     .on("click",
       "a#feedback-unhelpful",
       feedbackClickHandler(Feedback.Unhelpful))
+  $("#control-bar")
+    .on("click",
+      "#navigation-toggle",
+      navigationToggleHandler)
 })

@@ -3,12 +3,35 @@
 @tailwind utilities;
 
 @layer components {
-    #menu-state:hover ~ #menu-icon > span {
-        @apply bg-gray-900;
+    section#main {
+        @apply -mr-60;
     }
 
-    #menu-state:checked ~ #menu {
-        @apply block;
+    .drawer-open nav {
+        @apply translate-x-0;
+    }
+
+    .drawer-open section#main {
+        @apply translate-x-0;
+    }
+
+    .drawer-closed nav {
+        @apply -translate-x-60;
+    }
+
+    .drawer-closed section#main {
+        @apply -translate-x-60;
+    }
+
+    @screen md {
+        .drawer-open nav, .drawer-closed nav {
+            @apply translate-x-0;
+        }
+
+        .drawer-open section#main, .drawer-closed section#main {
+            @apply mr-0;
+            @apply translate-x-0;
+        }
     }
 
     .secondary-button .active {
@@ -43,7 +66,7 @@
     }
 
     .prose blockquote p {
-        @apply p-2
+        @apply pl-1 pt-4 pr-4 pb-4;
     }
 
     @screen md {

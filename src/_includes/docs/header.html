@@ -1,19 +1,14 @@
 <div class="w-full h-9 mb-8 relative flex justify-between">
-  <div class="flex-1 flex justify-between sm:justify-start">
-    <div class="menu-toggle h-9 w-9 sm:mr-4 relative md:hidden">
-      <input id="menu-state"
-             class="block absolute left-0 top-0 h-9 w-9 z-10
-                  appearance-none cursor-pointer outline-none"
-             type="checkbox"/>
-      <div id="menu-icon"
-           class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-1.5
-                bg-control-gray-light rounded-sm">
-        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-        <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-      </div>
-    </div>
-    <div class="search-button h-9 w-9 relative">
+  <div id="control-bar" class="flex-1 flex justify-between sm:justify-start">
+    <button id="navigation-toggle"
+            class="h-9 w-9 px-2.5 py-1.5 bg-control-gray-light
+                   rounded-sm focus:outline-none sm:mr-4 md:hidden">
+      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+    </button>
+    <div id="search-button"
+         class="h-9 w-9 relative">
       <input id="search-state"
              class="block absolute left-0 top-0 h-9 w-9 z-10
                   appearance-none cursor-pointer outline-none"
