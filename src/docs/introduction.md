@@ -53,4 +53,4 @@ Get to know the Boson smart contracts
 
 ## Developer community
 
-Join the Boson developer community on [Gitter](https://gitter.im/BosonProtocol/community).
+    Join the Boson developer community on [Gitter](https://gitter.im/BosonProtocol/community).

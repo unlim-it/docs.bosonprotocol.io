@@ -6,4 +6,51 @@ permalink: /protocol-overview/glossary/
 ---
 # Glossary
 
-TODO
+* **Seller**: User of the app/protocol who has an asset they wish to sell.
+* **Buyer**: User of the app/protocol who has an asset they wish to buy.
+* **Voucher**: The representation of a thing that has been offered by a seller and 
+  committed to by a buyer. A voucher is not created within a voucher set unless 
+  a buyer has committed to it. This is sometimes also referred to as: Order and 
+  NFTV in parts of the system.
+* **Voucher Set**: A set or collection of things that have been offered for sale by a seller.  It can have a quantity greater than or equal to 1. This is sometimes also referred to as: Voucher Supply; Token Supply; Offer; Listing
+* **Voucher Lifecycle**: The series of steps and states in which a voucher passes from when it is first committed to when it is final. A voucher may have more than one state at a time.
+* **Offer**: An action in the exchange mechanism in which a seller 'offers' a voucher set for commitment and redemption by a buyer.  As part of this action, a deposit, known as the seller deposit is put into escrow. If there are multiple items within a voucher set the total seller deposit is mutliplied by the quantity.
+* **Commit**: An action in the exchange mechanism in which a buyer 'commits' their intention to purchase an asset. As part of this action a deposit, known as the buyer deposit, is put into escrow.
+* **Redeem**: An action in the exchange mechanism in which a buyer acknowledges receipt of the asset. This redemption must be done after the start date but before the expiry date of the voucher set (also known as the voucher validity period).
+* **Refund**: An action in the exchange mechanism in which a buyer chooses to recieve a refund for the voucher. In doing so they will recieve their payment back, but potential lose their deposit.
+* **Complain**: An action in the exchange mechanism in which a buyer chooses to complain about a voucher, signaling the dissatisfaciton of the promise execution.  In doing so the Seller may get penalised.
+* **Cancel or Fault**: An action in the exchange mechanism in which a seller 'offers' can cancel or fault a particular voucher. This will cancel the current offer and corresponding voucher, and full or part of the buyers deposit will be refunded along with the payment amount.
+* **Void**: An action in which a seller may void all remaining uncommited assets within a voucher set. This has no affect on committed or finalised vouchers.
+* **Finalise**: An automated action in the exchange mechanism in which a voucher can no longer be used. This is trigger once all wait periods are passed.
+* **Escrow**: A place in custody or trust until a specified condition has been fulfilled.
+* **Order**: See Voucher
+* **Security Deposit**: A configurable amount that is put into escrow by a user (buyer or seller) to place a stake in the exchange to faciliate trust.
+* **Wait period**: Periods designed in the game tree which allow time for one or more parties to act. These are either configured by a user or set a default by the system admin.
+* **Voucher validity period**: A wait period defined by the seller at the creation of the voucher set. It is the period between the start date and the end date in which a voucher from a vocuher set can be redeemed.
+* **Complain period**: A wait period defined by the admin for a time period in which a buyer can complain upon redemption.
+* **Cancel or fault period**: A wait period defined by the admin for a time period in which a seller can issue a cancel or fault transaction.
+* **Price**: The price of the asset which is payable from the buyer to the seller on commitment.
+* **Currency**: The currency of the transaction (which can be either the price or the deposit).  The smart contracts currently supports both ETH and $BOSON.
+* **NFTV**: See **Voucher**
+* **Offer**: See **Voucher Set**
+* **Token Supply**: See **Voucher Set**
+* **Voucher Supply**: See **Voucher Set**
+* **Listing**: See **Voucher Set**
+* **My Vouchers**: A view within the app that lists all the vouchers commited to by the wallet of a particular buyer.  These vouchers set can be filtered by Active or Inactive.
+* **My Offers**: A view within the app that lists all the voucher sets created by the wallet of a particular seller.  These vouchers set can be filtered by Open or Closed.
+* **Active Voucher**: The position a voucher is in once it has been committed to by a buyer and is yet to be finalised. During this time either a buyer or seller has the ability to action it based on the rules of the game tree.
+* **Inactive Voucher**: The position a voucher is in once it finalised (at the end of the lifecycle) and can no longer be used.
+* **Open Voucher Set**: The position a voucher set is in when either voucher set validity period is not expired (before the end date) and/or their is a voucher from the voucher set which has not yet been finalised.
+* **Closed Voucher Set**: The position a voucher set is in when the voucher set validity period is expired (after the expiry date) and all voucher from the voucher set are finalised.
+* **Location**: TODO
+* **Asset**: TODO
+* **Commitment token**: TODO
+* **Thing**: TODO
+* **Non-fungible token voucher**: TODO
+* **Arbitration**: TODO
+* **Non-fungible tokens**: TODO
+* **Keepers**: TODO
+* **Wallet**: TODO
+* **ERC-20**: TODO
+* **ERC-1155**: TODO
+* **ERC-721**: TODO

@@ -6,7 +6,7 @@ permalink: /protocol-overview/how-boson-works/
 ---
 # How Boson works
 
-![How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled.png](How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled.png)
+![/images/docs/token-lifecycle.png](/images/docs/token-lifecycle.png)
 
 Boson is a *permissionless market exchange protocol*, which handles dispute 
 mediations and reversals in order to increase trust in P2P transactions. By 
@@ -32,11 +32,11 @@ designed in such a way that coordinates transactions and incentivizes parties
 to behave fairly. Or more formally, we say that: "subgame perfect equilibrium 
 implementation corresponds to the honest behavior of both players."
 
-![How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%201.png](How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%201.png)
+![/images/docs/game-tree.png](/images/docs/game-tree.png)
 
 ## Commitment token
 
-![How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%202.png](How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%202.png)
+![/images/docs/token-flow.png](/images/docs/token-flow.png)
 
 1. create voucherset - Seller lists item (which mints the voucher set )*
 2. commit / request voucher (Buyer commits to buying this item by making paying 
@@ -79,7 +79,7 @@ tokens that conform to the ERC20 standard. The issuer is responsible for
 defining the asset that they would like to transact with for both payment and 
 deposits for a certain VoucherSet. 
 
-![How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%203.png](How%20boson%20works%20190bf755c2b84577b4e2b7a8fd6c93b2/Untitled%203.png)
+![/images/docs/wat.png](/images/docs/wat.png)
 
 <Image of voucher minting, committed starting status, and 3 account balances>
 

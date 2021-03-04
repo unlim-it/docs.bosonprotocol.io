@@ -6,4 +6,15 @@ permalink: /protocol-overview/ecosystem-participants/
 ---
 # Ecosystem participants
 
-TODO
+## Buyer
+
+Elementary actor, representing the demand side.
+
+Goals: Buys vouchers to redeem them later for goods or services.
+
+## Seller
+
+Elementary actor, representing the supply side.
+
+Goals: Offers goods and services and commits to their quality.
+

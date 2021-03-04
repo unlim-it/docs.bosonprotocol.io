@@ -32,4 +32,14 @@
         @apply text-gray-400;
         @apply cursor-default;
     }
+
+    .prose p {
+        @apply leading-relaxed;
+    }
+
+    @screen md {
+        .prose p {
+            @apply leading-loose;
+        }
+    }
 }

@@ -82,7 +82,10 @@ module.exports = {
         'control-gray-dark': '#708096',
         'navigation-gray-light': '#FCFCFC',
         'navigation-gray-dark': '#EFF2F4',
-        'brand-purple': '#6061C6',
+        'brand-purple': {
+          'DEFAULT': '#6061C6',
+          600: '#6061C6',
+        },
         'brand-teal': '#71E7DE',
         'brand-green': '#8AF0C5'
       },
@@ -106,7 +109,8 @@ module.exports = {
               fontWeight: '400'
             },
             a: {
-              fontWeight: '400'
+              fontWeight: '600',
+              textDecoration: 'none'
             },
             strong: {
               fontWeight: '500'
