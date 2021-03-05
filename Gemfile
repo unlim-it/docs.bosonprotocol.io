@@ -11,4 +11,5 @@ group :jekyll_plugins do
   gem "jekyll-purgecss", "~> 0.3"
   gem "jekyll-tidy", "~> 0.2"
   gem "jekyll-redirect-from", "~> 0.16"
+  gem 'jekyll-algolia', '~> 1.0'
 end
