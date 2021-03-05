@@ -1,19 +1,32 @@
-<nav class="min-h-screen w-60 flex-shrink-0 text-icon-gray
-            bg-navigation-gray-light border-r border-navigation-gray-dark
+<nav class="min-h-screen w-60 flex-shrink-0
+            text-icon-gray bg-navigation-gray-light
+            border-r border-navigation-gray-dark
+            dark:text-white
+            dark:bg-brand-purple-900 dark:border-brand-purple-900
             transition-transform transform-gpu shadow-inner-right py-6
             md:w-72 md:shadow-none">
   <div class="flex items-center justify-start flex-wrap w-full ml-6 mb-8">
     <a href="/">
-      <img src="/images/logo-horizontal-transparent.png"
+      <img src="/images/logo-horizontal-transparent-white.png"
            alt="Boson Protocol"
-           class="inline h-6 object-contain object-left"/>
+           class="hidden dark:inline h-6 object-contain object-left"/>
+      <img src="/images/logo-horizontal-transparent-black.png"
+           alt="Boson Protocol"
+           class="inline dark:hidden h-6 object-contain object-left"/>
     </a>
   </div>
   <ul>
     {% for item in site.data.navigation.main %}
     <li>
       <a class="px-6 py-1.5 block font-semibold
-               {% if item.url == page.url %}bg-navigation-gray-dark text-brand-purple hover:text-brand-purple{% else %}hover:text-black{% endif %}"
+               {% if item.url == page.url %}
+               bg-navigation-gray-dark
+               text-brand-purple hover:text-brand-purple
+               dark:bg-brand-purple-800
+               dark:text-brand-green-400 dark:hover:text-brand-green-400
+               {% else %}
+               hover:text-white
+               {% endif %}"
          href="{{ item.url }}">
         {{ item.title }}
       </a>
@@ -21,7 +34,16 @@
         {% for child in item.children %}
         <li>
           <a class="pl-10 pr-6 py-1.5 block
-                    {% if child.url == page.url %}bg-navigation-gray-dark text-brand-purple font-semibold hover:text-brand-purple{% else %}font-normal hover:text-black{% endif %}"
+                    {% if child.url == page.url %}
+                    font-semibold
+                    bg-navigation-gray-dark
+                    text-brand-purple hover:text-brand-purple
+                    dark:bg-brand-purple-800
+                    dark:text-brand-green-400 dark:hover:text-brand-green-400
+                    {% else %}
+                    font-normal
+                    text-rule-gray
+                    hover:text-rule-gray{% endif %}"
              href="{{ child.url == page.url }}">
             {{ child.title }}
           </a>

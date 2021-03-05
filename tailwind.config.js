@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: false,
+  darkMode: 'media',
   theme: {
     inset: {
       '0': 0,
@@ -88,10 +89,22 @@ module.exports = {
         'navigation-gray-dark': '#EFF2F4',
         'brand-purple': {
           'DEFAULT': '#6061C6',
-          600: '#6061C6',
+          500: '#6061C6',
+          550: '#363651',
+          600: '#202032',
+          650: '#2C2C44',
+          700: '#2F2F47',
+          800: '#1D1D2C',
+          900: '#191927'
         },
-        'brand-teal': '#71E7DE',
-        'brand-green': '#8AF0C5'
+        'brand-teal': {
+          400: '#5FCCCA',
+          'DEFAULT': '#71E7DE',
+        },
+        'brand-green': {
+          400: '#80F0BE',
+          'DEFAULT': '#8AF0C5'
+        }
       },
       typography: theme => ({
         DEFAULT: {
@@ -142,8 +155,47 @@ module.exports = {
               content: 'none',
             }
           }
-        }
+        },
+        dark: {
+          css: {
+            color: theme('colors.rule-gray'),
+            a: {
+              color: theme('colors.brand-green.400'),
+              '&:hover': {
+                color: theme('colors.brand-green.400'),
+              },
+            },
+            strong: {
+              color: theme('colors.rule-gray')
+            },
+            blockquote: {
+              color: theme('colors.rule-gray'),
+              borderLeftColor: theme('colors.brand-green.400')
+            },
+            h1: {
+              color: theme('colors.white'),
+            },
+            h2: {
+              color: theme('colors.white'),
+            },
+            h3: {
+              color: theme('colors.white'),
+            },
+            h4: {
+              color: theme('colors.white'),
+            },
+          },
+        },
       })
+    }
+  },
+  variants: {
+    extend: {
+      display: ['dark'],
+      typography: ['dark'],
+      backgroundOpacity: ['dark'],
+      borderOpacity: ['dark'],
+      fill: ['dark'],
     }
   },
   plugins: [

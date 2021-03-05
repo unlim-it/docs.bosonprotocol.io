@@ -38,17 +38,24 @@
         @apply bg-gradient-to-b;
         @apply from-control-gray-light;
         @apply to-control-gray-light;
+        @apply dark:from-brand-purple-650;
+        @apply dark:to-brand-purple-650;
         @apply hover:from-brand-green;
         @apply hover:to-brand-teal;
+        @apply dark:hover:from-brand-purple-550;
+        @apply dark:hover:to-brand-purple-550;
     }
 
     .secondary-button .active a {
         @apply text-control-gray-dark;
+        @apply dark:text-rule-gray;
         @apply hover:text-white;
+        @apply dark:hover:text-brand-green-400;
     }
 
     .secondary-button .inactive {
         @apply bg-gray-100;
+        @apply dark:bg-brand-purple-700;
     }
 
     .secondary-button .inactive a {
@@ -71,11 +78,17 @@
         @apply border;
         @apply border-brand-purple;
         @apply border-opacity-50;
+        @apply dark:text-brand-teal-400;
+        @apply dark:bg-brand-teal-400;
+        @apply dark:bg-opacity-10;
+        @apply dark:border-brand-teal-400;
+        @apply dark:border-opacity-50;
     }
 
     .prose blockquote {
         @apply rounded-sm;
         @apply shadow-lg;
+        @apply dark:bg-brand-purple-700;
     }
 
     .prose blockquote p {

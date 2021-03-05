@@ -1,7 +1,8 @@
 <div class="w-full h-9 mb-8 relative flex justify-between">
   <div id="control-bar" class="flex-1 flex justify-between sm:justify-start">
     <button id="navigation-toggle"
-            class="h-9 w-9 px-2.5 py-1.5 bg-control-gray-light
+            class="h-9 w-9 px-2.5 py-1.5
+                   bg-control-gray-light dark:bg-brand-purple-700
                    rounded-sm focus:outline-none sm:mr-4 md:hidden">
       <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
       <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
@@ -11,11 +12,12 @@
          class="h-9 w-9 relative">
       <input id="search-state"
              class="block absolute left-0 top-0 h-9 w-9 z-10
-                  appearance-none cursor-pointer outline-none"
+                    appearance-none cursor-pointer outline-none"
              type="checkbox"/>
       <div id="search-icon"
            class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-2.5
-                bg-control-gray-light rounded-sm">
+                bg-control-gray-light dark:bg-brand-purple-700
+                rounded-sm">
         <img src="/images/search.png"
              class="object-contain object-center"
              alt="Search Icon"/>
@@ -24,13 +26,17 @@
   </div>
   <div class="flex-1 hidden items-center justify-center sm:flex md:hidden">
     <a href="/">
-      <img src="/images/logo-horizontal-transparent.png"
+      <img src="/images/logo-horizontal-transparent-black.png"
            alt="Boson Protocol"
-           class="h-8 object-contain object-center"/>
+           class="inline dark:hidden h-8 object-contain object-center"/>
+      <img src="/images/logo-horizontal-transparent-white.png"
+           alt="Boson Protocol"
+           class="hidden dark:inline h-8 object-contain object-center"/>
     </a>
   </div>
   <div class="hidden text-black justify-end items-center
-              sm:flex sm:flex-1 md:flex-auto">
+              sm:flex sm:flex-1 md:flex-auto
+              dark:text-control-gray-dark">
     <a href="https://bosonprotocol.io"
        class="block text-base font-medium sm:mr-4 md:mr-6">
       Boson Protocol
@@ -40,20 +46,18 @@
       Contact
     </a>
     <a href="https://github.com/bosonprotocol"
-       class="mr-4 hidden lg:inline">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           viewBox="0 0 20 20"
-           class="fill-black h-5">
+       class="text-black dark:text-control-gray-dark mr-4 hidden lg:inline">
+      <svg viewBox="0 0 20 20"
+           class="fill-current h-5">
         <title>GitHub</title>
         <path
             d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"/>
       </svg>
     </a>
     <a href="https://gitter.im/BosonProtocol/community"
-       class="mr-4 hidden lg:inline">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           viewBox="0 0 18 25"
-           class="fill-black h-5">
+       class="text-black dark:text-control-gray-dark mr-4 hidden lg:inline">
+      <svg viewBox="0 0 18 25"
+           class="fill-current h-5">
         <title>Gitter</title>
         <rect x="15" y="5" width="2" height="10"/>
         <rect x="10" y="5" width="2" height="20"/>
@@ -62,10 +66,9 @@
       </svg>
     </a>
     <a href="https://twitter.com/bosonprotocol"
-       class="hidden lg:inline">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           viewBox="0 0 20 20"
-           class="fill-black h-5">
+       class="text-black dark:text-control-gray-dark hidden lg:inline">
+      <svg viewBox="0 0 20 20"
+           class="fill-current h-5">
         <title>Twitter</title>
         <path
             d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67v-.53c.8-.59 1.49-1.3 2.04-2.13-.75.33-1.54.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.48-1.68.81-2.6 1a4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.45-4.3 4.1 4.1 0 0 0 1.27 5.49C2.01 8.2 1.37 8.03.8 7.7v.05a4.1 4.1 0 0 0 3.3 4.03 4.1 4.1 0 0 1-1.86.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.4a11.62 11.62 0 0 0 6.29 1.84"/>
