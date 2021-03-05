@@ -60,6 +60,19 @@
         @apply leading-relaxed;
     }
 
+    .prose p code {
+        @apply bg-brand-purple;
+        @apply bg-opacity-10;
+        @apply py-0.5;
+        @apply px-1.5;
+        @apply rounded-sm;
+        @apply text-brand-purple;
+        @apply font-medium;
+        @apply border;
+        @apply border-brand-purple;
+        @apply border-opacity-50;
+    }
+
     .prose blockquote {
         @apply rounded-sm;
         @apply shadow-lg;

@@ -47,7 +47,7 @@ below.
 
 ETH as the payment currency and ETH as the deposit currency example:
 
-```
+```solidity
 function requestCreateOrderETHETH(
   uint256[] calldata metadata
 )
@@ -56,7 +56,7 @@ function requestCreateOrderETHETH(
 $BOSON token ("TKN") as the payment currency and ETH as the deposit currency
 example:
 
-```
+```solidity
 function requestCreateOrderTKNETH(
   uint256[] calldata metadata
 )
@@ -93,7 +93,7 @@ such an offer is a Voucher Set.
     these terms so for the sake of clarity, making an offer is equivalent to
     creating a Voucher Set which is in turn equivalent to minting an ERC-1155 NFT.
 
-    ```
+    ```javascript
     BosonRouter.requestCreateOrderETHETH()
     ```
 
@@ -105,7 +105,7 @@ Buyer's amount of security deposit in escrow, alongside the payment amount.
     Voucher Set which is equivalent to minting an ERC-721 NFT out of the parent
     ERC-1155.
     
-    ```
+    ```javascript
     BosonRouter.requestVoucherETHETH()
     ```
 
@@ -115,7 +115,7 @@ getting the payment back, but also potentially losing the deposit, or can
 choose not to do anything (she can just forget about it), in which case the
 voucher `expires`.
 
-    ```
+    ```javascript
     BosonRouter.redeem()
     // or BosonRouter.refund() or wait 
     // until background service calls 
@@ -125,7 +125,7 @@ voucher `expires`.
 1. The Buyer can then `complain`, signaling dissatisfaction of the promise
 execution. In doing so, the Seller get penalized.
 
-    ```
+    ```javascript
     BosonRouter.complain()
     ```
 
@@ -134,7 +134,7 @@ execution. In doing so, the Seller get penalized.
 fault in a quality delivery, thus admitting part of his deposit to be sent to
 the Buyer as a recourse.
 
-    ```
+    ```javascript
     BosonRouter.cancelOrFault()
     ```
 
@@ -142,13 +142,13 @@ the Buyer as a recourse.
 they are marked for each Voucher and ultimately the Voucher is `finalized`,
 meaning neither the Buyer nor the Seller can use it anymore.
 
-    ```
+    ```javascript
     BosonRouter.triggerFinalizeVoucher()
     ```
 
 1. Finally, funds in escrow are released according to the Voucher's status.
 
-    ```
+    ```javascript
     Cashier.withdraw()
     ```
 
