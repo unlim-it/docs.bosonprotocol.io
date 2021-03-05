@@ -8,7 +8,7 @@
         @apply block;
         @apply relative;
         @apply cursor-pointer;
-        @apply bg-control-gray-light;
+        @apply bg-brand-purple-900;
         @apply w-10;
         @apply h-6;
         @apply rounded-full;
@@ -17,16 +17,16 @@
         @apply transform-gpu;
         @apply box-content;
         @apply border;
-        @apply border-navigation-gray-darker;
+        @apply border-brand-purple-650;
     }
 
     #theme-switch-label:after {
         content: '';
-        @apply bg-light-icon;
+        @apply bg-dark-icon;
         @apply bg-contain;
         @apply block;
         @apply absolute;
-        @apply bg-white;
+        @apply bg-brand-purple-650;
         @apply rounded-full;
         @apply top-0.5;
         @apply transition-all;
@@ -37,14 +37,14 @@
     }
 
     #theme-switch-control:checked + #theme-switch-label {
-        @apply bg-brand-purple-900;
-        @apply border-brand-purple-650;
+        @apply bg-control-gray-light;
+        @apply border-navigation-gray-darker;
     }
 
     #theme-switch-control:checked + #theme-switch-label:after {
         @apply translate-x-4.5;
-        @apply bg-brand-purple-650;
-        @apply bg-dark-icon;
+        @apply bg-white;
+        @apply bg-light-icon;
     }
 
     section#main {

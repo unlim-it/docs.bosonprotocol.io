@@ -27,7 +27,12 @@ Main contracts:
 - `VoucherKernel`: main business logic
 - `UsingHelpers`: common utilities
 
-![/images/docs/contract-dependencies.png](/images/docs/contract-dependencies.png)
+<img src="/images/docs/contract-inheritance-light.png" 
+     alt="Contract inheritance" 
+     class="block dark:hidden"/>
+<img src="/images/docs/contract-inheritance-dark.png" 
+     alt="Contract inheritance" 
+     class="dark:block hidden"/>
 
 A control graph of the contracts is 
 [available here](https://www.notion.so/assets/bosonprotocol-graph.png).
@@ -66,7 +71,12 @@ function requestCreateOrderTKNETH(
 
 The journey through the NFT lifecycle is presented on a simplified diagram below.
 
-![/images/docs/token-lifecycle.png](/images/docs/token-lifecycle.png)
+<img src="/images/docs/token-lifecycle-light.png" 
+     alt="Token Lifecycle" 
+     class="block dark:hidden"/>
+<img src="/images/docs/token-lifecycle-dark.png" 
+     alt="Token Lifecycle" 
+     class="dark:block hidden"/>
 
 A detailed game tree is [available here](https://www.notion.so/assets/exchange-diagram.png),
 showcasing the actions that Sellers and Buyers can make. The order of some of

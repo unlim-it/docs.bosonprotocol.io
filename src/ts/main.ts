@@ -34,10 +34,29 @@ function navigationToggleHandler() {
     .toggleClass("drawer-open")
 }
 
-function darkModeToggleHandler() {
-  $("body")
-    .toggleClass("dark")
+function initialiseTheme() {
+  if (localStorage.theme == "light") {
+    $("#theme-switch input")
+      .prop("checked", true)
+  }
+  $("#theme-switch").removeClass('hidden')
 }
+
+function darkModeToggleHandler() {
+  if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
+    $(document.documentElement)
+      .addClass("light")
+      .removeClass("dark")
+    localStorage.theme = 'light'
+  } else {
+    $(document.documentElement)
+      .removeClass('light')
+      .addClass("dark")
+    localStorage.theme = 'dark'
+  }
+}
+
+$(initialiseTheme)
 
 $.when($.ready).then(function () {
   $("#feedback-buttons")

@@ -6,7 +6,12 @@ permalink: /protocol-overview/how-boson-works/
 ---
 # How Boson works
 
-![/images/docs/token-lifecycle.png](/images/docs/token-lifecycle.png)
+<img src="/images/docs/token-lifecycle-light.png" 
+     alt="Token lifecycle" 
+     class="block dark:hidden"/>
+<img src="/images/docs/token-lifecycle-dark.png" 
+     alt="Token lifecycle" 
+     class="dark:block hidden"/>
 
 Boson is a *permissionless market exchange protocol*, which handles dispute 
 mediations and reversals in order to increase trust in P2P transactions. By 
