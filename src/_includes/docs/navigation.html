@@ -5,7 +5,7 @@
             dark:bg-brand-purple-900 dark:border-brand-purple-900
             transition-transform transform-gpu shadow-inner-right py-6
             md:w-72 md:shadow-none">
-  <div class="flex items-center justify-start flex-wrap w-full ml-6 mb-8">
+  <div class="flex items-center justify-between flex-wrap w-full px-6 mb-8">
     <a href="/">
       <img src="/images/logo-horizontal-transparent-white.png"
            alt="Boson Protocol"
@@ -14,6 +14,15 @@
            alt="Boson Protocol"
            class="inline dark:hidden h-6 object-contain object-left"/>
     </a>
+    <div id="theme-switch">
+      <input class="h-0 w-0 invisible"
+             type="checkbox"
+             id="theme-switch-control" />
+      <label id="theme-switch-label"
+             for="theme-switch-control">
+        Theme
+      </label>
+    </div>
   </div>
   <ul>
     {% for item in site.data.navigation.main %}
@@ -57,7 +66,7 @@
     {% endfor %}
   </ul>
   {% for category in site.data.navigation.categories %}
-  <hr class="border-rule-gray m-6" />
+  <hr class="border-rule-gray dark:border-icon-gray m-6" />
   <p class="uppercase font-semibold mx-6 my-2">{{ category.title }}</p>
   <ul>
     {% for item in category.items %}

@@ -34,6 +34,11 @@ function navigationToggleHandler() {
     .toggleClass("drawer-open")
 }
 
+function darkModeToggleHandler() {
+  $("body")
+    .toggleClass("dark")
+}
+
 $.when($.ready).then(function () {
   $("#feedback-buttons")
     .on("click",
@@ -46,4 +51,8 @@ $.when($.ready).then(function () {
     .on("click",
       "#navigation-toggle",
       navigationToggleHandler)
+  $("#theme-switch")
+    .on("click",
+      "#theme-switch-label",
+      darkModeToggleHandler)
 })

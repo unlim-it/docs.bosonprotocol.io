@@ -3,6 +3,50 @@
 @tailwind utilities;
 
 @layer components {
+    #theme-switch-label {
+        text-indent: -9999px;
+        @apply block;
+        @apply relative;
+        @apply cursor-pointer;
+        @apply bg-control-gray-light;
+        @apply w-10;
+        @apply h-6;
+        @apply rounded-full;
+        @apply float-right;
+        @apply transition-all;
+        @apply transform-gpu;
+        @apply box-content;
+        @apply border;
+        @apply border-navigation-gray-darker;
+    }
+
+    #theme-switch-label:after {
+        content: '';
+        @apply bg-light-icon;
+        @apply bg-contain;
+        @apply block;
+        @apply absolute;
+        @apply bg-white;
+        @apply rounded-full;
+        @apply top-0.5;
+        @apply transition-all;
+        @apply transform-gpu;
+        @apply translate-x-0.5;
+        @apply w-5;
+        @apply h-5;
+    }
+
+    #theme-switch-control:checked + #theme-switch-label {
+        @apply bg-brand-purple-900;
+        @apply border-brand-purple-650;
+    }
+
+    #theme-switch-control:checked + #theme-switch-label:after {
+        @apply translate-x-4.5;
+        @apply bg-brand-purple-650;
+        @apply bg-dark-icon;
+    }
+
     section#main {
         @apply -mr-60;
     }

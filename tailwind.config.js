@@ -2,15 +2,8 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: false,
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
-    inset: {
-      '0': 0,
-      auto: 'auto',
-      '2': '0.5rem',
-      '4': '1rem',
-      '7': '1.75rem'
-    },
     colors: {
       'transparent': 'transparent',
       'current': 'currentColor',
@@ -76,6 +69,21 @@ module.exports = {
       max: 'max-content',
     },
     extend: {
+      backgroundImage: theme => ({
+        'light-icon': "url(/images/light-icon.png)",
+        'dark-icon': "url(/images/dark-icon.png)"
+      }),
+      inset: {
+        '0': 0,
+        auto: 'auto',
+        '2': '0.5rem',
+        '4': '1rem',
+        '4.5': '1.125rem',
+        '7': '1.75rem'
+      },
+      spacing: {
+        '4.5': '1.125rem'
+      },
       boxShadow: {
         lg: '0 4px 20px 0px rgba(39, 43, 48, 0.1)',
         'inner-right': 'inset -4px 0 20px -4px rgba(39, 43, 48, 0.1)'
@@ -87,6 +95,7 @@ module.exports = {
         'control-gray-dark': '#708096',
         'navigation-gray-light': '#FCFCFC',
         'navigation-gray-dark': '#EFF2F4',
+        'navigation-gray-darker': '#E0E5E9',
         'brand-purple': {
           'DEFAULT': '#6061C6',
           500: '#6061C6',
