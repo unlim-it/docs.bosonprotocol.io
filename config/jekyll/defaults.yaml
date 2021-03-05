@@ -7,6 +7,12 @@ plugins:
   - "jekyll-purgecss"
   - "jekyll-tidy"
 
+algolia:
+  application_id: "RZUWD1CSL8"
+  index_name: "docs-preview"
+  search_only_api_key: "f1696b617ed35006924f527c3a423c6e"
+  nodes_to_index: "p"
+
 css_dir: "dist"
 
 exclude:

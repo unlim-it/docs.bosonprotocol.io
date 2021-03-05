@@ -1,4 +1,9 @@
 import '../css/main.css'
+import SearchBox from "./search"
+
+const SEARCH_ONLY_API_KEY = "f1696b617ed35006924f527c3a423c6e";
+const INDEX_NAME = "docs-preview";
+const APPLICATION_ID = "RZUWD1CSL8";
 
 enum Feedback {
   Helpful = "helpful",
@@ -34,6 +39,11 @@ function navigationToggleHandler() {
     .toggleClass("drawer-open")
 }
 
+function searchButtonHandler() {
+  $("#searchpanel")
+    .toggleClass("hidden")
+}
+
 $.when($.ready).then(function () {
   $("#feedback-buttons")
     .on("click",
@@ -46,4 +56,11 @@ $.when($.ready).then(function () {
     .on("click",
       "#navigation-toggle",
       navigationToggleHandler)
+    .on("click",
+      "#search-button",
+      searchButtonHandler)
+
+  new SearchBox(APPLICATION_ID, SEARCH_ONLY_API_KEY, INDEX_NAME)
+    .attach("#searchbox", "#hits")
+    .start()
 })

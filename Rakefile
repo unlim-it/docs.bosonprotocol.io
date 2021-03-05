@@ -152,6 +152,25 @@ namespace :content do
          "-d", content_work_directory)
     end
 
+    desc "Generate algolia index for deployment identitifer, by default " +
+           "bsn-local-default"
+    task :index, [
+      :deployment_type,
+      :deployment_label
+    ] => [:'dependencies:install'] do |_, args|
+      default_deployment_identifier(args)
+
+      configuration = configuration.for_scope(args.to_h)
+
+      environment = configuration.environment
+      deployment_identifier = configuration.deployment_identifier
+
+      sh({
+           "JEKYLL_ENV" => environment
+         }, "jekyll", "algolia",
+         "-c", "config/jekyll/defaults.yaml,config/jekyll/#{deployment_identifier}.yaml")
+    end
+
     desc 'Serve jekyll website on localhost:4000 for deployment identifier, ' +
            'by default bsn-local-default'
     task :serve, [
