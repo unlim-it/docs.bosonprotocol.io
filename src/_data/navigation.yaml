@@ -39,8 +39,8 @@ main:
 categories:
   - title: "Developer guides"
     items:
-      - title: "Smart contract integration"
-        url: "/developer-guides/smart-contract-integration/"
+      - title: "Smart contract quick start"
+        url: "/developer-guides/smart-contract-quick-start/"
   - title: "Reference"
     items:
       - title: "Smart contracts"

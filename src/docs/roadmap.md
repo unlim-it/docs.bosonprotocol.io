@@ -6,4 +6,6 @@ permalink: /roadmap/
 ---
 # Roadmap
 
-TODO
+## Boson Protocol v0.2
+
+We're going to have some design changes in the next major update.
