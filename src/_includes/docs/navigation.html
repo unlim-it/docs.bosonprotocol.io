@@ -25,7 +25,8 @@
                dark:bg-brand-purple-800
                dark:text-brand-green-400 dark:hover:text-brand-green-400
                {% else %}
-               hover:text-white
+               hover:text-black
+               dark:hover:text-white
                {% endif %}"
          href="{{ item.url }}">
         {{ item.title }}
@@ -42,8 +43,10 @@
                     dark:text-brand-green-400 dark:hover:text-brand-green-400
                     {% else %}
                     font-normal
-                    text-rule-gray
-                    hover:text-rule-gray{% endif %}"
+                    dark:text-rule-gray
+                    hover:text-white
+                    dark:hover:text-rule-gray
+                    {% endif %}"
              href="{{ child.url == page.url }}">
             {{ child.title }}
           </a>
@@ -60,7 +63,15 @@
     {% for item in category.items %}
     <li>
       <a class="px-6 py-1.5 block font-semibold
-               {% if item.url == page.url %}bg-navigation-gray-dark text-brand-purple hover:text-brand-purple{% else %}hover:text-black{% endif %}"
+                {% if item.url == page.url %}
+                bg-navigation-gray-dark
+                text-brand-purple hover:text-brand-purple
+                dark:bg-brand-purple-800
+                dark:text-brand-green-400 dark:hover:text-brand-green-400
+                {% else %}
+                hover:text-black
+                dark:hover:text-white
+                {% endif %}"
          href="{{ item.url }}">
         {{ item.title }}
       </a>
@@ -68,7 +79,18 @@
         {% for child in item.children %}
         <li>
           <a class="pl-10 pr-6 py-1.5 block
-                    {% if child.url == page.url %}bg-navigation-gray-dark text-brand-purple font-semibold hover:text-brand-purple{% else %}font-normal hover:text-black{% endif %}"
+                    {% if child.url == page.url %}
+                    font-semibold
+                    bg-navigation-gray-dark
+                    text-brand-purple hover:text-brand-purple
+                    dark:bg-brand-purple-800
+                    dark:text-brand-green-400 dark:hover:text-brand-green-400
+                    {% else %}
+                    font-normal
+                    dark:text-rule-gray
+                    hover:text-white
+                    dark:hover:text-rule-gray
+                    {% endif %}"
              href="{{ child.url == page.url }}">
             {{ child.title }}
           </a>
