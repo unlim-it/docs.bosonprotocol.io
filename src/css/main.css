@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "syntax-highlighting/monokai.css";
+
 @layer components {
     #theme-switch-label {
         text-indent: -9999px;

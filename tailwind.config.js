@@ -119,21 +119,6 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: '80ch',
-            h1: {
-              fontWeight: '700'
-            },
-            h2: {
-              fontWeight: '600'
-            },
-            h3: {
-              fontWeight: '500'
-            },
-            h4: {
-              fontWeight: '400'
-            },
-            code: {
-              fontWeight: '400'
-            },
             a: {
               fontWeight: '600',
               textDecoration: 'none'
@@ -147,6 +132,22 @@ module.exports = {
               color: theme('colors.icon-gray'),
               borderLeftWidth: '0.25rem',
               borderLeftColor: theme('colors.brand-teal'),
+            },
+            h1: {
+              fontWeight: '700'
+            },
+            h2: {
+              fontWeight: '600'
+            },
+            h3: {
+              fontWeight: '500'
+            },
+            h4: {
+              fontWeight: '400'
+            },
+            code: {
+              color: 'inherit',
+              fontWeight: '400'
             },
             thead: {
               fontWeight: '500'
