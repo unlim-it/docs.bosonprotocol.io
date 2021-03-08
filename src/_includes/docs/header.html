@@ -4,9 +4,9 @@
             class="h-9 w-9 px-2.5 py-1.5
                    bg-control-gray-light dark:bg-brand-purple-700
                    rounded-sm focus:outline-none sm:mr-4 md:hidden">
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
-      <span class="block w-full bg-icon-gray my-1 h-0.5"></span>
+      <span class="block w-full bg-icon-gray dark:bg-control-gray-dark my-1 h-0.5"></span>
+      <span class="block w-full bg-icon-gray dark:bg-control-gray-dark my-1 h-0.5"></span>
+      <span class="block w-full bg-icon-gray dark:bg-control-gray-dark my-1 h-0.5"></span>
     </button>
     <div id="search-button"
          class="h-9 w-9 relative">
@@ -15,11 +15,14 @@
                     appearance-none cursor-pointer outline-none"
              type="checkbox"/>
       <div id="search-icon"
-           class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-2.5
+           class="block absolute left-0 top-0 h-9 w-9 px-2.5 py-1
                 bg-control-gray-light dark:bg-brand-purple-700
                 rounded-sm">
-        <img src="/images/search.png"
-             class="object-contain object-center"
+        <img src="/images/search-light.png"
+             class="inline dark:hidden object-contain object-center"
+             alt="Search Icon"/>
+        <img src="/images/search-dark.png"
+             class="dark:inline hidden object-contain object-center"
              alt="Search Icon"/>
       </div>
     </div>
