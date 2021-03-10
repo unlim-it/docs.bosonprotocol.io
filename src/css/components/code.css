@@ -138,7 +138,6 @@
     }
 
     .hljs-comment {
-        @apply dark:text-rule-gray;
         @apply text-icon-gray-light;
     }
 

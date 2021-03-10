@@ -145,6 +145,7 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: '80ch',
+            color: theme('colors.icon-gray'),
             a: {
               fontWeight: '600',
               textDecoration: 'none',
@@ -197,6 +198,16 @@ module.exports = {
             'blockquote p:last-of-type::after': {
               content: 'none',
             }
+          }
+        },
+        "brand-purple": {
+          css: {
+            a: {
+              color: theme('colors.brand-purple.DEFAULT'),
+            },
+            'a code': {
+              color: theme('colors.brand-purple.DEFAULT')
+            },
           }
         },
         dark: {
