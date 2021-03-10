@@ -90,6 +90,7 @@ module.exports = {
       },
       colors: {
         'icon-gray': '#364353',
+        'icon-gray-light': '#90a5be',
         'rule-gray': '#C3CDD8',
         'control-gray-light': '#EFF2F4',
         'control-gray-dark': '#708096',
@@ -97,6 +98,7 @@ module.exports = {
         'navigation-gray-dark': '#EFF2F4',
         'navigation-gray-darker': '#E0E5E9',
         'brand-purple': {
+          100: '#AB80F0', // <-
           'DEFAULT': '#6061C6',
           500: '#6061C6',
           550: '#363651',
@@ -106,13 +108,37 @@ module.exports = {
           800: '#1D1D2C',
           900: '#191927'
         },
+        'brand-blue': {
+          'DEFAULT': '#3478F6', // <-
+          700: '#0046C8'
+        },
         'brand-teal': {
-          400: '#5FCCCA',
+          400: '#5FCCCA', // <-
           'DEFAULT': '#71E7DE',
+          700: '#00AFAC'
         },
         'brand-green': {
-          400: '#80F0BE',
-          'DEFAULT': '#8AF0C5'
+          400: '#80F0BE', // <-
+          'DEFAULT': '#8AF0C5',
+          600: '#64C97A', // <-
+          650: '#14C33B',
+          700: '#00A059'
+        },
+        'brand-aqua': {
+          'DEFAULT': '#5AC8FA', // <-
+          700: '#0099DF'
+        },
+        'brand-orange': {
+          'DEFAULT': '#EC7A3A', // <-
+          700: '#EC7A3A'
+        },
+        'brand-yellow': {
+          'DEFAULT': '#F7B046', // <-
+          700: '#F3980E'
+        },
+        'brand-pink': {
+          'DEFAULT': '#FF7686', // <-
+          700: '#E0293F'
         }
       },
       typography: theme => ({
@@ -121,7 +147,11 @@ module.exports = {
             maxWidth: '80ch',
             a: {
               fontWeight: '600',
-              textDecoration: 'none'
+              textDecoration: 'none',
+              color: theme('colors.brand-purple.DEFAULT'),
+              '&:hover': {
+                color: theme('colors.brand-purple.DEFAULT'),
+              },
             },
             strong: {
               fontWeight: '500'
@@ -131,7 +161,7 @@ module.exports = {
               fontStyle: 'normal',
               color: theme('colors.icon-gray'),
               borderLeftWidth: '0.25rem',
-              borderLeftColor: theme('colors.brand-teal'),
+              borderLeftColor: theme('colors.brand-teal.DEFAULT'),
             },
             h1: {
               fontWeight: '700'
@@ -148,6 +178,9 @@ module.exports = {
             code: {
               color: 'inherit',
               fontWeight: '400'
+            },
+            pre: {
+              backgroundColor: theme('colors.control-gray-light')
             },
             thead: {
               fontWeight: '500'
@@ -182,6 +215,9 @@ module.exports = {
               color: theme('colors.rule-gray'),
               borderLeftColor: theme('colors.brand-green.400')
             },
+            pre: {
+              backgroundColor: theme('colors.brand-purple.700')
+            },
             h1: {
               color: theme('colors.white'),
             },
@@ -205,6 +241,7 @@ module.exports = {
       typography: ['dark'],
       backgroundOpacity: ['dark'],
       borderOpacity: ['dark'],
+      borderWidth: ['dark'],
       fill: ['dark'],
     }
   },

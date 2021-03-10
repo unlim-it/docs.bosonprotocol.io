@@ -1,0 +1,162 @@
+@layer components {
+    .prose {
+        & pre {
+            @apply rounded-sm;
+        }
+
+        & code {
+            @apply bg-brand-purple;
+            @apply bg-opacity-10;
+            @apply py-0.5;
+            @apply px-1.5;
+            @apply rounded-sm;
+            @apply text-brand-purple;
+            @apply font-medium;
+            @apply border;
+            @apply border-brand-purple;
+            @apply border-opacity-50;
+            @apply dark:text-brand-teal-400;
+            @apply dark:bg-brand-teal-400;
+            @apply dark:bg-opacity-10;
+            @apply dark:border-brand-teal-400;
+            @apply dark:border-opacity-50;
+        }
+
+        & code.hljs {
+            @apply bg-transparent;
+            @apply p-0;
+            @apply text-icon-gray;
+            @apply dark:text-rule-gray;
+            @apply border-0;
+            @apply dark:border-0;
+        }
+    }
+
+    .hljs {
+        @apply block;
+        @apply overflow-x-auto;
+        @apply dark:text-control-gray-dark;
+
+        & table {
+            @apply mt-0;
+            @apply mb-0;
+            @apply leading-tight;
+            @apply text-sm;
+        }
+
+        & thead {
+            @apply border-0;
+        }
+
+        & tbody tr {
+            @apply border-0;
+        }
+
+        & tbody td {
+            @apply p-0;
+        }
+    }
+
+    .hljs-ln-numbers, .hljs-ln-number {
+        @apply select-none;
+        @apply text-center;
+        @apply text-control-gray-dark;
+        @apply align-top;
+        @apply w-8;
+    }
+
+    .hljs-subst {
+        @apply dark:text-rule-gray;
+        @apply text-control-gray-dark;
+    }
+
+    .hljs-deletion,
+    .hljs-formula,
+    .hljs-keyword,
+    .hljs-link,
+    .hljs-selector-tag {
+        @apply dark:text-brand-teal-400;
+        @apply text-brand-teal-700;
+    }
+
+    .hljs-built_in,
+    .hljs-emphasis,
+    .hljs-name,
+    .hljs-quote,
+    .hljs-strong,
+    .hljs-title,
+    .hljs-variable {
+        @apply dark:text-brand-blue;
+        @apply text-brand-blue-700;
+    }
+
+    .hljs-attr,
+    .hljs-params,
+    .hljs-template-tag,
+    .hljs-type {
+        @apply dark:text-brand-green-600;
+        @apply text-brand-green-700;
+    }
+
+    .hljs-builtin-name,
+    .hljs-doctag,
+    .hljs-literal,
+    .hljs-number {
+        @apply dark:text-brand-pink;
+        @apply text-brand-pink-700;
+    }
+
+    .hljs-code,
+    .hljs-meta,
+    .hljs-regexp,
+    .hljs-selector-id,
+    .hljs-template-variable {
+        @apply dark:text-brand-orange;
+        @apply text-brand-orange-700;
+    }
+
+    .hljs-addition,
+    .hljs-meta-string,
+    .hljs-section,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-string,
+    .hljs-symbol {
+        @apply dark:text-brand-aqua;
+        @apply text-brand-aqua-700;
+    }
+
+    .hljs-attribute,
+    .hljs-bullet,
+    .hljs-class,
+    .hljs-meta-keyword,
+    .hljs-function .hljs-keyword,
+    .hljs-selector-pseudo,
+    .hljs-tag {
+        @apply dark:text-brand-purple-100;
+        @apply text-brand-purple;
+    }
+
+    .hljs-comment {
+        @apply dark:text-rule-gray;
+        @apply text-icon-gray-light;
+    }
+
+    .hljs-link_label,
+    .hljs-literal,
+    .hljs-number {
+        @apply dark:text-brand-green-400;
+        @apply text-brand-green-650;
+    }
+
+    .hljs-comment,
+    .hljs-emphasis {
+        @apply italic;
+    }
+
+    .hljs-section,
+    .hljs-strong,
+    .hljs-tag {
+        @apply font-medium;
+    }
+}

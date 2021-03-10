@@ -182,7 +182,7 @@ A Voucher's status is defined in 7 bits that are set depending on the path in
 its lifecycle (defined in
 [UsingHelpers.sol](https://github.com/bosonprotocol/contracts/blob/master/contracts/UsingHelpers.sol#L47)):
 
-```
+```plaintext
 7:COMMITTED
 6:REDEEMED
 5:REFUNDED

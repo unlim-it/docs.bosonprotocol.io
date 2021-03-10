@@ -4,6 +4,9 @@
     "module": "commonjs",
     "sourceMap": true,
     "strict": true,
+    "allowJs": true,
+    "typeRoots": [ "./src/types", "./node_modules/@types"],
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["node_modules", "src/types"]
 }

@@ -1,0 +1,47 @@
+@layer components {
+    #theme-switch-label {
+        text-indent: -9999px;
+        @apply block;
+        @apply relative;
+        @apply cursor-pointer;
+        @apply bg-brand-purple-900;
+        @apply w-10;
+        @apply h-6;
+        @apply rounded-full;
+        @apply float-right;
+        @apply transition-all;
+        @apply transform-gpu;
+        @apply box-content;
+        @apply border;
+        @apply border-brand-purple-650;
+
+        &:after {
+            content: '';
+            @apply bg-dark-icon;
+            @apply bg-contain;
+            @apply block;
+            @apply absolute;
+            @apply bg-brand-purple-650;
+            @apply rounded-full;
+            @apply top-0.5;
+            @apply transition-all;
+            @apply transform-gpu;
+            @apply translate-x-0.5;
+            @apply w-5;
+            @apply h-5;
+        }
+    }
+
+    #theme-switch-control:checked {
+        & + #theme-switch-label {
+            @apply bg-control-gray-light;
+            @apply border-navigation-gray-darker;
+
+            &:after {
+                @apply translate-x-4.5;
+                @apply bg-white;
+                @apply bg-light-icon;
+            }
+        }
+    }
+}

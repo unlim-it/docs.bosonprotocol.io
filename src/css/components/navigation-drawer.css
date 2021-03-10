@@ -1,0 +1,38 @@
+@layer components {
+    section#main {
+        @apply -mr-60;
+    }
+
+    .drawer-open {
+        & nav {
+            @apply translate-x-0;
+        }
+
+        & section#main {
+            @apply translate-x-0;
+        }
+    }
+
+    .drawer-closed {
+        & nav {
+            @apply -translate-x-60;
+        }
+
+        & section#main {
+            @apply -translate-x-60;
+        }
+    }
+
+    @screen md {
+        .drawer-open, .drawer-closed {
+            & nav {
+                @apply translate-x-0;
+            }
+
+            & section#main {
+                @apply mr-0;
+                @apply translate-x-0;
+            }
+        }
+    }
+}

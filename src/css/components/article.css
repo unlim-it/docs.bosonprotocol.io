@@ -1,0 +1,21 @@
+@layer components {
+    .prose p {
+        @apply leading-relaxed;
+    }
+
+    .prose blockquote {
+        @apply rounded-sm;
+        @apply shadow-lg;
+        @apply dark:bg-brand-purple-700;
+    }
+
+    .prose blockquote p {
+        @apply pl-1 pt-4 pr-4 pb-4;
+    }
+
+    @screen md {
+        .prose p {
+            @apply leading-loose;
+        }
+    }
+}
