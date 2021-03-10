@@ -1,0 +1,10 @@
+---
+concourse_team: "bosonprotocol"
+
+development_cadmium_provisioning_role_arn: "arn:aws:iam::%{hiera('bsn_development_potassium_account_id')}:role/cross-account-admin-role"
+development_cadmium_deployment_type: "bsn-development"
+development_cadmium_deployment_label: "cadmium"
+
+production_sulfur_provisioning_role_arn: "arn:aws:iam::%{hiera('bsn_production_lutetium_account_id')}:role/cross-account-admin-role"
+production_sulfur_deployment_type: "bsn-production"
+production_sulfur_deployment_label: "sulfur"

@@ -9,5 +9,9 @@
 :hierarchy:
   - "roles/%{role}"
   - "deployments/%{deployment_type}-%{deployment_label}"
+  - "pipelines/%{pipeline_type}"
+  - "pipelines/defaults"
+  - "ci/%{ci_deployment_type}-%{ci_deployment_label}"
+  - "secrets/pipeline/%{ci_deployment_type}-%{ci_deployment_label}"
   - "secrets/website/%{deployment_type}-%{deployment_label}"
   - "defaults"

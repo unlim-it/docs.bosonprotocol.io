@@ -1,4 +1,5 @@
 require 'confidante'
+require 'rake_fly'
 require 'rake_terraform'
 require 'ruby_terraform/output'
 require 'aws-sdk'
@@ -15,6 +16,7 @@ configuration.non_standard_mime_types.each do |mime_type, extensions|
   })
 end
 
+RakeFly.define_installation_tasks(version: '6.7.2')
 RakeTerraform.define_installation_tasks(
   path: File.join(Dir.pwd, 'vendor', 'terraform'),
   version: '0.14.5')
@@ -22,6 +24,27 @@ RakeTerraform.define_installation_tasks(
 task :default => [
   :'content:build'
 ]
+
+namespace :secrets do
+  desc 'Check if secrets are readable'
+  task :check do
+    if File.exist?('config/secrets')
+      puts 'Checking if secrets are accessible.'
+      unless File.read('config/secrets/.unlocked').strip == "true"
+        raise RuntimeError, Paint['Cannot access secrets.', :red]
+      end
+      puts 'Secrets accessible. Continuing.'
+    end
+  end
+
+  desc 'Unlock secrets'
+  task :unlock do
+    if File.exist?('config/secrets')
+      puts 'Unlocking secrets.'
+      sh('git crypt unlock')
+    end
+  end
+end
 
 namespace :bootstrap do
   RakeTerraform.define_command_tasks(
@@ -247,6 +270,33 @@ namespace :content do
     Rake::Task['content:build'].invoke(*args)
     Rake::Task['content:publish'].invoke(*args)
     Rake::Task['content:invalidate'].invoke(*args)
+  end
+end
+
+namespace :ci do
+  RakeFly.define_project_tasks(
+    pipeline: 'docs-website',
+    argument_names: [:ci_deployment_type, :ci_deployment_label]
+  ) do |t, args|
+    configuration = configuration
+      .for_scope(args.to_h.merge(role: 'main-pipeline'))
+    ci_deployment_identifier = configuration.ci_deployment_identifier
+
+    t.concourse_url = configuration.concourse_url
+    t.team = configuration.concourse_team
+    t.username = configuration.concourse_username
+    t.password = configuration.concourse_password
+
+    t.config = 'pipelines/main/pipeline.yaml'
+
+    t.vars = configuration.vars
+    t.var_files = [
+      'config/secrets/pipeline/constants.yaml',
+      "config/secrets/pipeline/#{ci_deployment_identifier}.yaml"
+    ]
+
+    t.non_interactive = true
+    t.home_directory = 'build/fly'
   end
 end
 

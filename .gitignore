@@ -12,9 +12,9 @@
 .vscode
 
 # Build
-vendor/
-build/
-dist/
+/vendor
+/build
+/dist
 src/dist/
 !src/_data
 src/_data/manifest.yml
