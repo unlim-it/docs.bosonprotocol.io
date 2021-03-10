@@ -50,7 +50,7 @@ jobs:
           - get: node-builder-image
       - task: build
         image: node-builder-image
-        file: source/pipelines/provision-website/task.yaml
+        file: source/pipelines/main/provision-website/task.yaml
         params:
           GPG_KEY: ((gpg_key))
           PROVISIONING_ROLE_ARN: ((development_cadmium_provisioning_role_arn))
@@ -91,7 +91,7 @@ jobs:
           - get: node-builder-image
       - task: test
         image: node-builder-image
-        file: source/pipelines/provision-content/task.yaml
+        file: source/pipelines/main/provision-content/task.yaml
         params:
           GPG_KEY: ((gpg_key))
           PROVISIONING_ROLE_ARN: ((development_cadmium_provisioning_role_arn))
