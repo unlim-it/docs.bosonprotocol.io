@@ -236,7 +236,7 @@ namespace :content do
   task :invalidate, [
     :deployment_type,
     :deployment_label
-  ] do |_, args|
+  ] => [:'terraform:ensure'] do |_, args|
     configuration = configuration
       .for_scope(args.to_h.merge(role: 'website'))
 
@@ -266,7 +266,7 @@ namespace :content do
   task :deploy, [
     :deployment_type,
     :deployment_label
-  ] do |_, args|
+  ] => [:'terraform:ensure'] do |_, args|
     Rake::Task['content:build'].invoke(*args)
     Rake::Task['content:publish'].invoke(*args)
     Rake::Task['content:invalidate'].invoke(*args)

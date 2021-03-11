@@ -48,7 +48,7 @@ jobs:
           - get: source
             trigger: true
           - get: node-builder-image
-      - task: build
+      - task: provision-website
         image: node-builder-image
         file: source/pipelines/main/provision-website/task.yaml
         params:
@@ -89,7 +89,7 @@ jobs:
             passed:
               - provision-development-cadmium-website
           - get: node-builder-image
-      - task: test
+      - task: provision-content
         image: node-builder-image
         file: source/pipelines/main/provision-content/task.yaml
         params:

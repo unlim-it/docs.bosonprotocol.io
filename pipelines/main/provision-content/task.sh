@@ -22,4 +22,4 @@ export AWS_ACCESS_KEY_ID="$(jq -M -r .Credentials.AccessKeyId build/session)"
 export AWS_SECRET_ACCESS_KEY="$(jq -M -r .Credentials.SecretAccessKey build/session)"
 export AWS_SESSION_TOKEN="$(jq -M -r .Credentials.SessionToken build/session)"
 
-./go "website:provision[${DEPLOYMENT_TYPE},${DEPLOYMENT_LABEL}]"
+./go "content:deploy[${DEPLOYMENT_TYPE},${DEPLOYMENT_LABEL}]"
