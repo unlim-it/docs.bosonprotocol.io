@@ -35,10 +35,10 @@ groups:
     jobs:
       - provision-development-cadmium-website
       - provision-development-cadmium-content
-#  - name: production-sulfur
-#    jobs:
-#      - provision-production-sulfur-website
-#      - provision-production-sulfur-content
+  - name: production-sulfur
+    jobs:
+      - provision-production-sulfur-website
+      - provision-production-sulfur-content
 
 jobs:
   - name: provision-development-cadmium-website
@@ -97,6 +97,50 @@ jobs:
           PROVISIONING_ROLE_ARN: ((development_cadmium_provisioning_role_arn))
           DEPLOYMENT_TYPE: ((development_cadmium_deployment_type))
           DEPLOYMENT_LABEL: ((development_cadmium_deployment_label))
+
+    on_success: *on_success
+    on_failure: *on_failure
+    on_error: *on_error
+    on_abort: *on_abort
+
+  - name: provision-production-sulfur-website
+    serial: true
+    plan:
+      - in_parallel:
+          - get: source
+            passed:
+              - provision-development-cadmium-content
+          - get: node-builder-image
+      - task: provision-website
+        image: node-builder-image
+        file: source/pipelines/main/provision-website/task.yaml
+        params:
+          GPG_KEY: ((gpg_key))
+          PROVISIONING_ROLE_ARN: ((production_sulfur_provisioning_role_arn))
+          DEPLOYMENT_TYPE: ((production_sulfur_deployment_type))
+          DEPLOYMENT_LABEL: ((production_sulfur_deployment_label))
+
+    on_success: *on_success
+    on_failure: *on_failure
+    on_error: *on_error
+    on_abort: *on_abort
+
+  - name: provision-production-sulfur-content
+    plan:
+      - in_parallel:
+          - get: source
+            trigger: true
+            passed:
+              - provision-production-sulfur-website
+          - get: node-builder-image
+      - task: provision-content
+        image: node-builder-image
+        file: source/pipelines/main/provision-content/task.yaml
+        params:
+          GPG_KEY: ((gpg_key))
+          PROVISIONING_ROLE_ARN: ((production_sulfur_provisioning_role_arn))
+          DEPLOYMENT_TYPE: ((production_sulfur_deployment_type))
+          DEPLOYMENT_LABEL: ((production_sulfur_deployment_label))
 
     on_success: *on_success
     on_failure: *on_failure
