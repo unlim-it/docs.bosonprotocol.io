@@ -84,7 +84,7 @@ these transactions is not prescribed, e.g. a Seller can do a CancelOrFault
 transaction independently of any Buyer action.
 
 > Note: while the current exchange mechanism is in our opinion quite robust, it
-is by no means set in stone, rather it will be evolving in the future. We are
+is by no means set in stone and will be evolving in the future. We are
 already working on some improvements and are actively pursuing research in
 this area.
 
@@ -132,8 +132,8 @@ voucher `expires`.
     // VoucherKernel.triggerExpiration()
     ```
 
-1. The Buyer can then `complain`, signaling dissatisfaction of the promise
-execution. In doing so, the Seller get penalized.
+1. The Buyer can then `complain`, signaling dissatisfaction with the promise
+execution. When this happens, the Seller is penalized.
 
     ```javascript
     BosonRouter.complain()
@@ -150,7 +150,7 @@ the Buyer as a recourse.
 
 1. Wait periods start ticking at various points in the game tree. Once passed,
 they are marked for each Voucher and ultimately the Voucher is `finalized`,
-meaning neither the Buyer nor the Seller can use it anymore.
+meaning neither the Buyer nor the Seller can use it any more.
 
     ```javascript
     BosonRouter.triggerFinalizeVoucher()
@@ -198,9 +198,9 @@ periods triggering.
 
 ### Services in the background
 
-A scheduled process is running in the backend that flags the vouchers when
-redemption was made and when wait periods expire. Anybody could be executing
-these functions, marked as external, the backend is currently running them for
+A scheduled process is running in the back end that flags the vouchers when
+redemption was made and when wait periods expire. Anybody could execute
+these functions, marked as external - the back end is currently running them for
 convenience: `VoucherKernel.triggerExpiration()`,
 `VoucherKernel.triggerFinalizeVoucher()`, `Cashier.withdraw()`.
 
