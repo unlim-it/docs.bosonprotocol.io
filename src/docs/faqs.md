@@ -6,9 +6,9 @@ permalink: /faqs/
 ---
 # Frequently Asked Questions
 
-First, a small note: your question may not be here. Why? Because we've recently 
-open sourced this work. That means that questions haven't been asked, well, 
-frequently. This means that if you have a question, and it's not here, we 
+First, a small note: your question may not be here. Why? Because we've only recently 
+open-sourced this work. That means that questions haven't been asked, well, 
+frequently. This also means that if you have a question and it's not here, we 
 encourage you to ask it, and we'll add it here. 
 
 ### How can I add my question?
@@ -25,13 +25,13 @@ more useful this document will be.
 The third best way is to ask on our [Gitter](https://gitter.im/BosonProtocol). 
 If you can, mention that the question might be good for the FAQ.
 
-There is no bad way to ask for a question to be here. 
+There is no bad way to ask for a question to be added here. 
 
 ## What is Boson Protocol?
 
 Boson Protocol is three things:
 
-- A protocol, comprised of modular components, for tokenizing Things and to ...
+- A protocol, comprised of modular components, for tokenizing Things and thus enabling smart contracts to perform on-chain financial transfers coordinated with the off-chain, often physical, delivery of goods and services
 - A foundation, currently funded by an external company, Redeemeum, which works 
   on the protocol
 - A wider community of developers working on the protocol
