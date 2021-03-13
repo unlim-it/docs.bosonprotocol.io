@@ -10,10 +10,10 @@ permalink: /protocol-overview/how-boson-works/
 
 Boson is a *permissionless market exchange protocol*, which handles dispute 
 mediations and reversals in order to facilitate P2P transactions in a trustless 
-way. By leveraging a dynamic game the protocol enables atomic automated 
+way. By leveraging a dynamic game, the protocol enables practically atomic automated 
 transactions. It is implemented in a system of non-upgradeable smart contracts 
 on the [Ethereum](https://ethereum.org/) blockchain. The protocol functions as a 
-commercial primitive or "lego brick", thereby enabling digital and 
+commercial primitive or "Lego brick", thereby enabling digital and 
 decentralized applications to be easily developed on top of it. This obviates 
 the requirement for trusted intermediaries; instead prioritizing 
 **decentralization**, cost minimization and **trustless value exchange**.
@@ -32,7 +32,7 @@ The following image illustrates the complete game tree:
 
 ## How It Works
 
-When a seller lists an item they specify the item price as well as deposit 
+When a seller lists an item, they specify the item price as well as deposit 
 amounts for both the buyer and seller. In addition to this, the desired payment 
 currency and the listing's validity period are detailed. This validity period 
 includes the start date and expiry date of the listing, the first of which is 
@@ -68,4 +68,4 @@ variance in payouts for both the buyer and seller.
 This is very much our beta launch of our mechanism and the first step in our 
 work for bringing greater trust and protection to buyers in dCommerce to allow 
 them to benefit from the promises of interoperability, specialised flows from 
-composable pieces, and of course protection from all the ills of intermediaries.
+composable pieces, and of course protection from all the extractive ills of intermediaries.

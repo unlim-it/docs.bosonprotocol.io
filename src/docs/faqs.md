@@ -6,7 +6,10 @@ permalink: /faqs/
 ---
 # Frequently Asked Questions
 
-First, a small note: your question may not be here. Why? Because we've recently open sourced this work. That means that questions haven't been asked, well, frequently. This means that if you have a question, and it's not here, we encourage you to ask it, and we'll add it here.
+First, a small note: your question may not be here. Why? Because we've only recently 
+open-sourced this work. That means that questions haven't been asked, well, 
+frequently. This also means that if you have a question and it's not here, we 
+encourage you to ask it, and we'll add it here. 
 
 **Table of Contents**:
 
@@ -22,14 +25,18 @@ If you have a question, but not the answer, the best place to ask it is on our [
 The best way to add a question to the FAQ for which you already have an answer is to open a Pull Request to
 [the repo for this site](https://github.com/bosonprotocol/docs.bosonprotocol.io).
 
-Ultimately, there is no bad way to ask for a question, and we would love to have questions which are actually frequently asked here.
+Ultimately, there is no bad way to ask for a question to be added here, and we 
+would love to have questions which are actually frequently asked.
 
 ## What is Boson Protocol?
 
 Boson Protocol is three things:
 
-- A protocol, comprised of modular components, which focuses on exchanging NFTs.
-- A foundation, currently funded by an external company, Redeemeum, which works on the wider Bosom Protocol ecosystem.
+- A protocol, comprised of modular components, for tokenizing Things and thus enabling 
+  smart contracts to perform on-chain financial transfers coordinated with the off-chain, 
+  often physical, delivery of goods and services.
+- A foundation, currently funded by an external company, Redeemeum, which works on the 
+  wider Boson Protocol ecosystem.
 - A wider community of developers working on the protocol.
 
 ## What is Redeemeum?

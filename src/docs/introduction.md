@@ -52,7 +52,7 @@ everyone.
 
 ## Developer links
 
-The Boson codebase is comprised of an ecosystem of open source components. For 
+The Boson codebase is comprised of an ecosystem of open-source components. For 
 now, the most relevant code is in the following repository:
 
 - [`contracts`](https://github.com/bosonprotocol/contracts)
@@ -79,10 +79,10 @@ If you're reading this for the first time, welcome.
 
 Boson Protocol is both a protocol, a foundation, and a community. We've worked 
 hard to ensure that the code and technical specifications for the protocol are 
-available, here. As a foundation, we're hiring developers to work on the code 
+available, here on GitHub. As a foundation, we're hiring developers to work on the code 
 and working with partner organizations to ensure that the ecosystem grows. As a 
 community, we're interested in building tools together, no matter where you're 
-coming from. Boson Protocol is dedicated to open source as our primary 
+from. Boson Protocol is dedicated to open source as our primary 
 methodology: whatever we can work on in the open, we will, and we want to 
 ensure that our community is welcoming, awesome, and that you (yes, you) have a 
 say in its future and governance.
