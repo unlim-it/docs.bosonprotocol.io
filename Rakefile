@@ -22,7 +22,19 @@ RakeTerraform.define_installation_tasks(
   version: '0.14.5')
 
 task :default => [
-  :'content:build'
+  :build_fix
+]
+
+task :build => [
+  :"content:docs:lint",
+  :"content:docs:format",
+  :"content:build"
+]
+
+task :build_fix => [
+  :"content:docs:lint_fix",
+  :"content:docs:format_fix",
+  :"content:build"
 ]
 
 namespace :secrets do
@@ -103,9 +115,25 @@ namespace :content do
     rm_rf 'build/content'
   end
 
-  namespace :markdown do
-    desc 'Lint all markdown files' do
-      
+  namespace :docs do
+    desc "Lint all documentation"
+    task :lint => [:'dependencies:install'] do
+      sh('npm', 'run', 'docs:lint')
+    end
+
+    desc "Lint & fix all documentation"
+    task :lint_fix => [:'dependencies:install'] do
+      sh('npm', 'run', 'docs:lint-fix')
+    end
+
+    desc "Format all documentation"
+    task :format => [:'dependencies:install'] do
+      sh('npm', 'run', 'docs:format')
+    end
+
+    desc "Format & fix all documentation"
+    task :format_fix => [:'dependencies:install'] do
+      sh('npm', 'run', 'docs:format-fix')
     end
   end
 

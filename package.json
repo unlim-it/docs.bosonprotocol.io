@@ -9,10 +9,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "articles:lint": "markdownlint \"src/**/*.md\"",
-    "articles:lint-fix": "markdownlint --fix \"src/**/*.md\"",
-    "articles:format": "prettier --list-different --prose-wrap=always \"src/**/*.md\"",
-    "articles:format-fix": "prettier --write --prose-wrap=always \"src/**/*.md\""
+    "docs:lint": "markdownlint \"src/**/*.md\"",
+    "docs:lint-fix": "markdownlint --fix \"src/**/*.md\"",
+    "docs:format": "prettier --list-different --prose-wrap=always \"src/**/*.md\"",
+    "docs:format-fix": "prettier --write --prose-wrap=always \"src/**/*.md\""
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.0",
