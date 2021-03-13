@@ -4,6 +4,7 @@ title: "Boson Protocol: Docs: Protocol Overview: Smart Contracts"
 short_title: "Smart Contracts"
 permalink: /protocol-overview/smart-contracts/
 ---
+
 # Smart contracts
 
 This is a brief description of the smart contracts used in Boson Protocol. They
@@ -12,9 +13,9 @@ are based on two NFT standards,
 [ERC-721](https://eips.ethereum.org/EIPS/eip-721).
 
 > Note: Seller makes an offer by minting an ERC-1155 Voucher Set that holds a
-supply of a specified quantity of assets. A Buyer taking the offer is implying
-that a singleton Voucher will be extracted from the originating Voucher Set,
-thus minting an ERC-721.
+> supply of a specified quantity of assets. A Buyer taking the offer is implying
+> that a singleton Voucher will be extracted from the originating Voucher Set,
+> thus minting an ERC-721.
 
 ## Contracts description
 
@@ -27,17 +28,17 @@ Main contracts:
 - `VoucherKernel`: main business logic
 - `UsingHelpers`: common utilities
 
-<img src="/images/docs/contract-inheritance-light.png" 
-     alt="Contract inheritance" 
+<img src="/images/docs/contract-inheritance-light.png"
+     alt="Contract inheritance"
      class="block dark:hidden"/>
-<img src="/images/docs/contract-inheritance-dark.png" 
-     alt="Contract inheritance" 
+<img src="/images/docs/contract-inheritance-dark.png"
+     alt="Contract inheritance"
      class="dark:block hidden"/>
 
-A control graph of the contracts is 
+A control graph of the contracts is
 [available here](https://www.notion.so/assets/bosonprotocol-graph.png).
 
-There are ***three types of funds*** in Boson Protocol, one for the payment and
+There are **_three types of funds_** in Boson Protocol, one for the payment and
 two for security deposits:
 
 - The price of the asset
@@ -47,8 +48,8 @@ two for security deposits:
 Supported **currencies** are currently: ETH and $BOSON tokens.
 
 > Note: Functions dealing with funds have suffices such as ETHETH or ETHTKN to
-denote the currencies used in that particular function. Two examples are given
-below.
+> denote the currencies used in that particular function. Two examples are given
+> below.
 
 ETH as the payment currency and ETH as the deposit currency example:
 
@@ -69,112 +70,118 @@ function requestCreateOrderTKNETH(
 
 ## Exchange mechanism
 
-The journey through the NFT lifecycle is presented on a simplified diagram below.
+The journey through the NFT lifecycle is presented on a simplified diagram
+below.
 
-<img src="/images/docs/token-lifecycle-light.png" 
-     alt="Token Lifecycle" 
+<img src="/images/docs/token-lifecycle-light.png"
+     alt="Token Lifecycle"
      class="block dark:hidden"/>
-<img src="/images/docs/token-lifecycle-dark.png" 
-     alt="Token Lifecycle" 
+<img src="/images/docs/token-lifecycle-dark.png"
+     alt="Token Lifecycle"
      class="dark:block hidden"/>
 
-A detailed game tree is [available here](https://www.notion.so/assets/exchange-diagram.png),
-showcasing the actions that Sellers and Buyers can make. The order of some of
-these transactions is not prescribed, e.g. a Seller can do a CancelOrFault
-transaction independently of any Buyer action.
+A detailed game tree is
+[available here](https://www.notion.so/assets/exchange-diagram.png), showcasing
+the actions that Sellers and Buyers can make. The order of some of these
+transactions is not prescribed, e.g. a Seller can do a CancelOrFault transaction
+independently of any Buyer action.
 
 > Note: while the current exchange mechanism is in our opinion quite robust, it
-is by no means set in stone and will be evolving in the future. We are
-already working on some improvements and are actively pursuing research in
-this area.
+> is by no means set in stone and will be evolving in the future. We are already
+> working on some improvements and are actively pursuing research in this area.
 
 ### Process
 
-1. The process starts when the Seller makes an offer to sell something. He is
-making a promise to execute the exchange of his non-monetary asset for a
-monetary asset of a Buyer at a later point in time. He has some skin in the
-game, pressuring him to deliver what was promised, as a Seller's deposit.
-The offer can be for an arbitrary amount of items, thus the Seller specifies
-the quantity of available things that all bear similar properties, we say
-such an offer is a Voucher Set.
+<!-- markdownlint-disable MD046 MD048 -->
 
-    > Note: the contracts currently refer to this Voucher Set using a few different
-    terms such as offer, listing, supply. We are in the process of consolidating
-    these terms so for the sake of clarity, making an offer is equivalent to
-    creating a Voucher Set which is in turn equivalent to minting an ERC-1155 NFT.
+1.  The process starts when the Seller makes an offer to sell something. He is
+    making a promise to execute the exchange of his non-monetary asset for a
+    monetary asset of a Buyer at a later point in time. He has some skin in the
+    game, pressuring him to deliver what was promised, as a Seller's deposit.
+    The offer can be for an arbitrary amount of items, thus the Seller specifies
+    the quantity of available things that all bear similar properties, we say
+    such an offer is a Voucher Set.
+
+        > Note: the contracts currently refer to this Voucher Set using a few
+        different terms such as offer, listing, supply. We are in the process
+        of consolidating these terms so for the sake of clarity, making an
+        offer is equivalent to creating a Voucher Set which is in turn
+        equivalent to minting an ERC-1155 NFT.
+
+        ```javascript
+        BosonRouter.requestCreateOrderETHETH()
+        ```
+
+1.  The Buyer discovers the offer and decides to purchase a single Voucher. In
+    doing so, she commits to redeem that voucher in the future by putting the
+    Buyer's amount of security deposit in escrow, alongside the payment amount.
+
+        > Note: committing to buy a voucher is equivalent to creating a Voucher
+        from a Voucher Set which is equivalent to minting an ERC-721 NFT out of
+        the parent ERC-1155.
+
+        ```javascript
+        BosonRouter.requestVoucherETHETH()
+        ```
+
+1.  The Buyer can then choose to `redeem` the voucher and exchange the payment
+    amount for the item received, or can choose to `refund` the voucher, thus
+    getting the payment back, but also potentially losing the deposit, or can
+    choose not to do anything (she can just forget about it), in which case the
+    voucher `expires`.
+
+        ```javascript
+        BosonRouter.redeem()
+        // or BosonRouter.refund() or wait
+        // until background service calls
+        // VoucherKernel.triggerExpiration()
+        ```
+
+1.  The Buyer can then `complain`, signaling dissatisfaction with the promise
+    execution. When this happens, the Seller is penalized.
+
+        ```javascript
+        BosonRouter.complain()
+        ```
+
+1.  The Seller can at any time, independently of the Buyer, issue a
+    `cancelOrFault` transaction, which can cancel the current offer and/or admit
+    fault in a quality delivery, thus admitting part of his deposit to be sent
+    to the Buyer as a recourse.
+
+        ```javascript
+        BosonRouter.cancelOrFault()
+        ```
+
+1.  Wait periods start ticking at various points in the game tree. Once passed,
+    they are marked for each Voucher and ultimately the Voucher is `finalized`,
+    meaning neither the Buyer nor the Seller can use it any more.
+
+        ```javascript
+        BosonRouter.triggerFinalizeVoucher()
+        ```
+
+1.  Finally, funds in escrow are released according to the Voucher's status.
 
     ```javascript
-    BosonRouter.requestCreateOrderETHETH()
+    Cashier.withdraw();
     ```
 
-1. The Buyer discovers the offer and decides to purchase a single Voucher.
-In doing so, she commits to redeem that voucher in the future by putting the
-Buyer's amount of security deposit in escrow, alongside the payment amount.
-
-    > Note: committing to buy a voucher is equivalent to creating a Voucher from a
-    Voucher Set which is equivalent to minting an ERC-721 NFT out of the parent
-    ERC-1155.
-    
-    ```javascript
-    BosonRouter.requestVoucherETHETH()
-    ```
-
-1. The Buyer can then choose to `redeem` the voucher and exchange the payment
-amount for the item received, or can choose to `refund` the voucher, thus
-getting the payment back, but also potentially losing the deposit, or can
-choose not to do anything (she can just forget about it), in which case the
-voucher `expires`.
-
-    ```javascript
-    BosonRouter.redeem()
-    // or BosonRouter.refund() or wait 
-    // until background service calls 
-    // VoucherKernel.triggerExpiration()
-    ```
-
-1. The Buyer can then `complain`, signaling dissatisfaction with the promise
-execution. When this happens, the Seller is penalized.
-
-    ```javascript
-    BosonRouter.complain()
-    ```
-
-1. The Seller can at any time, independently of the Buyer, issue a
-`cancelOrFault` transaction, which can cancel the current offer and/or admit
-fault in a quality delivery, thus admitting part of his deposit to be sent to
-the Buyer as a recourse.
-
-    ```javascript
-    BosonRouter.cancelOrFault()
-    ```
-
-1. Wait periods start ticking at various points in the game tree. Once passed,
-they are marked for each Voucher and ultimately the Voucher is `finalized`,
-meaning neither the Buyer nor the Seller can use it any more.
-
-    ```javascript
-    BosonRouter.triggerFinalizeVoucher()
-    ```
-
-1. Finally, funds in escrow are released according to the Voucher's status.
-
-    ```javascript
-    Cashier.withdraw()
-    ```
+<!-- markdownlint-enable MD046 MD048 -->
 
 ### Wait periods
 
 There are three different wait periods, also visible in the game tree diagram:
 
 - the Voucher's validity period: the start and end dates when the voucher can be
-redeemed
+  redeemed
 - the complain period: during which the Buyer can complain
 - the cancelOrFault period: during which the Seller can issue a cancel-or-fault
-transaction
+  transaction
 
 The validity period is set by the Seller when creating an offer. The complain
-and cancelOrFault periods are global for the whole Boson Protocol in
-the `VoucherKernel` contract.
+and cancelOrFault periods are global for the whole Boson Protocol in the
+`VoucherKernel` contract.
 
 ### Voucher lifecycle
 
@@ -199,8 +206,8 @@ periods triggering.
 ### Services in the background
 
 A scheduled process is running in the back end that flags the vouchers when
-redemption was made and when wait periods expire. Anybody could execute
-these functions, marked as external - the back end is currently running them for
+redemption was made and when wait periods expire. Anybody could execute these
+functions, marked as external - the back end is currently running them for
 convenience: `VoucherKernel.triggerExpiration()`,
 `VoucherKernel.triggerFinalizeVoucher()`, `Cashier.withdraw()`.
 

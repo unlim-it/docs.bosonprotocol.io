@@ -103,6 +103,12 @@ namespace :content do
     rm_rf 'build/content'
   end
 
+  namespace :markdown do
+    desc 'Lint all markdown files' do
+      
+    end
+  end
+
   namespace :webpack do
     desc 'Build webpack content for deployment identifier, by default ' +
            'bsn-local-default'
