@@ -109,4 +109,40 @@ The Seller has the option to address issues as follows:
 
 Summary
 
-Add Game Tree
+The variables that are part of the mechanism are:
+
+\begin{itemize}
+    \item price the buyer is willing to pay for the item, denoted by $p$. 
+    \item deposit the seller is putting to the mechanism $M$, denoted by $D_S$.
+    \item deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
+\end{itemize}
+
+Therefore, in this setting, there are $2^3=8$ final states the contract can observe. Example state is denoted by $s$. Contract has to specify $8\times 2=16$ transfers, $2$ transfers for each state $s$. One transfer to the seller, denoted by $t^{S}_s$, and one to the buyer, denoted by $t^{B}_s$. $T$ denotes the set of transfers.   
+
+
+Note that the total number of {\it real} states is more than $8$ since there are hidden actions of the players. 
+
+[decision_tree.pdf](https://github.com/bosonprotocol/docs.bosonprotocol.io/files/6136690/decision_tree.pdf)
+On figure the green lines denote subgame-perfect equilibrium moves. The red lines denote off-equilibrium moves. Note that the first move is not observed by the mechanism. That is, the states in the left and right subtrees are the same, from the perspective of the smart contract. 
+
+In the first move of the seller, H corresponds to sending a high-quality item, while L corresponds to sending a low-quality item. 
+In the second move, the buyer plays either redeem (R) or no redeem (refund or expire - RfE). In the third move, the buyer complains (C) or does not complain (NC). Finally, the seller acknowledges a fault (CF) or does not acknowledge the fault (NC).   
+
+
+Transfers to players are:
+
+\begin{center}
+\begin{tabular}{ |c| c| c| }
+ state $s$ & $t_s^B$ & t_s^S \hline \\ 
+ 000 & 0 & 0 \hline \\  
+ 001 & 0 & 0 \hline \\
+ 010 & 0 & 0 \hline \\
+ 011 & 0 & 0 \hline \\
+ 100 & 0 & 0 \hline \\
+ 101 & 0 & 0 \hline \\
+ 110 & 0 & 0 \hline \\
+ 111 & 0 & 0 \hline
+\end{tabular}
+\end{center}
+
+First bit stands for redemption, where $1$ is if the redemption was performed and $0$ if it did not. The second bit stands for complaint, and the third bit corresponds to Cancel or Fault. 
