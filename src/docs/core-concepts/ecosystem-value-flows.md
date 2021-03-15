@@ -3,9 +3,7 @@ layout: docs
 title: "Boson Protocol: Docs: Core Concepts: Ecosystem Value Flows"
 short_title: "Ecosystem Value Flows"
 permalink: /core-concepts/ecosystem-value-flows/
----
-
-# Ecosystem value flows
+---  
 
 # Ecosystem Value Flows
 
@@ -47,4 +45,5 @@ Network fees for using the value flows are minimally extractive and are collecte
 
 ![](https://github.com/bosonprotocol/docs.bosonprotocol.io/blob/main/src/docs/core-concepts/Phase2-3.png)
 
-We will detail these as we progress with the modeling and simulations.
+We will detail these as we progress with the modeling and simulations. This work also ties into the Boson Protocol [Roadmap](../roadmap.md).
+
