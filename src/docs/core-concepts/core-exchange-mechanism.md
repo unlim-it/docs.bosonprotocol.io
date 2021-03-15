@@ -111,19 +111,18 @@ Summary
 
 The variables that are part of the mechanism are:
 
-\begin{itemize}
-    \item price the buyer is willing to pay for the item, denoted by $p$. 
-    \item deposit the seller is putting to the mechanism $M$, denoted by $D_S$.
-    \item deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
-\end{itemize}
+*price the buyer is willing to pay for the item, denoted by $p$. 
+*deposit the seller is putting to the mechanism $M$, denoted by $D_S$.
+*deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
+
 
 Therefore, in this setting, there are $2^3=8$ final states the contract can 
 observe. Example state is denoted by $s$. Contract has to specify 
-$8\times 2=16$ transfers, $2$ transfers for each state $s$. One transfer to the 
+$8\times 2=16$ transfers, $2$ transfers to players for each state $s$. One transfer to the 
 seller, denoted by $t^{S}_s$, and one to the buyer, denoted by $t^{B}_s$. $T$ 
 denotes the set of transfers.   
 
-Note that the total number of {\it real} states is more than $8$ since there 
+Note that the total number of  *real* states is more than $8$ since there 
 are hidden actions of the players. 
 
 [decision_tree.pdf](https://github.com/bosonprotocol/docs.bosonprotocol.io/files/6136690/decision_tree.pdf)
@@ -142,20 +141,17 @@ the fault (NC).
 
 Transfers to players are:
 
-\begin{center}
-\begin{tabular}{ |c| c| c| }
- state $s$ & $t_s^B$ & t_s^S \hline \\ 
- 000 & 0 & 0 \hline \\  
- 001 & 0 & 0 \hline \\
- 010 & 0 & 0 \hline \\
- 011 & 0 & 0 \hline \\
- 100 & 0 & 0 \hline \\
- 101 & 0 & 0 \hline \\
- 110 & 0 & 0 \hline \\
- 111 & 0 & 0 \hline
-\end{tabular}
-\end{center}
+ state $s$ & $t_s^B$ & t_s^S  
+ *000 & $p$ & $D_S$   
+ *001 & $p+D_S$ & 0 
+ *010 & $p$ & 0 
+ *011 & $p+D_S+D_B$ & $0$ 
+ *100 & $D_B$ & $p+D_S$ 
+ *101 & $D_B+D_S$ & $p$ 
+ *110 & $0$ & $p$ 
+ *111 & $D_S+D_B$ & $p$ 
 
-First bit stands for redemption, where $1$ is if the redemption was performed 
-and $0$ if it did not. The second bit stands for complaint, and the third bit 
-corresponds to Cancel or Fault. 
+First bit stands for redemption, where $1$ means that the redemption was performed by the buyer 
+and $0$ if it was not. The second bit stands for complaint, where $1$ corresponds 
+to the buyer complaint and $0$ corresponds to no complaint. The third bit 
+corresponds to Cancel or Fault, where $1$ stands for Cancel or Fault and $0$ for no Cancel or Fault. 
