@@ -111,9 +111,9 @@ Summary
 
 The variables that are part of the mechanism are:
 
-*price the buyer is willing to pay for the item, denoted by $p$. 
-*deposit the seller is putting to the mechanism $M$, denoted by $D_S$.
-*deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
+* price the buyer is willing to pay for the item, denoted by $p$. 
+* deposit the seller is putting to the mechanism $M$, denoted by $D_S$.
+* deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
 
 
 Therefore, in this setting, there are $2^3=8$ final states the contract can 
@@ -142,14 +142,14 @@ the fault (NC).
 Transfers to players are:
 
  state $s$ & $t_s^B$ & t_s^S  
- *000 & $p$ & $D_S$   
- *001 & $p+D_S$ & 0 
- *010 & $p$ & 0 
- *011 & $p+D_S+D_B$ & $0$ 
- *100 & $D_B$ & $p+D_S$ 
- *101 & $D_B+D_S$ & $p$ 
- *110 & $0$ & $p$ 
- *111 & $D_S+D_B$ & $p$ 
+ * 000 & $p$ & $D_S$   
+ * 001 & $p+D_S$ & 0 
+ * 010 & $p$ & 0 
+ * 011 & $p+D_S+D_B$ & $0$ 
+ * 100 & $D_B$ & $p+D_S$ 
+ * 101 & $D_B+D_S$ & $p$ 
+ * 110 & $0$ & $p$ 
+ * 111 & $D_S+D_B$ & $p$ 
 
 First bit stands for redemption, where $1$ means that the redemption was performed by the buyer 
 and $0$ if it was not. The second bit stands for complaint, where $1$ corresponds 
