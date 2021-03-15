@@ -117,17 +117,28 @@ The variables that are part of the mechanism are:
     \item deposit the buyer is putting to the mechanism $M$, denoted by $D_B$. 
 \end{itemize}
 
-Therefore, in this setting, there are $2^3=8$ final states the contract can observe. Example state is denoted by $s$. Contract has to specify $8\times 2=16$ transfers, $2$ transfers for each state $s$. One transfer to the seller, denoted by $t^{S}_s$, and one to the buyer, denoted by $t^{B}_s$. $T$ denotes the set of transfers.   
+Therefore, in this setting, there are $2^3=8$ final states the contract can 
+observe. Example state is denoted by $s$. Contract has to specify 
+$8\times 2=16$ transfers, $2$ transfers for each state $s$. One transfer to the 
+seller, denoted by $t^{S}_s$, and one to the buyer, denoted by $t^{B}_s$. $T$ 
+denotes the set of transfers.   
 
-
-Note that the total number of {\it real} states is more than $8$ since there are hidden actions of the players. 
+Note that the total number of {\it real} states is more than $8$ since there 
+are hidden actions of the players. 
 
 [decision_tree.pdf](https://github.com/bosonprotocol/docs.bosonprotocol.io/files/6136690/decision_tree.pdf)
-On figure the green lines denote subgame-perfect equilibrium moves. The red lines denote off-equilibrium moves. Note that the first move is not observed by the mechanism. That is, the states in the left and right subtrees are the same, from the perspective of the smart contract. 
+On figure the green lines denote subgame-perfect equilibrium moves. The red 
+lines denote off-equilibrium moves. Note that the first move is not observed by 
+the mechanism. That is, the states in the left and right subtrees are the same, 
+from the perspective of the smart contract. 
 
-In the first move of the seller, H corresponds to sending a high-quality item, while L corresponds to sending a low-quality item. 
-In the second move, the buyer plays either redeem (R) or no redeem (refund or expire - RfE). In the third move, the buyer complains (C) or does not complain (NC). Finally, the seller acknowledges a fault (CF) or does not acknowledge the fault (NC).   
+In the first move of the seller, H corresponds to sending a high-quality item, 
+while L corresponds to sending a low-quality item. 
 
+In the second move, the buyer plays either redeem (R) or no redeem (refund or 
+expire - RfE). In the third move, the buyer complains (C) or does not complain 
+(NC). Finally, the seller acknowledges a fault (CF) or does not acknowledge 
+the fault (NC).   
 
 Transfers to players are:
 
@@ -145,4 +156,6 @@ Transfers to players are:
 \end{tabular}
 \end{center}
 
-First bit stands for redemption, where $1$ is if the redemption was performed and $0$ if it did not. The second bit stands for complaint, and the third bit corresponds to Cancel or Fault. 
+First bit stands for redemption, where $1$ is if the redemption was performed 
+and $0$ if it did not. The second bit stands for complaint, and the third bit 
+corresponds to Cancel or Fault. 
