@@ -124,7 +124,12 @@ $$t^{B}_s$$. $$T$$ denotes the set of transfers.
 Note that the total number of _real_ states is more than $$8$$ since there are
 hidden actions of the players.
 
-![Decision Tree](/images/docs/decision-tree.png)
+<img src="/images/docs/decision-tree-light.png"
+     alt="Decision tree"
+     class="block dark:hidden"/>
+<img src="/images/docs/decision-tree-dark.png"
+     alt="Decision tree"
+     class="dark:block hidden"/>
 
 On figure the green lines denote subgame-perfect equilibrium moves. The red
 lines denote off-equilibrium moves. Note that the first move is not observed by
