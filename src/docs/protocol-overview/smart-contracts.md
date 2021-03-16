@@ -102,27 +102,27 @@ independently of any Buyer action.
     the quantity of available things that all bear similar properties, we say
     such an offer is a Voucher Set.
 
-        > Note: the contracts currently refer to this Voucher Set using a few
-        different terms such as offer, listing, supply. We are in the process
-        of consolidating these terms so for the sake of clarity, making an
-        offer is equivalent to creating a Voucher Set which is in turn
-        equivalent to minting an ERC-1155 NFT.
+    > Note: the contracts currently refer to this Voucher Set using a few
+    > different terms such as offer, listing, supply. We are in the process of
+    > consolidating these terms so for the sake of clarity, making an offer is
+    > equivalent to creating a Voucher Set which is in turn equivalent to
+    > minting an ERC-1155 NFT.
 
-        ```javascript
-        BosonRouter.requestCreateOrderETHETH()
-        ```
+    ```javascript
+    BosonRouter.requestCreateOrderETHETH();
+    ```
 
 1.  The Buyer discovers the offer and decides to purchase a single Voucher. In
     doing so, she commits to redeem that voucher in the future by putting the
     Buyer's amount of security deposit in escrow, alongside the payment amount.
 
-        > Note: committing to buy a voucher is equivalent to creating a Voucher
-        from a Voucher Set which is equivalent to minting an ERC-721 NFT out of
-        the parent ERC-1155.
+    > Note: committing to buy a voucher is equivalent to creating a Voucher from
+    > a Voucher Set which is equivalent to minting an ERC-721 NFT out of the
+    > parent ERC-1155.
 
-        ```javascript
-        BosonRouter.requestVoucherETHETH()
-        ```
+    ```javascript
+    BosonRouter.requestVoucherETHETH();
+    ```
 
 1.  The Buyer can then choose to `redeem` the voucher and exchange the payment
     amount for the item received, or can choose to `refund` the voucher, thus
@@ -130,36 +130,36 @@ independently of any Buyer action.
     choose not to do anything (she can just forget about it), in which case the
     voucher `expires`.
 
-        ```javascript
-        BosonRouter.redeem()
-        // or BosonRouter.refund() or wait
-        // until background service calls
-        // VoucherKernel.triggerExpiration()
-        ```
+    ```javascript
+    BosonRouter.redeem();
+    // or BosonRouter.refund() or wait
+    // until background service calls
+    // VoucherKernel.triggerExpiration()
+    ```
 
 1.  The Buyer can then `complain`, signaling dissatisfaction with the promise
     execution. When this happens, the Seller is penalized.
 
-        ```javascript
-        BosonRouter.complain()
-        ```
+    ```javascript
+    BosonRouter.complain();
+    ```
 
 1.  The Seller can at any time, independently of the Buyer, issue a
     `cancelOrFault` transaction, which can cancel the current offer and/or admit
     fault in a quality delivery, thus admitting part of his deposit to be sent
     to the Buyer as a recourse.
 
-        ```javascript
-        BosonRouter.cancelOrFault()
-        ```
+    ```javascript
+    BosonRouter.cancelOrFault();
+    ```
 
 1.  Wait periods start ticking at various points in the game tree. Once passed,
     they are marked for each Voucher and ultimately the Voucher is `finalized`,
     meaning neither the Buyer nor the Seller can use it any more.
 
-        ```javascript
-        BosonRouter.triggerFinalizeVoucher()
-        ```
+    ```javascript
+    BosonRouter.triggerFinalizeVoucher();
+    ```
 
 1.  Finally, funds in escrow are released according to the Voucher's status.
 

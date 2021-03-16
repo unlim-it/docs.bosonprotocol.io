@@ -33,6 +33,7 @@ resources:
 groups:
   - name: development-cadmium
     jobs:
+      - build
       - provision-development-cadmium-website
       - provision-development-cadmium-content
   - name: production-sulfur
@@ -41,21 +42,15 @@ groups:
       - provision-production-sulfur-content
 
 jobs:
-  - name: provision-development-cadmium-website
-    serial: true
+  - name: build
     plan:
       - in_parallel:
           - get: source
             trigger: true
           - get: node-builder-image
-      - task: provision-website
+      - task: build
         image: node-builder-image
-        file: source/pipelines/main/provision-website/task.yaml
-        params:
-          GPG_KEY: ((gpg_key))
-          PROVISIONING_ROLE_ARN: ((development_cadmium_provisioning_role_arn))
-          DEPLOYMENT_TYPE: ((development_cadmium_deployment_type))
-          DEPLOYMENT_LABEL: ((development_cadmium_deployment_label))
+        file: source/pipelines/shared/build/task.yaml
 
     on_success: &on_success
       put: notify-success
@@ -80,6 +75,29 @@ jobs:
       params:
         text: ((slack_abort_message))
         channel: ((slack_abort_channel))
+
+  - name: provision-development-cadmium-website
+    serial: true
+    plan:
+      - in_parallel:
+          - get: source
+            trigger: true
+            passed:
+              - build
+          - get: node-builder-image
+      - task: provision-website
+        image: node-builder-image
+        file: source/pipelines/main/provision-website/task.yaml
+        params:
+          GPG_KEY: ((gpg_key))
+          PROVISIONING_ROLE_ARN: ((development_cadmium_provisioning_role_arn))
+          DEPLOYMENT_TYPE: ((development_cadmium_deployment_type))
+          DEPLOYMENT_LABEL: ((development_cadmium_deployment_label))
+
+    on_success: *on_success
+    on_failure: *on_failure
+    on_error: *on_error
+    on_abort: *on_abort
 
   - name: provision-development-cadmium-content
     plan:
