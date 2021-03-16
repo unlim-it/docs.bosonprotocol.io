@@ -183,6 +183,10 @@ module.exports = {
             pre: {
               backgroundColor: theme('colors.control-gray-light')
             },
+            table: {
+              width: 'auto',
+              minWidth: '50%',
+            },
             thead: {
               fontWeight: '500'
             },
@@ -241,6 +245,13 @@ module.exports = {
             h4: {
               color: theme('colors.white'),
             },
+            thead: {
+              color: theme('colors.rule-gray'),
+              borderBottomColor: theme('colors.rule-gray'),
+            },
+            'tbody tr': {
+              borderBottomColor: theme('colors.rule-gray'),
+            }
           },
         },
       })
