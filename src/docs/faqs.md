@@ -49,13 +49,14 @@ Boson Protocol is three things:
 
 ## What is Redeemeum?
 
-Redeemeum is a company that the Boson Protocol team has set up to acquire funding
-and to directly employ developers. The goal is that this company will work on
-tools and systems which contribute to the Boson Protocol ecosystem, and that it
-will eventually be one of many such companies - similar to Ethereum and the
-Ethereum Foundation, or Protocol Labs and Filecoin.
+Redeemeum is a company that the Boson Protocol team has set up to acquire
+funding and to directly employ developers. The goal is that this company will
+work on tools and systems which contribute to the Boson Protocol ecosystem, and
+that it will eventually be one of many such companies - similar to Ethereum and
+the Ethereum Foundation, or Protocol Labs and Filecoin.
 
 ## When is your next token sale?
 
-These docs concern the Boson Protocol codebase and do not relate to token sales. For those questions, you'd best go to our
+These docs concern the Boson Protocol codebase and do not relate to token sales.
+For those questions, you'd best go to our
 [Telegram](https://t.me/bosonprotocol).

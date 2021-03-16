@@ -26,14 +26,14 @@ task :default => [
 ]
 
 task :build => [
-  :"content:docs:lint",
   :"content:docs:format",
+  :"content:docs:lint",
   :"content:build"
 ]
 
 task :build_fix => [
-  :"content:docs:lint_fix",
   :"content:docs:format_fix",
+  :"content:docs:lint_fix",
   :"content:build"
 ]
 
