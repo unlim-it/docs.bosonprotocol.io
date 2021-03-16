@@ -58,10 +58,17 @@ jobs:
         file: source/pipelines/shared/build/task.yaml
 
     on_success:
-      put: notify-success
-      params:
-        text: ((slack_success_message))
-        channel: ((slack_success_channel))
+      do:
+        - put: status
+          params:
+            path: source
+            state: success
+            context: "CI Pipeline"
+            description: "Pipeline succeeded."
+        - put: notify-success
+          params:
+            text: ((slack_success_message))
+            channel: ((slack_success_channel))
 
     on_failure:
       do:
