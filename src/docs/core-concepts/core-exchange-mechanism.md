@@ -116,10 +116,10 @@ The variables that are part of the mechanism are:
 - deposit the buyer is putting to the mechanism $$M$$, denoted by $$D_B$$.
 
 Therefore, in this setting, there are $$2^3=8$$ final states the contract can
-observe. Example state is denoted by $$s$$. Contract has to specify 
-$$8\times 2=16$$ transfers, $$2$$ transfers to players for each state $$s$$. 
-One transfer to the seller, denoted by $$t^{S}_s$$, and one to the buyer, 
-denoted by $$t^{B}_s$$. $$T$$ denotes the set of transfers.
+observe. Example state is denoted by $$s$$. Contract has to specify
+$$8\times 2=16$$ transfers, $$2$$ transfers to players for each state $$s$$. One
+transfer to the seller, denoted by $$t^{S}_s$$, and one to the buyer, denoted by
+$$t^{B}_s$$. $$T$$ denotes the set of transfers.
 
 Note that the total number of _real_ states is more than $$8$$ since there are
 hidden actions of the players.
@@ -142,8 +142,8 @@ fault (NC).
 Transfers to players are:
 
 | state $$s$$ | $$t_s^B$$     | $$t_s^S$$ |
-|-------------|---------------|-----------|  
-| 000         | $$p$$         | $$D_S$$   |  
+| ----------- | ------------- | --------- |
+| 000         | $$p$$         | $$D_S$$   |
 | 001         | $$p+D_S$$     | $$0$$     |
 | 010         | $$p$$         | $$0$$     |
 | 011         | $$p+D_S+D_B$$ | $$0$$     |
@@ -154,6 +154,6 @@ Transfers to players are:
 
 First bit stands for redemption, where $$1$$ means that the redemption was
 performed by the buyer and $$0$$ if it was not. The second bit stands for
-complaint, where $$1$$ corresponds to the buyer complaint and $$0$$ corresponds 
-to no complaint. The third bit corresponds to Cancel or Fault, where $$1$$ 
+complaint, where $$1$$ corresponds to the buyer complaint and $$0$$ corresponds
+to no complaint. The third bit corresponds to Cancel or Fault, where $$1$$
 stands for Cancel or Fault and $$0$$ for no Cancel or Fault.
