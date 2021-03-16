@@ -6,6 +6,7 @@ development_group: "bsn"
 component: "docs-website"
 deployment_identifier: "%{deployment_type}-%{deployment_label}"
 
+source_repository_name: "bosonprotocol/docs.bosonprotocol.io"
 source_repository_url: "git@github.com:bosonprotocol/docs.bosonprotocol.io.git"
 source_repository_branch: "main"
 
