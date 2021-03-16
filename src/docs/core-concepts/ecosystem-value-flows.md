@@ -78,6 +78,6 @@ $BOSON
 Ecosystem Fund, which will be detailed as we progress into Phases 2 and 3. Below
 is a sneak peek into those value flows:
 
-![Phase 2-3: Money and Data](/images/ecosystem-value-flows-phase-2-3.png)
+![Phase 2-3: Money and Data](/images/docs/ecosystem-value-flows-phase-2-3.png)
 
 We will detail these as we progress with the modeling and simulations.
