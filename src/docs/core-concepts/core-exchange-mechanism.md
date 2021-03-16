@@ -126,8 +126,7 @@ hidden actions of the players.
 
 <img src="/images/docs/decision-tree-light.png"
      alt="Decision tree"
-     class="block dark:hidden"/>
-<img src="/images/docs/decision-tree-dark.png"
+     class="block dark:hidden"/> <img src="/images/docs/decision-tree-dark.png"
      alt="Decision tree"
      class="dark:block hidden"/>
 
