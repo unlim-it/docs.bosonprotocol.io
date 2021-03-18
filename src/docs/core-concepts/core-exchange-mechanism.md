@@ -107,7 +107,7 @@ The Seller has the option to address issues as follows:
   considered an admission of fault. This decision will affect the final deposit
   payouts.
 
-Summary
+## Summary
 
 The variables that are part of the mechanism are:
 
