@@ -10,14 +10,15 @@ permalink: /protocol-overview/how-boson-works/
 ## Overview
 
 Boson is a _permissionless market exchange protocol_, which handles dispute
-mediations and reversals in order to facilitate P2P transactions for physical items 
-in a trustless way. By leveraging a dynamic game, the protocol enables practically 
-atomic automated transactions. It is implemented in a system of non-upgradeable 
-smart contracts on the [Ethereum](https://ethereum.org/) blockchain. The protocol
-functions as a commercial primitive or "Lego brick", thereby enabling digital
-and decentralized applications to be easily developed on top of it. This
-obviates the requirement for trusted intermediaries; instead prioritizing
-**decentralization**, cost minimization and **trustless value exchange**.
+mediations and reversals in order to facilitate P2P transactions for physical
+items in a trustless way. By leveraging a dynamic game, the protocol enables
+practically atomic automated transactions. It is implemented in a system of
+non-upgradeable smart contracts on the [Ethereum](https://ethereum.org/)
+blockchain. The protocol functions as a commercial primitive or "Lego brick",
+thereby enabling digital and decentralized applications to be easily developed
+on top of it. This obviates the requirement for trusted intermediaries; instead
+prioritizing **decentralization**, cost minimization and **trustless value
+exchange**.
 
 ## Core exchange mechanism
 

@@ -62,10 +62,10 @@ As part of the process of becoming integrated in the community, it will
 eventually make sense to make community members part of the Boson Protocol
 GitHub organization with access rights and privileges. While we haven't yet
 onboarded non-Boson Protocol users to maintainers, that's just because we're
-new. If you feel that you, or (even better) someone else in the community, should
-have maintainer rights to a project, reach out to the core team on Gitter or
-privately to talk about next steps forward. We will eventually codify this into
-a more robust process.
+new. If you feel that you, or (even better) someone else in the community,
+should have maintainer rights to a project, reach out to the core team on Gitter
+or privately to talk about next steps forward. We will eventually codify this
+into a more robust process.
 
 ## Join the team
 
