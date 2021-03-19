@@ -8,7 +8,7 @@ permalink: /contributing/
 # Contributing
 
 Boson Protocol is open source. That means that the code is permissively licensed
-so that anyone can see, copy, distribute, use, and share the code. More than
+so that anyone can see, copy, distribute, use and share the code. More than
 that - while it means that Boson Protocol follows the norms and values of open
 source culture - we're interested in not just creating code, but working on it
 collaboratively with others. Boson Protocol is being built by a community of
@@ -42,8 +42,8 @@ well, which depends upon tests passing.
 
 ## Community calls
 
-We are shortly going to have community calls on a regular cadence. These will be
-public, recorded, and put online for others to watch at their leisure. We will
+We are shortly going to have community calls at a regular cadence. These will be
+public, recorded and put online for others to watch at their leisure. We will
 announce these calls in the
 [bosonprotocol/community](https://github.com/bosonprotocol/community)
 repository; watch it in order to be notified!
@@ -62,7 +62,7 @@ As part of the process of becoming integrated in the community, it will
 eventually make sense to make community members part of the Boson Protocol
 GitHub organization with access rights and privileges. While we haven't yet
 onboarded non-Boson Protocol users to maintainers, that's just because we're
-new. If you feel that you, or (even better) someone else in the community should
+new. If you feel that you, or (even better) someone else in the community, should
 have maintainer rights to a project, reach out to the core team on Gitter or
 privately to talk about next steps forward. We will eventually codify this into
 a more robust process.
