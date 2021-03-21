@@ -88,11 +88,22 @@ permalink: /protocol-overview/glossary/
   validity period is expired (after the expiry date) and all voucher from the
   voucher set are finalized.
 - **Location**: TODO ?
-- **Asset**: TODO ? 
+- **Asset**: TODO ?
 - **Arbitration**: TODO ?
-- **Non-fungible tokens**: A token that is non-devisble and has a unique identifier.
-- **Keepers**: For keepers we use [Ryan Zurrer's definition](https://rzurrer.medium.com/keepers-workers-that-maintain-blockchain-networks-a40182615b66):"a catchall term for the different utility players in distributed network that maintain stability and perfrom crucial jobs in the crypto-economic model" To find out more about different actors in Boson Protocol refer to our Whitepaper.
-- **Wallet**: Software that allows users to interact with the smart contracts of their desired blockchain. 
-- **ERC-20**: A smart contract standard for (fungible) tokens, [see here](https://eips.ethereum.org/EIPS/eip-20)
-- **ERC-1155**: A smart contract standard for managing multiple types of tokens (fungible, non-fungible, semi-fungible), [see here](https://eips.ethereum.org/EIPS/eip-1155)
-- **ERC-721**: A smart contract standard for non-fungible tokens, [see here](https://eips.ethereum.org/EIPS/eip-721)
+- **Non-fungible tokens**: A token that is non-devisble and has a unique
+  identifier.
+- **Keepers**: For keepers we use
+  [Ryan Zurrer's definition](https://rzurrer.medium.com/keepers-workers-that-maintain-blockchain-networks-a40182615b66):"a
+  catchall term for the different utility players in distributed network that
+  maintain stability and perfrom crucial jobs in the crypto-economic model" To
+  find out more about different actors in Boson Protocol refer to our
+  Whitepaper.
+- **Wallet**: Software that allows users to interact with the smart contracts of
+  their desired blockchain.
+- **ERC-20**: A smart contract standard for (fungible) tokens,
+  [see here](https://eips.ethereum.org/EIPS/eip-20)
+- **ERC-1155**: A smart contract standard for managing multiple types of tokens
+  (fungible, non-fungible, semi-fungible),
+  [see here](https://eips.ethereum.org/EIPS/eip-1155)
+- **ERC-721**: A smart contract standard for non-fungible tokens,
+  [see here](https://eips.ethereum.org/EIPS/eip-721)
