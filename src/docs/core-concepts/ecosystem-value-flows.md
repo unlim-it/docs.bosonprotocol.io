@@ -3,7 +3,7 @@ layout: docs
 title: "Boson Protocol: Docs: Core Concepts: Ecosystem Value Flows"
 short_title: "Ecosystem Value Flows"
 permalink: /core-concepts/ecosystem-value-flows/
----  
+---
 
 Ecosystem Participants are the value creators. In Boson Protocol v0.1 we
 consider as the fundamental value creators Sellers (and Aggregators), Buyers
@@ -78,5 +78,5 @@ is a sneak peek into those value flows:
 
 ![Phase 2-3: Money and Data](/images/docs/ecosystem-value-flows-phase-2-3.png)
 
-We will detail these as we progress with the modeling and simulations. This work also ties into the Boson Protocol [Roadmap](../roadmap.md).
-
+We will detail these as we progress with the modeling and simulations. This work
+also ties into the Boson Protocol [Roadmap](../roadmap.md).
