@@ -61,7 +61,7 @@ currently consists of a reference P2P app and accompanying documentation.
 
 ## Alignment of the on-chain and off-chain governance
 
-When it comes to governance, our goal is to have both, on-chain and of-chain
+When it comes to governance, our goal is to have both, on-chain and off-chain
 governance aligned, especially in the most significant matters like voting. We
 are making sure, through progressive decentralization to be transparent and
 include the community in the decision-making process. Since we have started
