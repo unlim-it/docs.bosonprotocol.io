@@ -54,27 +54,28 @@ ecosystem to co-create.
 Sellers and Aggregators of Sellers increase the Commitment Token Supply when
 they offer to mint the Commitment Token (Voucher or Voucher Set in v0.1),
 indicating what physical goods and services they will provide in the physical
-world. The Commitment Tokens get only minted when the Buyers and Resellers (to
+world. The Commitment Tokens get minted only when the Buyers and Resellers (to
 cater to their buyers) commit to buy.
 
-In Phase 1, the price of a good is set by the Seller and is static.
+In Phase 1, the price of an item is set by the Seller and is static.
 
 Both Seller and Buyer put down a deposit when they offer and commit. The game
-theory embedded in the Commitment Token's logic then unfolds to ensure that
+theory embedded in the Commitment Token's logic then unfolds to ensure that the
 Buyer either gets the item or gets refunded. The deposit transfer scheme
-guarantees that either Seller delivers a high quality item and Buyer does not
-complain, or if the Seller delivers a low quality good, then the Buyer complains
-and Seller admits to it.
+guarantees that either the Seller delivers a high quality item and the Buyer
+does not complain, or if the Seller delivers a low quality item, then the Buyer
+complains and the Seller admits to being at fault.
 
-The deposits can be in any ERC20 including $BOSON. If network participants
+The deposits can be in any ERC20, including $BOSON. If network participants
 deposit with $BOSON, depending on network expansion state, they would pay
 accordingly lower network fees.
 
 Network fees for using the value flows are minimally extractive and are
-collected in the $BOSON Ecosystem Fund. There are further value flows into
-$BOSON
-Ecosystem Fund, which will be detailed as we progress into Phases 2 and 3. Below
-is a sneak peek into those value flows:
+collected in the
+$BOSON Ecosystem Fund. There are further value flows into the
+$BOSON Ecosystem
+Fund, which will be detailed as we progress into Phases 2 and 3. Below is a
+sneak peek into those value flows:
 
 ![Phase 2-3: Money and Data](/images/docs/ecosystem-value-flows-phase-2-3.png)
 

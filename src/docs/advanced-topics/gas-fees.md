@@ -87,15 +87,15 @@ to interact with the contract and execute the transaction. In such transactions,
 a significant amount of gas will be used for invoking the smart contract
 functions and the rest will be paid as a transaction fee to the miners.
 
-### Delegated Transfers [as in ERC 865] [Mostly used in gas less transfers]
+### Delegated Transfers [as in ERC 865] [Mostly used in gasless transfers]
 
 ![https://lh3.googleusercontent.com/97JnBP6K2N2H5knZPGrVhD49o4xREM-fn4GUG-6EHM6i8Wl2j2cw-2FM9SmWXXVgDq-px7oclymBa7uSNNjKRHp5ou93OiQS8nVmVpIL3qXYF8oPN0W0m7XEjDoen6_UAeigxbDS](https://lh3.googleusercontent.com/97JnBP6K2N2H5knZPGrVhD49o4xREM-fn4GUG-6EHM6i8Wl2j2cw-2FM9SmWXXVgDq-px7oclymBa7uSNNjKRHp5ou93OiQS8nVmVpIL3qXYF8oPN0W0m7XEjDoen6_UAeigxbDS)
 
 In delegated transfers, the sender will create the signature of the signed
 transaction and will send the signature to the delegator. The delegator will pay
-for the transaction fee and invokes the transactions. This can also be used for
+for the transaction fee and invoke the transaction. This can further be used for
 collecting tokens as payment for the transaction fee which was provided by the
-Delegator. Also we can opt not to charge the users for their transactions.
+Delegator. Also, we can opt not to charge the users for their transactions.
 
 ### Bulk transfers [Mostly used for airdrops]
 
@@ -108,16 +108,16 @@ bulk sending or airdrop smart contract which will have the capabilities to
 execute 300-plus transfers / function calls in a single transaction. Bulk
 transfer transactions were widely used during airdrops and token offerings.
 
-### Open Gas Station [Widely used in gas less transactions]
+### Open Gas Station [Widely used in gasless transactions]
 
 ![https://lh5.googleusercontent.com/aipn26A-ReT1E28y0s6X0hDQxSC1CI7afgZn4pJUuSoa2Dsu4bK4e2p0BwbQdElIfaWkdofYlBr8UaOGcXLaXrkoHcY9Q_mLbwInlACiaWXYlNoIPH8TGUR0i3O868DzHj6_ViZ2](https://lh5.googleusercontent.com/aipn26A-ReT1E28y0s6X0hDQxSC1CI7afgZn4pJUuSoa2Dsu4bK4e2p0BwbQdElIfaWkdofYlBr8UaOGcXLaXrkoHcY9Q_mLbwInlACiaWXYlNoIPH8TGUR0i3O868DzHj6_ViZ2)
 
 In Open Gas Station, you have to create a relay of your own and set up a
-paymaster contract to pay for the transactions. Alternatively you can use
+paymaster contract to pay for the transactions. Alternatively you can use the
 OpenGSN dApp to collect the user's signature and thereby allow the paymaster's
 TrustedForwarder contract to initiate the transfers.
 
-A simple dApp for open gsn:
+A simple dApp for OpenGSN:
 ![https://metacoin.opengsn.org/](https://metacoin.opengsn.org/)
 
 ### Using meta data for claims - EIP 712 / Biconomy [Gas subsidization]
@@ -125,9 +125,9 @@ A simple dApp for open gsn:
 Reusable Off-Chain Verifiable Claims enable the issuance of off-chain identity
 claims, based on the typed signing capabilities defined in EIP712. The standard
 provides an important piece of integrating smart contracts with real world
-organizational requirements such as meeting regulatory requirements such as KYC,
-GDPR, Accredited Investor rules etc. However It is both dangerous and in some
-cases illegal (according to EU GDPR rules for example) to record Identity Claims
+organizational requirements such as meeting regulatory requirements (KYC, GDPR,
+Accredited Investor rules etc). However, it is both dangerous and in some cases
+illegal (according to EU GDPR rules for example) to record Identity Claims
 containing Personal Identifying Information (PII) on an immutable public
 database such as the Ethereum blockchain.
 
@@ -172,12 +172,11 @@ One way to get around this is to standardize on a meta-tx-relayer API so that:
   0).
 - Value transfer from EOA (externally owned address) is not possible via meta
   transactions.
-- For contract interactions which involve ERC20 transfers, meta transactions
-  looks appealing.
 
-Boson contracts have not yet incorporated native meta transactions due to the
-above drawbacks. However efforts are continually made to make dApps easier to
-use. Some of these include implementing new approaches in tackling high Gas
-prices so that users spend less of their funds in paying for Gas while
+For contract interactions which involve ERC20 transfers, meta transactions look
+appealing. Boson contracts have not yet incorporated native meta transactions
+due to the above drawbacks. However efforts are continually made to make dApps
+easier to use. Some of these include implementing new approaches in tackling
+high Gas prices so that users spend less of their funds in paying for Gas while
 interacting with the Boson contracts. Alternative approaches include subsidizing
 Gas payments to an extent.
