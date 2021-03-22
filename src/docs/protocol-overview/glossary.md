@@ -65,7 +65,7 @@ permalink: /protocol-overview/glossary/
   seller on commitment.
 - **Currency**: The currency of the transaction (which can be either the price
   or the deposit). The smart contracts currently supports both ETH and $BOSON.
-- **NFTV**: See **Voucher**
+- **Non-fungible token voucher**: See **Voucher**
 - **Offer**: See **Voucher Set**
 - **Token Supply**: See **Voucher Set**
 - **Voucher Supply**: See **Voucher Set**
@@ -87,15 +87,23 @@ permalink: /protocol-overview/glossary/
 - **Closed Voucher Set**: The position a voucher set is in when the voucher set
   validity period is expired (after the expiry date) and all voucher from the
   voucher set are finalized.
-- **Location**: TODO
-- **Asset**: TODO
-- **Commitment token**: TODO
-- **Thing**: TODO
-- **Non-fungible token voucher**: TODO
-- **Arbitration**: TODO
-- **Non-fungible tokens**: TODO
-- **Keepers**: TODO
-- **Wallet**: TODO
-- **ERC-20**: TODO
-- **ERC-1155**: TODO
-- **ERC-721**: TODO
+- **Location**: TODO ?
+- **Asset**: TODO ?
+- **Arbitration**: TODO ?
+- **Non-fungible tokens**: A token that is non-devisble and has a unique
+  identifier.
+- **Keepers**: For keepers we use
+  [Ryan Zurrer's definition](https://rzurrer.medium.com/keepers-workers-that-maintain-blockchain-networks-a40182615b66):"a
+  catchall term for the different utility players in distributed network that
+  maintain stability and perfrom crucial jobs in the crypto-economic model" To
+  find out more about different actors in Boson Protocol refer to our
+  Whitepaper.
+- **Wallet**: Software that allows users to interact with the smart contracts of
+  their desired blockchain.
+- **ERC-20**: A smart contract standard for (fungible) tokens,
+  [see here](https://eips.ethereum.org/EIPS/eip-20)
+- **ERC-1155**: A smart contract standard for managing multiple types of tokens
+  (fungible, non-fungible, semi-fungible),
+  [see here](https://eips.ethereum.org/EIPS/eip-1155)
+- **ERC-721**: A smart contract standard for non-fungible tokens,
+  [see here](https://eips.ethereum.org/EIPS/eip-721)

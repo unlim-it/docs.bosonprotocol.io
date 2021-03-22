@@ -14,7 +14,7 @@ an ERC-1155 Voucher Set that holds a supply of a specified quantity of assets.
 
 **Goals**: Offers goods and services and commits to their quality.
 
-**Examples**: This could be an artist offering physical counterpart to a
+**Examples**: This could be an artist offering a physical counterpart to a
 cryptoart NFT, or a clothing brand offering a physical counterpart to a wearable
 in-game NFT.
 
@@ -34,20 +34,20 @@ physical artwork on their wall at home, or a gamer who is not only into
 ## Aggregator
 
 Custodial hub for multiple sellers. Aggregators enable sellers, as well as
-perform basic curation based on their relation with sellers.
+perform basic curation based on their relationship with sellers.
 
 **Goals**: Sources supply into BOSON network, get rewarded, can take an
 additional transaction fee from the d2p transaction if appropriate (e.g. special
-onboarding service, taking on deposits etc.)
+onboarding service, taking on deposits etc).
 
 **Examples**: This could be a platform or a marketplace, but also independent
-brokers who implement an appropriate front-/backend logic for the Sellers they
+brokers who implement an appropriate front/backend logic for the Sellers they
 are onboarding.
 
 ## Reseller
 
-“Power buyer”. Has their own end-user app to roam the network and buy Vouchers
-in bulk to resell them later to their non-crypto customers.
+“Power buyer”. Has their own end-user app to roam the network and buy vouchers
+in bulk to then resell later to their non-crypto customers.
 
 **Goals**: Leverages Boson Protocol’s Voucher infrastructure for their B2C
 logic.
