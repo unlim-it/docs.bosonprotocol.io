@@ -30,8 +30,6 @@ main:
         url: "/advanced-topics/research/"
   - title: "Governance"
     url: "/governance/"
-  - title: "Roadmap"
-    url: "/roadmap/"
   - title: "FAQs"
     url: "/faqs/"
   - title: "Contributing"
