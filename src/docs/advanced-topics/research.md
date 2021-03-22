@@ -17,7 +17,7 @@ honest moves.
 Each decision at each _internal_ node of the decision tree gives a linear
 constraint on the variable set $$T$$. These are so-called _incentive
 compatibility constraints_. There are also _budget-balance constraints_ for each
-final state, namely that $$t^s_S+t^s_B\leq D_S+D_B+p$$. Verbally it means that 
+final state, namely that $$t^s_S+t^s_B\leq D_S+D_B+p$$. Verbally it means that
 the mechanism can not add any money into the contract, but it can burn money.
 
 Feasible linear programs normally have more than $$1$$ solution. To pin down the
@@ -64,12 +64,12 @@ of edges $$p=\{e_1,\cdots, e_n\}$$.
 
 There are $$15$$ internal nodes of the decision tree. Each node generates one
 incentive compatibility constraint of the linear program. Each final state adds
-$$1$$ constraint. There are $$2$$ additional _individual rationality_ 
-constraints, $$1$$ for each player. In the subgame-perfect equilibrium solution, 
-the expected payoff of the player should be non-negative. In other words, any 
-player may opt-out for not participating in the contract. In total, there are 
-$$15+8+2=25$$ constraints and $$8$$ (transfer) variables. Optimizing target 
-function given these constraints determines the values of transfers, and 
+$$1$$ constraint. There are $$2$$ additional _individual rationality_
+constraints, $$1$$ for each player. In the subgame-perfect equilibrium solution,
+the expected payoff of the player should be non-negative. In other words, any
+player may opt-out for not participating in the contract. In total, there are
+$$15+8+2=25$$ constraints and $$8$$ (transfer) variables. Optimizing target
+function given these constraints determines the values of transfers, and
 consequently, smart contract.
 
 [decision_tree.pdf](https://github.com/bosonprotocol/docs.bosonprotocol.io/files/6164651/decision_tree.pdf)
@@ -122,10 +122,10 @@ the buyers who get a high-quality good lie, while $$10\%$$ of the buyers lie all
 the time. In the context of the Boson exchange mechanism, it would be the seller
 forming pessimistic beliefs about the buyer.
 
-This mechanism can be easily generalized to general values of $$h$$ and $$l$$, 
-where $$h$$ denotes the value of the high-quality item/service and $$l$$ denotes 
-the value of the low-quality item/service. A similar generic example was 
-developed by Gans (2019), with the difference that the seller has different 
+This mechanism can be easily generalized to general values of $$h$$ and $$l$$,
+where $$h$$ denotes the value of the high-quality item/service and $$l$$ denotes
+the value of the low-quality item/service. A similar generic example was
+developed by Gans (2019), with the difference that the seller has different
 costs of sending/providing different quality item/service.
 
 Two additional recent experimental papers, Fehr et al. (2020) and Chen et al.
@@ -144,9 +144,9 @@ be replaced by smart contracts and decentralized systems. In the Boson core
 exchange mechanism, on the other hand, common knowledge is guaranteed by
 informing both parties joining the smart contract by default. Smart contracts
 can be seen as a way of generating common knowledge. Informally, common
-knowledge of a proposition $$P$$ means: every player knows $$P$$, every player 
-knows that every other player knows $$P$$, every player knows that every player 
-knows that every player knows $$P$$, and so on and so forth, infinitely. In our 
+knowledge of a proposition $$P$$ means: every player knows $$P$$, every player
+knows that every other player knows $$P$$, every player knows that every player
+knows that every player knows $$P$$, and so on and so forth, infinitely. In our
 setting, $$P = \text{\{all players are rational\}}$$.
 
 ## Future development
