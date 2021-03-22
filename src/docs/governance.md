@@ -25,7 +25,7 @@ funding and enabling the development of a stack of specialized applications to
 disrupt, demonopolize and democratize commerce - and we want the community to
 have a say in it.
 
-## Progressive Decentralization
+## Progressive decentralization
 
 We are going to achieve this mission by building Boson protocol as a
 decentralized system enabling design practices that prevent the value capture we
