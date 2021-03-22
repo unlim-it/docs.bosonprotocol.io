@@ -76,7 +76,7 @@ directly. Sound fun? Take a gander at our
 ## Code of Conduct
 
 All of our interactions are governed by our
-[Code of Conduct](/code-of-conduct/).
-Please read and abide by it; you signify that you support and will follow it by
-interacting in any Boson Protocol space. This helps makes the entire ecosystem
-more safe, diverse, and equitable for everyone.
+[Code of Conduct](/code-of-conduct/). Please read and abide by it; you signify
+that you support and will follow it by interacting in any Boson Protocol space.
+This helps makes the entire ecosystem more safe, diverse, and equitable for
+everyone.
