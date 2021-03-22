@@ -17,13 +17,13 @@ honest moves.
 Each decision at each _internal_ node of the decision tree gives a linear
 constraint on the variable set $$T$$. These are so-called _incentive
 compatibility constraints_. There are also _budget-balance constraints_ for each
-final state, namely that $$t^s_S+t^s_B\leq D_S+D_B+p$$. Verbally it means that
+final state, namely that $$t^s_S+t^s_B\leq D_S+D_B+p$$. In simple terms, it means that
 the mechanism can not add any money into the contract, but it can burn money.
 
 Feasible linear programs normally have more than $$1$$ solution. To pin down the
 solution set to one, we need to come up with the objective function. The first
 candidate is to minimize the sum of deposits. The friction coming from putting
-deposits has to be acknowledged. The obvious cost of putting high deposits for
+deposits has to be acknowledged. The obvious cost of making high deposits for
 any (especially long) time period is opportunity cost. Depositing involves an
 implicit cost for the participants in the smart contract: This can be the
 opportunity cost of not using the deposit while the contract is executed,
@@ -34,12 +34,12 @@ though the punishments are only executed off the equilibrium path, huge deposits
 have to be made to make the threat of punishment credible. This would make such
 mechanisms very costly to implement as a smart contract. Therefore, minimizing
 the sum of deposits can be an objective function. Opportunity cost in smart
-contracts and subgame perfect equilibria is a topic of Mamageishvili and
+contracts and subgame-perfect equilibria is a topic of Mamageishvili and
 Schlegel (2020). With instant exchange procedures, however, the opportunity cost
 is not of first-order importance.
 
 An alternative objective function could be to maximize the money burnt
-(transferred to the Boson protocol) off-equilibrium path. The transferred money
+(transferred to Boson protocol) on the off-equilibrium path. The transferred money
 could be used to analyze what went wrong in this particular game. This incentive
 for network nodes can be useful in the early stages of protocol functioning.
 
@@ -76,27 +76,28 @@ consequently, smart contract.
 
 ## Discussion
 
-Subgame-perfect implementation can be used with machine-to-machine commerce
+The subgame-perfect implementation can be used with machine-to-machine commerce
 since it avoids the behavioral play of humans. Machines are programmed by
-rational people, therefore, there is no difference between these two. Machines
+rational people, therefore there is no difference between these two. Machines
 are, on the other hand, better than irrational--behavioral players, or even
-rational players. Examples include but are not limited to that they do not press
+rational players. Examples include but are not limited to: they do not press
 the wrong button by accident, they do not make decisions based on a bad mood
 (e.g, to punish other machines), they do not form opinions about other people's
 skills depending on how they look (this phenomenon is extensively studied in the
-experimental economic literature), etc. Programs just follow the rules rational
-people defined for them. Core exchange mechanism could be useful with
+experimental economic literature), etc. Programs simply follow the rules rational
+people define for them. The core exchange mechanism could be useful with
 machine-to-machine scenarios as long as machines can do proper verification of
-the service--item, that the seller provides. Examples include digital goods
-(files, codes, passwords), the example of a similar solution is filebounty. With
-physical goods commerce, mechanism can still be used in the machine-to-machine
+the service or item that the seller provides. Examples include digital goods
+(files, codes, passwords) - the example of a similar solution is filebounty. 
+
+With physical goods commerce, the mechanism can still be used for the machine-to-machine
 approach. The only difference is that some steps (those that machines can not
 perform) will be performed by humans. Integrating machine and human is not the
 focus of the protocol. Another advantage of machine-to-machine use of the
 mechanism is that moves do not need to be intuitive and have a logical
 explanation. All the relevant information is final transfers and that the
 subgame-perfect equilibrium corresponds to the correct play. To design transfers
-in any game, we apply the same linear programming approach as in section on
+in any game, we apply the same linear programming approach as in the section on
 **Linear programming formulation**. We need to design how the subgame-perfect
 equilibrium solution looks, make appropriate assumptions on the utilities for
 both players coming from each move, and solve the linear program to find
@@ -105,20 +106,19 @@ solution.
 
 ## Related literature
 
-Theoretical importance and applicability of subgame-perfect equilibria solutions
+The theoretical importance and applicability of subgame-perfect equilibria solutions
 were found much earlier. Moore and Repullo (1988) developed a general mechanism.
 The paper proposes subgame perfect implementation of most of the allocation
 problems given some mild conditions are satisfied. In other words, the authors
-prove that almost all social choice functions can be implemented as a subgame
-perfect equilibrium solution of some game. However, the game forms can be
+prove that almost all social choice functions can be implemented as a subgame-perfect equilibrium solution of some game. However, the game forms can be
 complicated, they have at most $$3$$ stages.
 
 A more recent experiment by Aghion et al. (2018) suggests that participants fail
 to play these games correctly and that often subgame-perfect equilibrium
 solution is not implemented. The authors argue that the problem is not in the
 inability of the participants to use backward induction for calculating the
-right solution, but in their beliefs about counterparts' abilities. $$30\%$$ of
-the buyers who get a high-quality good lie, while $$10\%$$ of the buyers lie all
+right solution, but in their beliefs about their counterparts' abilities. $$30\%$$ of
+the buyers who receive a high-quality good lie, while $$10\%$$ of the buyers lie all
 the time. In the context of the Boson exchange mechanism, it would be the seller
 forming pessimistic beliefs about the buyer.
 
@@ -151,7 +151,7 @@ setting, $$P = \text{\{all players are rational\}}$$.
 
 ## Future development
 
-Experimenting exchange mechanisms with different parameters in different
+Experimenting with the exchange mechanisms with different parameters in different
 environments, assessing their performance, and finding the best contracts
 depending on the application is at the center of the core mechanism development.
 Creating a suitable environment for common knowledge in the game is the ultimate
