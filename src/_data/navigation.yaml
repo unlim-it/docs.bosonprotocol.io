@@ -36,6 +36,8 @@ main:
     url: "/faqs/"
   - title: "Contributing"
     url: "/contributing/"
+  - title: "Code of Conduct"
+    url: "/code-of-conduct/"
 categories:
   - title: "Developer guides"
     items:
