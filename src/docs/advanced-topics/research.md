@@ -50,7 +50,7 @@ move, the buyer complains (C) or does not complain (NC). Finally, the seller
 acknowledges a fault (CF) or does not acknowledge the fault (NC).
 
 Suppose the seller is deciding the root vertex S. Then the example incentive
-compatibility constraint at the vertex $S$ is the following:
+compatibility constraint at the vertex $$S$$ is the following:
 
 $$t*{S_8}^S + u^S*{H, R, NC,NC} \geq t*{S_1}^S + u^S*{L,RfE,C,CF}$$
 
@@ -88,20 +88,20 @@ experimental economic literature), etc. Programs just follow the rules rational
 people defined for them. Core exchange mechanism could be useful with
 machine-to-machine scenarios as long as machines can do proper verification of
 the service--item, that the seller provides. Examples include digital goods
-(files, codes, passwords), the example of a similar solution
-is~\cite{filebounty}. With physical goods commerce, mechanism can still be used
-in the machine-to-machine approach. The only difference is that some steps
-(those that machines can not perform) will be performed by humans. Integrating
-machine and human is not the focus of the protocol. Another advantage of
-machine-to-machine use of the mechanism is that moves do not need to be
-intuitive and have a logical explanation. All the relevant information is final
-transfers and that the subgame-perfect equilibrium corresponds to the correct
-play. To design transfers in any game, we apply the same linear programming
-approach as in section on **Linear programming formulation**. We need to design
-how the subgame-perfect equilibrium solution looks, make appropriate assumptions
-on the utilities for both players coming from each move, and solve the linear
-program to find transfers in the final states leading to this subgame-perfect
-equilibrium solution.
+(files, codes, passwords), the example of a similar solution is filebounty. With
+physical goods commerce, mechanism can still be used in the machine-to-machine
+approach. The only difference is that some steps (those that machines can not
+perform) will be performed by humans. Integrating machine and human is not the
+focus of the protocol. Another advantage of machine-to-machine use of the
+mechanism is that moves do not need to be intuitive and have a logical
+explanation. All the relevant information is final transfers and that the
+subgame-perfect equilibrium corresponds to the correct play. To design transfers
+in any game, we apply the same linear programming approach as in section on
+**Linear programming formulation**. We need to design how the subgame-perfect
+equilibrium solution looks, make appropriate assumptions on the utilities for
+both players coming from each move, and solve the linear program to find
+transfers in the final states leading to this subgame-perfect equilibrium
+solution.
 
 ## Related literature
 
