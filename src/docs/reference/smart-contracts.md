@@ -12,13 +12,13 @@ are based on two NFT standards,
 [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155) and
 [ERC-721](https://eips.ethereum.org/EIPS/eip-721).
 
-## `BosonRouter`
+## `BosonRouter` (Routing contract)
 
 Source code → <https://github.com/bosonprotocol/contracts/blob/master/contracts/BosonRouter.sol>
 
 BosonRouter is responsible for creation of VoucherSets and Vouchers.
 
-## `Cashier`
+## `Cashier` (Escrow and funds)
 
 Source code → <https://github.com/bosonprotocol/contracts/blob/master/contracts/Cashier.sol>
 
@@ -35,13 +35,13 @@ Multi-token contract, implementing ERC-1155 and ERC-721 hybrid. Minting,
 transferring, and burning of both token types?. Balance of token check for an
 account.
 
-## `VoucherKernel`
+## `VoucherKernel` (Vouchers)
 
 Source code → <https://github.com/bosonprotocol/contracts/blob/master/contracts/VoucherKernel.sol>
 
 Controlling the core business logic.
 
-## `UsingHelpers`
+## `UsingHelpers` (utilities)
 
 Source code → <https://github.com/bosonprotocol/contracts/blob/master/contracts/UsingHelpers.sol>
 
