@@ -24,8 +24,6 @@ main:
     children:
       - title: "Gas fees"
         url: "/advanced-topics/gas-fees/"
-      - title: "Token engineering"
-        url: "/advanced-topics/token-engineering/"
       - title: "Research"
         url: "/advanced-topics/research/"
   - title: "Governance"
