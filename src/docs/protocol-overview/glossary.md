@@ -42,9 +42,9 @@ permalink: /protocol-overview/glossary/
   current offer and corresponding voucher, and all or part of the buyer's
   deposit will be refunded along with the payment amount.
 - **Void**: An action in which a seller may void all remaining uncommitted
-  assets within a voucher set. This has no effect on committed or finalised
+  assets within a voucher set. This has no effect on committed or finalized
   vouchers.
-- **Finalise**: An automated action in the exchange mechanism in which a voucher
+- **Finalize**: An automated action in the exchange mechanism in which a voucher
   can no longer be used. This is triggered once all wait periods are passed.
 - **Escrow**: A place of custody or trust until a specified condition has been
   fulfilled.
@@ -56,7 +56,7 @@ permalink: /protocol-overview/glossary/
   by the system admin.
 - **Voucher validity period**: A wait period defined by the seller at the
   creation of the voucher set. It is the period between the start date and the
-  end date in which a voucher from a vocuher set can be redeemed.
+  end date in which a voucher from a voucher set can be redeemed.
 - **Complain period**: A wait period defined by the admin for a time period in
   which a buyer can complain upon redemption.
 - **Cancel or fault period**: A wait period defined by the admin for a time
@@ -76,13 +76,13 @@ permalink: /protocol-overview/glossary/
   by the wallet of a particular seller. This voucher set can be filtered by Open
   or Closed.
 - **Active Voucher**: The state a voucher is in once it has been committed to by
-  a buyer and is yet to be finalised. During this time either a buyer or seller
+  a buyer and is yet to be finalized. During this time either a buyer or seller
   has the ability to action it based on the rules of the game tree.
 - **Inactive Voucher**: The state a voucher is in once it is finalized (at the
   end of the lifecycle) and can no longer be used.
 - **Open Voucher Set**: The state a voucher set is in when either voucher set
   validity period is not expired (before the end date) and/or there is a voucher
-  from the voucher set which has not yet been finalised.
+  from the voucher set which has not yet been finalized.
 - **Closed Voucher Set**: The state a voucher set is in when the voucher set
   validity period is expired (after the expiry date) and all voucher from the
   voucher set are finalized.
