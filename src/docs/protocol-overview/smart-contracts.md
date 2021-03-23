@@ -27,13 +27,8 @@ Main contracts:
 - `FundLimitsOracle`: restrictions on the allowed escrowed amounts
 - `VoucherKernel`: main business logic
 - `UsingHelpers`: common utilities
-
-<img src="/images/docs/contract-inheritance-light.png"
-     alt="Contract inheritance"
-     class="block dark:hidden"/>
-<img src="/images/docs/contract-inheritance-dark.png"
-     alt="Contract inheritance"
-     class="dark:block hidden"/>
+     
+![Contract Inheritance](/images/docs/contract-inheritance.png)
 
 You can find a
 [control graph of the contracts here](https://raw.githubusercontent.com/bosonprotocol/contracts/master/docs/assets/bosonprotocol-graph.png?token=AAAEAH2ZUG563GJUTCJCJT3AMMZY2).
