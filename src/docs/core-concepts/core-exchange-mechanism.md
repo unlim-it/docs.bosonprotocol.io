@@ -37,8 +37,8 @@ The core exchange process proceeds as follows:
 
 Deposit amounts are variable and form part of the commercial terms of the
 exchange. Deposit levels are proposed by the Seller and then accepted by the
-Buyer. It is possible that the same underlying item could be offered via
-multiple vouchers, each with differing Buyer and Seller deposit levels,
+Buyer. It is possible that similar underlying items could be offered via their
+respective vouchers, but with differing Buyer and Seller deposit levels,
 indicating different levels of commitment to redemption and quality. We
 elaborate on this below.
 
@@ -156,7 +156,7 @@ Transfers to players are:
 | 110         | $$0$$         | $$p$$     |
 | 111         | $$D_S+D_B$$   | $$p$$     |
 
-First bit stands for redemption, where $$1$$ means that the redemption was
+The first bit stands for redemption, where $$1$$ means that the redemption was
 performed by the buyer and $$0$$ if it was not. The second bit stands for
 complaint, where $$1$$ corresponds to the buyer complaint and $$0$$ corresponds
 to no complaint. The third bit corresponds to Cancel or Fault, where $$1$$
