@@ -66,7 +66,6 @@ permalink: /protocol-overview/glossary/
 - **Currency**: The currency of the transaction (which can be either the price
   or the deposit). The smart contracts currently supports both ETH and $BOSON.
 - **Non-fungible token voucher**: See **Voucher**
-- **Offer**: See **Voucher Set**
 - **Token Supply**: See **Voucher Set**
 - **Voucher Supply**: See **Voucher Set**
 - **Listing**: See **Voucher Set**
@@ -91,7 +90,8 @@ permalink: /protocol-overview/glossary/
   value.
 - **Arbitration**: A mechanism for resolving disputes between parties involved
   in a transaction.
-- **Non-fungible tokens**: A token which has a unique identifier on an immutable network.
+- **Non-fungible tokens**: A token which is non-divisible and has a unique 
+  identifier on an immutable network.
 - **Keepers**: For keepers we use
   [Ryan Zurrer's definition](https://rzurrer.medium.com/keepers-workers-that-maintain-blockchain-networks-a40182615b66):"a
   catchall term for the different utility players in a distributed network that
