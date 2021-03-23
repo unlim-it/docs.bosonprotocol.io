@@ -91,5 +91,4 @@ near further, we're going to have regular community calls to talk about our
 roadmaps and future work. You can join our developer community on
 [Gitter](https://gitter.im/BosonProtocol/community) and find out more about how
 to contribute, including our process for pull request approvals and our
-[Code of Conduct](https://github.com/bosonprotocol/docs/blob/main/CODE_OF_CONDUCT.md)
-[here](https://github.com/bosonprotocol/docs).
+[Code of Conduct](/code-of-conduct/).

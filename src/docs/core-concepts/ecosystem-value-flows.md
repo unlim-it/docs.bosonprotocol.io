@@ -79,5 +79,4 @@ sneak peek into those value flows:
 
 ![Phase 2-3: Money and Data](/images/docs/ecosystem-value-flows-phase-2-3.png)
 
-We will detail these as we progress with the modeling and simulations. This work
-also ties into the Boson Protocol [Roadmap](../roadmap.md).
+We will detail these as we progress with the modeling and simulations.
