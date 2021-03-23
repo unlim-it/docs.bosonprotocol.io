@@ -29,7 +29,7 @@ implementation corresponds to the honest behavior of both players."
 
 The following image illustrates the complete game tree:
 
-![/images/docs/game-tree.png](/images/docs/game-tree.png)
+![Game Tree](/images/docs/game-tree.jpg)
 
 ## How It Works
 
@@ -57,12 +57,7 @@ after this, provided that they have not already done so earlier in the process.
 Each of these options, in addition to the voucher expiring, results in a
 variance in payouts for both the buyer and seller.
 
-<img src="/images/docs/token-lifecycle-light.png"
-     alt="Token lifecycle"
-     class="block dark:hidden"/>
-<img src="/images/docs/token-lifecycle-dark.png"
-     alt="Token lifecycle"
-     class="dark:block hidden"/>
+![Token Lifecycle](/images/docs/token-lifecycle.png)
 
 ## Note on beta
 

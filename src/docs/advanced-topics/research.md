@@ -74,7 +74,11 @@ $$15+8+2=25$$ constraints and $$8$$ (transfer) variables. Optimizing target
 function given these constraints determines the values of transfers, and
 consequently, smart contract.
 
-[decision_tree.pdf](https://github.com/bosonprotocol/docs.bosonprotocol.io/files/6164651/decision_tree.pdf)
+<img src="/images/docs/decision-tree-light.png"
+     alt="Decision tree"
+     class="block dark:hidden"/> <img src="/images/docs/decision-tree-dark.png"
+     alt="Decision tree"
+     class="dark:block hidden"/>
 
 ## Discussion
 

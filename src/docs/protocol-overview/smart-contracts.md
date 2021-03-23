@@ -35,8 +35,8 @@ Main contracts:
      alt="Contract inheritance"
      class="dark:block hidden"/>
 
-A control graph of the contracts is
-[available here](https://www.notion.so/assets/bosonprotocol-graph.png).
+You can find a 
+[control graph of the contracts here](https://raw.githubusercontent.com/bosonprotocol/contracts/master/docs/assets/bosonprotocol-graph.png?token=AAAEAH2ZUG563GJUTCJCJT3AMMZY2).
 
 There are **_three types of funds_** in Boson Protocol, one for the payment and
 two for security deposits:
@@ -73,15 +73,10 @@ function requestCreateOrderTKNETH(
 The journey through the NFT lifecycle is presented on a simplified diagram
 below.
 
-<img src="/images/docs/token-lifecycle-light.png"
-     alt="Token Lifecycle"
-     class="block dark:hidden"/>
-<img src="/images/docs/token-lifecycle-dark.png"
-     alt="Token Lifecycle"
-     class="dark:block hidden"/>
+![Token Lifecycle](/images/docs/token-lifecycle.png)
 
 A detailed game tree is
-[available here](https://www.notion.so/assets/exchange-diagram.png), showcasing
+[available here](/images/docs/game-tree.jpg), showcasing
 the actions that Sellers and Buyers can make. The order of some of these
 transactions is not prescribed, e.g. a Seller can do a CancelOrFault transaction
 independently of any Buyer action.

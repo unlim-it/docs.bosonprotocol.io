@@ -82,7 +82,7 @@ approaches for creating transactions.
 
 ### Simple Transactions
 
-![https://lh5.googleusercontent.com/7_FIwNVuOFzCHMI1hHOs1aAD49bs86fLPUxuBJsGQwwYbo1kqXb5-k5o7f_VmmqZNmmT0KU69VzfrJr8GlkiQZFWxgG6peAVvarmLvZ8kddJ5fzJrqK6-ER6Iy7U8nwuKsukEv1e](https://lh5.googleusercontent.com/7_FIwNVuOFzCHMI1hHOs1aAD49bs86fLPUxuBJsGQwwYbo1kqXb5-k5o7f_VmmqZNmmT0KU69VzfrJr8GlkiQZFWxgG6peAVvarmLvZ8kddJ5fzJrqK6-ER6Iy7U8nwuKsukEv1e)
+![Simple Transactions](/images/docs/simple-transactions.png)
 
 In simple transactions, the sender invokes a function call on the smart contract
 to interact with the contract and execute the transaction. In such transactions,
@@ -91,7 +91,7 @@ functions and the rest will be paid as a transaction fee to the miners.
 
 ### Delegated Transfers [as in ERC 865] [Mostly used in gasless transfers]
 
-![https://lh3.googleusercontent.com/97JnBP6K2N2H5knZPGrVhD49o4xREM-fn4GUG-6EHM6i8Wl2j2cw-2FM9SmWXXVgDq-px7oclymBa7uSNNjKRHp5ou93OiQS8nVmVpIL3qXYF8oPN0W0m7XEjDoen6_UAeigxbDS](https://lh3.googleusercontent.com/97JnBP6K2N2H5knZPGrVhD49o4xREM-fn4GUG-6EHM6i8Wl2j2cw-2FM9SmWXXVgDq-px7oclymBa7uSNNjKRHp5ou93OiQS8nVmVpIL3qXYF8oPN0W0m7XEjDoen6_UAeigxbDS)
+![Delegated Transfers](/images/docs/delegated-transfers.png)
 
 In delegated transfers, the sender will create the signature of the signed
 transaction and will send the signature to the delegator. The delegator will pay
@@ -101,7 +101,7 @@ Delegator. Also, we can opt not to charge the users for their transactions.
 
 ### Bulk transfers [Mostly used for airdrops]
 
-![https://lh3.googleusercontent.com/iSjvB9C1ZsZJrrAD5jh_84AMiqsu41S7sgKXuCBsHrh7osGrDpPajDdZzwd_VNt47n8qChLay2uNU_wPhtF2qaFkE0Y5xdOugu778WPRaFh8jGG4mfC4fjuIDUdtKPiRhYskXKS4](https://lh3.googleusercontent.com/iSjvB9C1ZsZJrrAD5jh_84AMiqsu41S7sgKXuCBsHrh7osGrDpPajDdZzwd_VNt47n8qChLay2uNU_wPhtF2qaFkE0Y5xdOugu778WPRaFh8jGG4mfC4fjuIDUdtKPiRhYskXKS4)
+![Bulk Transfers](/images/docs/bulk-transfers.png)
 
 In bulk transfer, an admin will take a list of the transactions which need to be
 transferred to the receiver with the corresponding values to be transferred or
@@ -112,15 +112,14 @@ transfer transactions were widely used during airdrops and token offerings.
 
 ### Open Gas Station [Widely used in gasless transactions]
 
-![https://lh5.googleusercontent.com/aipn26A-ReT1E28y0s6X0hDQxSC1CI7afgZn4pJUuSoa2Dsu4bK4e2p0BwbQdElIfaWkdofYlBr8UaOGcXLaXrkoHcY9Q_mLbwInlACiaWXYlNoIPH8TGUR0i3O868DzHj6_ViZ2](https://lh5.googleusercontent.com/aipn26A-ReT1E28y0s6X0hDQxSC1CI7afgZn4pJUuSoa2Dsu4bK4e2p0BwbQdElIfaWkdofYlBr8UaOGcXLaXrkoHcY9Q_mLbwInlACiaWXYlNoIPH8TGUR0i3O868DzHj6_ViZ2)
+![Open Gas Station](/images/docs/open-gas-station.png)
 
 In Open Gas Station, you have to create a relay of your own and set up a
 paymaster contract to pay for the transactions. Alternatively you can use the
 OpenGSN dApp to collect the user's signature and thereby allow the paymaster's
 TrustedForwarder contract to initiate the transfers.
 
-A simple dApp for OpenGSN:
-![https://metacoin.opengsn.org/](https://metacoin.opengsn.org/)
+You can find a [simple dApp for OpenGSN here](https://metacoin.opengsn.org/).
 
 ### Using meta data for claims - EIP 712 / Biconomy [Gas subsidization]
 
@@ -145,7 +144,7 @@ executed on the network.
 Biconomy’s native meta-tx usage:
 [metatx-standard](https://github.com/bcnmy/metatx-standard)
 
-![https://lh4.googleusercontent.com/PBMV06Fi9jlacBrNoc-gSs2oQMgVsAZ5u8WsxDMVEl1nkPSe13AyqJOT1xdIQ6ZbmqrWiN0_6Iw7v9eVPjjIo6f0Vupj63gXMmoIAFYx46fWH1cmxMAFp-1v99-Y2toIA5fIxNgr](https://lh4.googleusercontent.com/PBMV06Fi9jlacBrNoc-gSs2oQMgVsAZ5u8WsxDMVEl1nkPSe13AyqJOT1xdIQ6ZbmqrWiN0_6Iw7v9eVPjjIo6f0Vupj63gXMmoIAFYx46fWH1cmxMAFp-1v99-Y2toIA5fIxNgr)
+![MetaTX Standard](/images/docs/metatx-standard.png)
 
 The generalization of meta transactions responds to the problem of user
 onboarding on Ethereum applications.
