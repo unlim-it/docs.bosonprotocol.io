@@ -72,8 +72,8 @@ The options available after the commit stage are:
   returned to the Buyer.
 
 However, transaction reversibility introduces the challenges of reversal costs
-and dispute mediation identified in the original Bitcoin White Paper. The example
-of buying a used car illustrates these challenges.
+and dispute mediation identified in the original Bitcoin White Paper. The
+example of buying a used car illustrates these challenges.
 
 Take the following example:
 
