@@ -27,7 +27,7 @@ Main contracts:
 - `FundLimitsOracle`: restrictions on the allowed escrowed amounts
 - `VoucherKernel`: main business logic
 - `UsingHelpers`: common utilities
-     
+
 ![Contract Inheritance](/images/docs/contract-inheritance.png)
 
 You can find a
