@@ -37,8 +37,8 @@ The core exchange process proceeds as follows:
 
 Deposit amounts are variable and form part of the commercial terms of the
 exchange. Deposit levels are proposed by the Seller and then accepted by the
-Buyer. It is possible that the same underlying item could be offered via
-multiple vouchers, each with differing Buyer and Seller deposit levels,
+Buyer. It is possible that similar underlying items could be offered via their
+respective vouchers, but with differing Buyer and Seller deposit levels,
 indicating different levels of commitment to redemption and quality. We
 elaborate on this below.
 
