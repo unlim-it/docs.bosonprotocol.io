@@ -35,7 +35,7 @@ Main contracts:
      alt="Contract inheritance"
      class="dark:block hidden"/>
 
-You can find a 
+You can find a
 [control graph of the contracts here](https://raw.githubusercontent.com/bosonprotocol/contracts/master/docs/assets/bosonprotocol-graph.png?token=AAAEAH2ZUG563GJUTCJCJT3AMMZY2).
 
 There are **_three types of funds_** in Boson Protocol, one for the payment and
@@ -75,8 +75,7 @@ below.
 
 ![Token Lifecycle](/images/docs/token-lifecycle.png)
 
-A detailed game tree is
-[available here](/images/docs/game-tree.jpg), showcasing
+A detailed game tree is [available here](/images/docs/game-tree.jpg), showcasing
 the actions that Sellers and Buyers can make. The order of some of these
 transactions is not prescribed, e.g. a Seller can do a CancelOrFault transaction
 independently of any Buyer action.
