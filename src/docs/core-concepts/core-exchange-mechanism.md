@@ -10,8 +10,8 @@ permalink: /core-concepts/core-exchange-mechanism/
 The core exchange mechanism can be viewed as a decision support system which
 coordinates exchange, governs reversals and handles the main load of disputes in
 order to significantly reduce arbitration cost and friction versus arbitrated
-protocols. The mechanism is designed as a sequential game in which Buyer and
-Seller commit deposits up-front, promoting fair behaviour.
+protocols. The mechanism is designed as a sequential game in which buyer and
+seller commit deposits up-front, promoting fair behaviour.
 
 ## Towards an Ideal Arbitrated System
 
@@ -28,11 +28,11 @@ The objective function of the system is:
 
 The core exchange process proceeds as follows:
 
-- **Offer**: This involves a Seller listing an item; thereby specifying the
+- **Offer**: This involves a seller listing an item; thereby specifying the
   item's price and deposit amounts, in addition to the desired payment currency
   and the listing's validity period. The Seller's deposit is then placed in
   escrow.
-- **Commit**: This involves a Buyer committing to purchase an item; thereby
+- **Commit**: This involves a buyer committing to purchase an item; thereby
   paying the seller-defined deposit and the item price, placing both in escrow.
 
 Deposit amounts are variable and form part of the commercial terms of the
@@ -44,11 +44,11 @@ elaborate on this below.
 
 ## Practical Atomicity
 
-For the happy path, at point of exchange the Buyer unilaterally signs a
-redemption transaction in return for the Seller transferring the item. If, and
+For the happy path, at point of exchange the buyer unilaterally signs a
+redemption transaction in return for the seller transferring the item. If, and
 only if, the redemption transaction is signed, the system will transfer the
-payment amount to the Seller. We refer to this as _practical atomicity_, where
-_practical_ refers to the assumption that a Buyer who signs the redemption
+payment amount to the seller. We refer to this as _practical atomicity_, where
+_practical_ refers to the assumption that a buyer who signs the redemption
 receives the item. The transaction is _practical_ rather than absolute, because
 it is as atomic as handing over cash for goods. With a cash transaction the
 Seller could take the cash and not deliver the service, but this is not a
@@ -63,17 +63,17 @@ As a consequence, the system enables a Buyer to trigger a refund transaction as
 well as automatically reversing transactions at expiry of their validity period.
 The options available after the commit stage are:
 
-- **Redeem**: This involves the Buyer redeeming their purchased item (i.e.
+- **Redeem**: This involves the buyer redeeming their purchased item (i.e.
   gaining ownership of said item). At this point, the payment amount is released
   to the Seller.
-- **Refund**: This involves the Buyer triggering a refund request. Payment is
-  then returned to the Buyer.
+- **Refund**: This involves the buyer triggering a refund request. Payment is
+  then returned to the buyer.
 - **Wait**: No action taken and the validity period expires. Payment is then
   returned to the Buyer.
 
 However, transaction reversibility introduces the challenges of reversal costs
-and dispute mediation identified in the original Bitcoin whitepaper. The example
-of buying a used car illustrates these challenges.
+and dispute mediation identified in the original Bitcoin White Paper. The
+example of buying a used car illustrates these challenges.
 
 Take the following example:
 
@@ -87,20 +87,20 @@ arrives in Leeds and Bob has already sold the car, then Alice incurs a loss.
 
 ## Dispute mediation
 
-If Buyer and Seller beneficiaries make conflicting claims on real world events,
+If buyer and seller beneficiaries make conflicting claims on real-world events,
 then smart contracts cannot determine which version of reality to trust. Taking
 our previous example: if Alice arrives in Leeds to complete the exchange and
 detects that the car has actually driven 200,000 miles, Alice has a quality
 dispute. This, and the above, problems are addressed by the mechanism:
 
-The Buyer has the option to unilaterally report quality (in addition to other)
+The buyer has the option to unilaterally report quality (in addition to other)
 issues as follows:
 
 - **Complain**: A Buyer can only complain after either redeeming, refunding or
   waiting for the validity period to expire. The decision to do this will affect
   the final deposits payout.
 
-The Seller has the option to address issues as follows:
+The seller has the option to address issues as follows:
 
 - **Cancel or Fault**: The Seller can choose to cancel the transaction at any
   point. However if this is done after the Buyer redeems, then this is
@@ -130,7 +130,7 @@ hidden actions of the players.
      alt="Decision tree"
      class="dark:block hidden"/>
 
-On figure the green lines denote subgame-perfect equilibrium moves. The red
+Here, the the green lines denote subgame-perfect equilibrium moves. The red
 lines denote off-equilibrium moves. Note that the first move is not observed by
 the mechanism. That is, the states in the left and right subtrees are the same,
 from the perspective of the smart contract.
