@@ -1,5 +1,4 @@
-docs.bosonprotocol.io
-=====================
+# docs.bosonprotocol.io
 
 The documentation website for Boson Protocol.
 

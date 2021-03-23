@@ -30,20 +30,9 @@ main:
         url: "/advanced-topics/research/"
   - title: "Governance"
     url: "/governance/"
-  - title: "Roadmap"
-    url: "/roadmap/"
   - title: "FAQs"
     url: "/faqs/"
   - title: "Contributing"
     url: "/contributing/"
   - title: "Code of Conduct"
     url: "/code-of-conduct/"
-categories:
-  - title: "Developer guides"
-    items:
-      - title: "Smart contract quick start"
-        url: "/developer-guides/smart-contract-quick-start/"
-  - title: "Reference"
-    items:
-      - title: "Smart contracts"
-        url: "/reference/smart-contracts/"

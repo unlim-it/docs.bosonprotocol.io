@@ -17,10 +17,6 @@ The base layer of Boson Protocol is implemented and enforced in smart contracts.
 There are also keeper services running as self-hosted scripts that offer an
 improved UX and can be run by anyone, e.g. scheduled transactions.
 
-Lastly, there is a developer experience component whose aim is to help
-developers understand and use Boson Protocol. This currently consists of a
-reference P2P app and accompanying documentation.
-
 The protocol will progressively grow in complexity, as will the list of its
 components, and we are looking forward to finding the best paths in
 collaboration with other projects in the space.
