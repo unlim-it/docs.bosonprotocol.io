@@ -66,7 +66,6 @@ permalink: /protocol-overview/glossary/
 - **Currency**: The currency of the transaction (which can be either the price
   or the deposit). The smart contracts currently supports both ETH and $BOSON.
 - **Non-fungible token voucher**: See **Voucher**
-- **Offer**: See **Voucher Set**
 - **Token Supply**: See **Voucher Set**
 - **Voucher Supply**: See **Voucher Set**
 - **Listing**: See **Voucher Set**
@@ -87,9 +86,10 @@ permalink: /protocol-overview/glossary/
 - **Closed Voucher Set**: The position a voucher set is in when the voucher set
   validity period is expired (after the expiry date) and all voucher from the
   voucher set are finalized.
-- **Location**: TODO ?
-- **Asset**: TODO ?
-- **Arbitration**: TODO ?
+- **Asset**: An entity-controlled resource that can potentially create future
+  value.
+- **Arbitration**: A mechanism for resolving disputes between parties involved
+  in a transaction.
 - **Non-fungible tokens**: A token that is non-devisble and has a unique
   identifier.
 - **Keepers**: For keepers we use
