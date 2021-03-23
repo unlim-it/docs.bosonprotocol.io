@@ -39,8 +39,8 @@ permalink: /protocol-overview/glossary/
   execution. In doing so, the seller may get penalized.
 - **Cancel or Fault**: An action in the exchange mechanism in which a seller
   'offers' can cancel or fault a particular voucher. This will cancel the
-  current offer and corresponding voucher, and all or part of the buyer's deposit
-  will be refunded along with the payment amount.
+  current offer and corresponding voucher, and all or part of the buyer's
+  deposit will be refunded along with the payment amount.
 - **Void**: An action in which a seller may void all remaining uncommitted
   assets within a voucher set. This has no effect on committed or finalised
   vouchers.
@@ -75,11 +75,11 @@ permalink: /protocol-overview/glossary/
 - **My Offers**: A view within the app that lists all the voucher sets created
   by the wallet of a particular seller. This voucher set can be filtered by Open
   or Closed.
-- **Active Voucher**: The state a voucher is in once it has been committed to
-  by a buyer and is yet to be finalised. During this time either a buyer or
-  seller has the ability to action it based on the rules of the game tree.
-- **Inactive Voucher**: The state a voucher is in once it is finalized (at
-  the end of the lifecycle) and can no longer be used.
+- **Active Voucher**: The state a voucher is in once it has been committed to by
+  a buyer and is yet to be finalised. During this time either a buyer or seller
+  has the ability to action it based on the rules of the game tree.
+- **Inactive Voucher**: The state a voucher is in once it is finalized (at the
+  end of the lifecycle) and can no longer be used.
 - **Open Voucher Set**: The state a voucher set is in when either voucher set
   validity period is not expired (before the end date) and/or there is a voucher
   from the voucher set which has not yet been finalised.
@@ -90,14 +90,14 @@ permalink: /protocol-overview/glossary/
   value.
 - **Arbitration**: A mechanism for resolving disputes between parties involved
   in a transaction.
-- **Non-fungible tokens**: A token which is non-divisible and has a unique 
+- **Non-fungible tokens**: A token which is non-divisible and has a unique
   identifier on an immutable network.
 - **Keepers**: For keepers we use
   [Ryan Zurrer's definition](https://rzurrer.medium.com/keepers-workers-that-maintain-blockchain-networks-a40182615b66):"a
   catchall term for the different utility players in a distributed network that
   maintain stability and perform crucial jobs in the crypto-economic model" To
-  find out more about the different actors in Boson Protocol refer to our
-  White Paper.
+  find out more about the different actors in Boson Protocol refer to our White
+  Paper.
 - **Wallet**: Software that allows users to interact with the smart contracts of
   their desired blockchain.
 - **ERC-20**: A smart contract standard for (fungible) tokens,
