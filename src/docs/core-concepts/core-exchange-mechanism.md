@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Core Concepts: Core Exchange Mechanism"
-short_title: "Core Exchange Mechanism"
+title: "Boson Protocol: Docs: Core Concepts: Core exchange mechanism"
+short_title: "Core exchange mechanism"
 permalink: /core-concepts/core-exchange-mechanism/
 ---
 
@@ -13,7 +13,7 @@ order to significantly reduce arbitration cost and friction versus arbitrated
 protocols. The mechanism is designed as a sequential game in which Buyer and
 Seller commit deposits up-front, promoting fair behavior.
 
-## Towards an Ideal Arbitrated System
+## Towards an ideal arbitrated system
 
 Boson Protocol implements a 2-sided deposit structure within a sequential game,
 which automates the mediation of disputes and mitigates reversal losses by
@@ -42,7 +42,7 @@ respective vouchers, but with differing Buyer and Seller deposit levels,
 indicating different levels of commitment to redemption and quality. We
 elaborate on this below.
 
-## Practical Atomicity
+## Practical atomicity
 
 For the happy path, at point of exchange the buyer unilaterally signs a
 redemption transaction in return for the seller transferring the item. If, and
@@ -55,7 +55,7 @@ Seller could take the cash and not deliver the service, but this is not a
 practical concern. Therefore, we contend that this is atomic enough for most
 commercial purposes.
 
-## Transaction Reversibility
+## Transaction reversibility
 
 Due to the requirement for atomicity, in addition to the fact that not all
 promises will be fulfilled, transactions require the property of reversibility.

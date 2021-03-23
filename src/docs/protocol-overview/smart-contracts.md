@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Protocol Overview: Smart Contracts"
-short_title: "Smart Contracts"
+title: "Boson Protocol: Docs: Protocol Overview: Smart contracts"
+short_title: "Smart contracts"
 permalink: /protocol-overview/smart-contracts/
 ---
 

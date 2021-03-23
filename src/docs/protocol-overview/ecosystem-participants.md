@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Protocol Overview: Ecosystem Participants"
-short_title: "Ecosystem Participants"
+title: "Boson Protocol: Docs: Protocol Overview: Ecosystem participants"
+short_title: "Ecosystem participants"
 permalink: /protocol-overview/ecosystem-participants/
 ---
 
@@ -56,7 +56,7 @@ logic.
 from particular artists, which looks for specific NFTs and then bundles them for
 resale to galleries or at auctions directly.
 
-## Developers / Projects
+## Developers / projects
 
 We have developed a reference frontend and backend for the v0.1 release. Our aim
 is to enable and incentivize co-creation in the Boson Ecosystem. We are actively

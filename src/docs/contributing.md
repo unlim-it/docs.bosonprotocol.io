@@ -56,7 +56,7 @@ as drivers of the protocol. The best way to become involved in our process is to
 join the community calls and to suggest partnerships, integrations, or features
 which will lead to a more robust, useful ecosystem for Boson Protocol.
 
-## Path to Maintainership
+## Path to maintainership
 
 As part of the process of becoming integrated in the community, it will
 eventually make sense to make community members part of the Boson Protocol
@@ -73,7 +73,7 @@ Another way of becoming a maintainer is to join the Boson Protocol team
 directly. Sound fun? Take a gander at our
 [job postings](https://github.com/bosonprotocol/jobs)!
 
-## Code of Conduct
+## Code of conduct
 
 All of our interactions are governed by our
 [Code of Conduct](/code-of-conduct/). Please read and abide by it; you signify

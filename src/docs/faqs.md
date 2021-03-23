@@ -5,7 +5,7 @@ short_title: "FAQs"
 permalink: /faqs/
 ---
 
-# Frequently Asked Questions
+# Frequently asked questions
 
 First, a small note: your question may not be here. Why? Because we've only
 recently open-sourced this work. That means that questions haven't been asked,

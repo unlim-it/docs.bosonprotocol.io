@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Advanced Topics: Gas Fees"
-short_title: "Gas Fees"
+title: "Boson Protocol: Docs: Advanced Topics: Gas fees"
+short_title: "Gas fees"
 permalink: /advanced-topics/gas-fees/
 ---
 
@@ -45,7 +45,7 @@ This can also lead to a possible scenario where the transaction is left in a
 pending state for a long time. If the actual cost exceeds the supplied Gas, then
 the transaction fails with an out-of-Gas exception.
 
-**Ideal Gas limit** : The ideal Gas limit is when a transaction is submitted
+**Ideal gas limit** : The ideal Gas limit is when a transaction is submitted
 with enough Gas limit to cover the costs involved to execute the transaction or
 invoke a function call. In order to find the current ideal Gas limits, most
 dApps use [ethgasstation](https://ethgasstation.info/).
@@ -54,7 +54,7 @@ dApps use [ethgasstation](https://ethgasstation.info/).
 Hence each block has a theoretical maximum number of transactions that it can
 contain. If there is surplus Gas, it is returned to the sender.
 
-**Gas Price** controls the upper limit of a trade execution order. Each
+**Gas price** controls the upper limit of a trade execution order. Each
 execution of a contract instruction consumes a fixed amount of cost. When a
 transaction has not been executed and the Gas is exhausted, the contract
 execution is terminated and rolled back. Gas can be exchanged with Ether. It
@@ -62,7 +62,7 @@ should be noted that the price of Ethereum fluctuates, but the Gas costs for
 executing a certain smart contract can be fixed and adjusted by setting the
 price of Gas.
 
-**Gas Optimization:** Smart contract execution cost more Gas than necessary, and
+**Gas optimization:** Smart contract execution cost more Gas than necessary, and
 therefore the creators or users will be overcharged. To avoid wasting money,
 there are various best-practice programming rules that developers can follow in
 [Solidity](https://docs.soliditylang.org/en/v0.8.2/) or
@@ -73,14 +73,14 @@ the Ethereum network can be expensive, no matter how good the code. In order to
 avoid this situation, there are various on-chain and off-chain solutions which
 can counter issues caused by high Gas prices.
 
-## Ethereum Transactions
+## Ethereum transactions
 
 There are multiple ways in which we can execute transactions on Ethereum. The
 object of sending a transaction is either to transfer an asset or to invoke a
 function call in the smart contract. In this document we will discuss various
 approaches for creating transactions.
 
-### Simple Transactions
+### Simple transactions
 
 ![Simple Transactions](/images/docs/simple-transactions.png)
 
@@ -89,7 +89,7 @@ to interact with the contract and execute the transaction. In such transactions,
 a significant amount of gas will be used for invoking the smart contract
 functions and the rest will be paid as a transaction fee to the miners.
 
-### Delegated Transfers [as in ERC 865] [Mostly used in gasless transfers]
+### Delegated transfers [as in ERC 865] [mostly used in gasless transfers]
 
 ![Delegated Transfers](/images/docs/delegated-transfers.png)
 
@@ -99,7 +99,7 @@ for the transaction fee and invoke the transaction. This can further be used for
 collecting tokens as payment for the transaction fee which was provided by the
 Delegator. Also, we can opt not to charge the users for their transactions.
 
-### Bulk transfers [Mostly used for airdrops]
+### Bulk transfers [mostly used for airdrops]
 
 ![Bulk Transfers](/images/docs/bulk-transfers.png)
 
@@ -110,7 +110,7 @@ bulk sending or airdrop smart contract which will have the capabilities to
 execute 300-plus transfers / function calls in a single transaction. Bulk
 transfer transactions were widely used during airdrops and token offerings.
 
-### Open Gas Station [Widely used in gasless transactions]
+### Open Gas Station [widely used in gasless transactions]
 
 ![Open Gas Station](/images/docs/open-gas-station.png)
 
@@ -121,7 +121,7 @@ TrustedForwarder contract to initiate the transfers.
 
 You can find a [simple dApp for OpenGSN here](https://metacoin.opengsn.org/).
 
-### Using meta data for claims - EIP 712 / Biconomy [Gas subsidization]
+### Using meta data for claims - EIP 712 / Biconomy [gas subsidization]
 
 Reusable Off-Chain Verifiable Claims enable the issuance of off-chain identity
 claims, based on the typed signing capabilities defined in EIP712. The standard
@@ -167,7 +167,7 @@ One way to get around this is to standardize on a meta-tx-relayer API so that:
 - There is an agreed-upon way to incentivize relayers to run these user-signed
   transactions.
 
-### Drawbacks of Meta Transactions
+### Drawbacks of meta transactions
 
 - Value transferred in meta transactions should always be non-zero (msg.value >
   0).

@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Advanced Topics"
-short_title: "Advanced Topics"
+title: "Boson Protocol: Docs: Advanced topics"
+short_title: "Advanced topics"
 permalink: /advanced-topics/
 ---
 

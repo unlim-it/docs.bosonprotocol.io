@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Core Concepts: Ecosystem Value Flows"
-short_title: "Ecosystem Value Flows"
+title: "Boson Protocol: Docs: Core Concepts: Ecosystem value flows"
+short_title: "Ecosystem value flows"
 permalink: /core-concepts/ecosystem-value-flows/
 ---
 
@@ -32,7 +32,7 @@ handle the exchange of goods & services from the digital into the physical
 world, and "**Thing Tokens**", ERC20 fungible counterparts for buying particular
 Commitment Tokens which will be introduced with Phase 2.
 
-## Phase 0 "Ecosystem Success": Community-first Development
+## Phase 0: "Ecosystem Success": community-first development
 
 ![Phase 0: Ecosystem Success](/images/docs/ecosystem-value-flows-phase-0.png)
 
@@ -49,7 +49,7 @@ The distribution policy mechanics will vary as we progress from phase to phase.
 Initially, we closely engage with the Participants and communities in the
 ecosystem to co-create.
 
-## Phase 1 "Things": Activating the Value Creation Pattern of Commitment Tokens
+## Phase 1: "Things": activating the value creation pattern of commitment tokens
 
 ![Phase 1: Things](/images/docs/ecosystem-value-flows-phase-1.png)
 

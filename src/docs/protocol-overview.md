@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Protocol Overview"
-short_title: "Protocol Overview"
+title: "Boson Protocol: Docs: Protocol overview"
+short_title: "Protocol overview"
 permalink: /protocol-overview/
 ---
 

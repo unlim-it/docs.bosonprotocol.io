@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Protocol Overview: How Boson Works"
-short_title: "How Boson Works"
+title: "Boson Protocol: Docs: Protocol Overview: How Boson works"
+short_title: "How Boson works"
 permalink: /protocol-overview/how-boson-works/
 ---
 
@@ -31,7 +31,7 @@ The following image illustrates the complete game tree:
 
 ![Game Tree](/images/docs/game-tree.jpg)
 
-## How It Works
+## How it works
 
 When a seller lists an item, they specify the item price as well as deposit
 amounts for both the buyer and seller. In addition to this, the desired payment
