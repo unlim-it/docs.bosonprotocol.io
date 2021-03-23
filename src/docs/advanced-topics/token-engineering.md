@@ -201,8 +201,8 @@ year.
 ## Solving dcommerce challenges
 
 **dcommerce challenges** At the core of dcommerce are a set of challenges which
-combine operations, game theory, ecosystem value flows and token engineering.
-It is possible that this set of problems is intractable, which would mean that
+combine operations, game theory, ecosystem value flows and token engineering. It
+is possible that this set of problems is intractable, which would mean that
 commerce will be forever mediated by humans- with all the cost, trust and
 friction that this implies.  However, our research indicates that these problems
 can be solved, to a significant extent, by unbundling the services provided by
@@ -230,9 +230,9 @@ dCommerce DAO, in order to develop solutions into  dapps or protocols which may
 be usefu or valuable to the ecosystem.
 
 **dcommerce accelerator** We are in discussion with Outlier Ventures about
-creating a track within their Basecamp accelerator, for dcommerce projects.
-Such projects would receive additional grant funding and specialist token,
-ecosystem, game theory and dcommerce support from the Boson protocol team.
+creating a track within their Basecamp accelerator, for dcommerce projects. Such
+projects would receive additional grant funding and specialist token, ecosystem,
+game theory and dcommerce support from the Boson protocol team.
 
 Think you got what it takes to face the dcommerce challenges? Reach out to Boson
 head of community Alastair Band on LinkedIn to learn more about the
