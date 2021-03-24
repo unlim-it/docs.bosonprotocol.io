@@ -29,7 +29,7 @@ implementation corresponds to the honest behavior of both players."
 
 The following image illustrates the complete game tree:
 
-![Game Tree](/images/docs/game-tree.jpg)
+![Game Tree](/images/docs/game-tree.png)
 
 ## How it works
 

@@ -70,7 +70,7 @@ below.
 
 ![Token Lifecycle](/images/docs/token-lifecycle.png)
 
-A detailed game tree is [available here](/images/docs/game-tree.jpg), showcasing
+A detailed game tree is [available here](/images/docs/game-tree.png), showcasing
 the actions that Sellers and Buyers can make. The order of some of these
 transactions is not prescribed, e.g. a Seller can do a CancelOrFault transaction
 independently of any Buyer action.
