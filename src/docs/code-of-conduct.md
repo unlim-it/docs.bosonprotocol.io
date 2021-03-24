@@ -1,11 +1,11 @@
 ---
 layout: docs
 title: "Boson Protocol: Docs: Code of conduct"
-short_title: "Code of conduct"
+short_title: "Code of Conduct"
 permalink: /code-of-conduct/
 ---
 
-# Contributor covenant code of conduct
+# Contributor Covenant Code of Conduct
 
 ## Our pledge
 

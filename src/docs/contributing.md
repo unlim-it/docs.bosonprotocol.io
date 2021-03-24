@@ -73,7 +73,7 @@ Another way of becoming a maintainer is to join the Boson Protocol team
 directly. Sound fun? Take a gander at our
 [job postings](https://github.com/bosonprotocol/jobs)!
 
-## Code of conduct
+## Code of Conduct
 
 All of our interactions are governed by our
 [Code of Conduct](/code-of-conduct/). Please read and abide by it; you signify
