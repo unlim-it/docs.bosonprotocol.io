@@ -15,7 +15,7 @@ ecosystem by funding and enabling the development of a stack of specialized
 applications to disrupt, demonopolize and democratize commerce. Boson Protocol
 enables this via an open tokenized economy of Things which:
 
-1. automates the redemption of digital rights for physical assets using NFTs and
+1. Automates the redemption of digital rights for physical assets using NFTs and
    carefully-designed deposit transfers.
 2. Disrupts e-commerce platforms by tokenizing Things and their data within a
    liquid digital market, built on DeFi.
