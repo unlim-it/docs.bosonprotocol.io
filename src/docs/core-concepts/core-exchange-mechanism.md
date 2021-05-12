@@ -145,19 +145,25 @@ fault (NC).
 
 Transfers to players are:
 
-| state $$s$$ | $$t_s^B$$     | $$t_s^S$$ |
-| ----------- | ------------- | --------- |
-| 000         | $$p$$         | $$D_S$$   |
-| 001         | $$p+D_S$$     | $$0$$     |
-| 010         | $$p$$         | $$0$$     |
-| 011         | $$p+D_S+D_B$$ | $$0$$     |
-| 100         | $$D_B$$       | $$p+D_S$$ |
-| 101         | $$D_B+D_S$$   | $$p$$     |
-| 110         | $$0$$         | $$p$$     |
-| 111         | $$D_S+D_B$$   | $$p$$     |
+| state $$s$$ | $$t_s^B$$        | $$t_s^S$$         |
+| ----------- | ---------------- | ----------------- |
+| 000         | $$p$$            | $$D_S$$           |
+| 001         | $$p+D_B+0.5D_S$$ | $$0.5D_S$$        |
+| 010         | $$p$$            | $$0$$             |
+| 011         | $$p+0.5D_S+D_B$$ | $$0.25D_S$$       |
+| 100         | $$D_B$$          | $$p+D_S$$         |
+| 101         | $$D_B+0.5D_S$$   | $$p+0.5D_S$$      |
+| 110         | $$0$$            | $$p$$             |
+| 111         | $$0.5D_S+D_B$$   | $$p+0.25D_S$$     |
 
 The first bit stands for redemption, where $$1$$ means that the redemption was
 performed by the buyer and $$0$$ if it was not. The second bit stands for
 complaint, where $$1$$ corresponds to the buyer complaint and $$0$$ corresponds
 to no complaint. The third bit corresponds to Cancel or Fault, where $$1$$
-stands for Cancel or Fault and $$0$$ for no Cancel or Fault.
+stands for Cancel or Fault and $$0$$ for no Cancel or Fault. Note that there are
+$$p+D_S+D_B$$ total amount locked up. If transfers paid to players do not sum up 
+to that number, it means that the rest goes to Boson protocol. In the current 
+implementation there are 2 additional states, as CF is allowed to be called any time.
+If it is called right before buyer's committment - nothing happens - seller gets his/her
+deposit back. If it is called right after buyer's committment - seller gets $$0.5D_S$$ 
+back and buyer gets $$0.5D_S+D_B+p$$.  
