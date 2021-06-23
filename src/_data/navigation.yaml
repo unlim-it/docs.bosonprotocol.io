@@ -26,6 +26,13 @@ main:
         url: "/advanced-topics/gas-fees/"
       - title: "Research"
         url: "/advanced-topics/research/"
+  - title: "Reference Application"
+    url: "/reference-application/"
+    children:
+      - title: "Introduction"
+        url: "/reference-application/introduction/"
+      - title: "Development Setup"
+        url: "/reference-application/development-setup/"
   - title: "Governance"
     url: "/governance/"
   - title: "FAQs"
