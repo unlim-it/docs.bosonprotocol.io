@@ -15,7 +15,7 @@ assume a working knowledge of git and GitHub.
 ## Repositories
 
 By default, v0.1.0 of the reference application points to v0.1.0 of the Boson
-Protocol smart contracts running on the Rinkeby testnet.
+Protocol smart contracts deployed to the Rinkeby testnet.
 
 To run the Leptonite application locally while pointing to the smart contracts
 on the testnet, you will first need to clone the following repositories:

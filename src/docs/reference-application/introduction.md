@@ -13,7 +13,7 @@ seller, as well as discover products that can be purchased as a buyer. The
 application also demonstrates how the transaction lifecycle can be tracked and
 co-ordinated by both parties.
 
-1. **NFTs for Physical** - Sellers can create listings for physical items that
+1. **Digital to Physical** - Sellers can create listings for physical items that
    can be discovered with pick-up location information added to metadata.
 2. **Minting NFT on commitment** - Buyers can purchase items, which mints an NFT
    on commitment and payment
@@ -24,11 +24,11 @@ co-ordinated by both parties.
 ## Features
 
 1. Users can connect wallet from metamask or with wallet connect
-2. Seller can list an item, which mints an 1155 NFT
+2. Seller can list an item, which mints an ERC1155
 3. Seller can view her listings and void any remaining quantities that haven't
    been committed to
-4. Seller can track the lifecycle of her listings of minted 721 NFTs committed
-   to by buyers
+4. Seller can track the lifecycle of her listings of minted ERC721 tokens
+   committed to by buyers
 5. Seller can cancel or admit fault on a commitment token if issues arise
 6. Buyer can discover NFTs for physical items, filtering by description or
    location based on metadata attached
@@ -45,7 +45,7 @@ The p2p marketplace is implemented as a full-stack application with a React
 front-end and a Node.js backend, both leveraging the Boson Protocol smart
 contracts.
 
-![Leptonite Architecture](/images/docs/eptonite-architecture.png)
+![Leptonite Architecture](/images/docs/leptonite-architecture.png)
 
 ### Technical features
 
