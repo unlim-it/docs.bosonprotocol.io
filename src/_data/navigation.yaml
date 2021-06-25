@@ -19,6 +19,8 @@ main:
         url: "/core-concepts/core-exchange-mechanism/"
       - title: "Ecosystem value flows"
         url: "/core-concepts/ecosystem-value-flows/"
+  - title: "Game Mode"
+    url: "/game-mode/"
   - title: "Advanced topics"
     url: "/advanced-topics/"
     children:
