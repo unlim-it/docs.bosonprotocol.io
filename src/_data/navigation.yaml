@@ -33,8 +33,6 @@ main:
   - title: "Apps"
     url: "/applications/"
     children:
-      - title: "Introduction"
-        url: "/applications/introduction/"
       - title: "Leptonite"
         url: "/applications/leptonite/"
   - title: "Contributing"
