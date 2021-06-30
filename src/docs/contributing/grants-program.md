@@ -5,23 +5,22 @@ short_title: "Grants Program"
 permalink: /contributing/grants-program/
 ---
 
-## Build the future of dCommerce. Apply for a Boson Protocol Ecosystem Grant
+# Build the future of dCommerce. Apply for a Boson Protocol Ecosystem Grant
 
 ![Grants Program](/images/docs/grants-program.png)
 
 At Boson Protocol, we are creating an entirely new decentralized commerce
 ecosystem based on an open tokenized economy.
 
-### We are announcing a $5 million grant program to enable others to join us in
-
-this endeavour
+**_We are announcing a $5 million grant program to enable others to join us in
+this endeavour_**
 
 We have designed Boson as a core component, enabling smart contracts to connect
 to real world commerce and build infrastructure that everyone can trust, can
 use, and which allows buyers, sellers and creators to flourish in an equitable
 non-extractionary environment.
 
-### But we cannot do it alone
+**_But we cannot do it alone_**
 
 Building an ecosystem takes time and effort. Above all, we require the ideas and
 creativity of many different types of people. Good ideas alone, however, are not
@@ -38,14 +37,12 @@ incentivized. It does not happen in a vacuum.
 
 We are already equipped to empower a whole new generation of developers and
 entrepreneurs building on top of the Boson Protocol. We provide full developer
-documentation and we have also presented a film of an upcoming reference
-application to give an idea of the sort of dApps you can build using Boson.
+documentation and we have also presented a film of an upcoming
+[reference application](https://www.youtube.com/watch?v=z5VfFv7EGrg) to give an
+idea of the sort of dApps you can build using Boson.
 
-<https://www.youtube.com/watch?v=z5VfFv7EGrg>
-
-### But we recognise that execution takes dedication and money, so, we are
-
-### announcing the first wave of Boson Protocol Grants
+**But we recognise that execution takes dedication and money, so, we are
+announcing the first wave of Boson Protocol Grants**
 
 Grants have played a crucial role in the expansion of the decentralized
 ecosystem. Without grants, some of the best-known projects may never have
@@ -65,7 +62,7 @@ While we are happy to accept applications in all areas that will make it easier
 for future developers and teams to build on the core protocol, we are especially
 interested in projects working in the following areas:
 
-### dCommerce applications & components
+**_dCommerce applications & components_**
 
 We are looking to fund innovative approaches to decentralized commerce
 applications and projects extending the
@@ -73,7 +70,7 @@ applications and projects extending the
 This can range from user-facing front-ends, plug-ins to existing e-commerce
 platforms and infrastructure to enable dCommerce applications and experiences.
 
-### Metaverse commerce
+**_Metaverse commerce_**
 
 [Metaverse Commerce](https://medium.com/@bosonprotocol/a-look-inside-our-metaverse-commerce-strategy-bfd8c09ccaca)
 is one of the first key applications of Boson Protocol. As such we’re moving
@@ -86,7 +83,7 @@ game-changing possibilities of Metaverse commerce. This is not limited to the
 use of Boson Protocol’s Commitment NFTs, but can also be wider propositions
 leveraging our LAND.
 
-### Community and ecosystem
+**_Community and ecosystem_**
 
 Bringing people from a range of backgrounds together, and building a community,
 is the vital key needed to unbundle e-commerce. In the past months we hosted a
@@ -95,7 +92,7 @@ with the Token Engineering Academy on educational courses on dCommerce. We’re
 actively looking to support community, and ecosystem, initiatives ranging from
 community education to DAO modules and governance proposals.
 
-### Tooling, developer experience and more
+**_Tooling, developer experience and more_**
 
 With the upcoming release of Leptonite, a reference application demonstrating
 Boson capabilities, including our developer documentation site, we want to
@@ -103,9 +100,8 @@ support developers in understanding and implementing Boson Protocol into their
 applications. We want to fund additions to this toolkit with analytical tools,
 SDKs and more, that will help developers to leverage Boson.
 
-### Above all, we want to inspire and encourage others to join us on our
-
-### mission to decentralize commerce
+**Above all, we want to inspire and encourage others to join us on our mission
+to decentralize commerce**
 
 We want to foster a dynamic, thriving and self-sustaining community where ideas
 can be freely expressed and buyers and sellers can be rewarded equitably for
@@ -127,9 +123,13 @@ All applications will be reviewed by a council of Boson stakeholders, composed
 of Foundation Board, tech and business teams, investors and advisors.
 
 The council will conduct their decision on a set of criteria and objectives
-which are included in the questionnaire and are primarily based on: (a)
-Ecosystem impact (b) Team profiles and experience (c) Needs and challenges (d)
-Measurable milestones and outcomes (e) Grant size
+which are included in the questionnaire and are primarily based on:
+
+- Ecosystem impact
+- Team profiles and experience
+- Needs and challenges
+- Measurable milestones and outcomes
+- Grant size
 
 The council will make recommendations on the recipients of the ecosystem grants.
 The final decision on all grants will be approved individually by the Foundation
