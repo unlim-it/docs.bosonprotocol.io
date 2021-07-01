@@ -34,5 +34,12 @@ main:
     url: "/faqs/"
   - title: "Contributing"
     url: "/contributing/"
+    children:
+      - title: "How To Contribute"
+        url: "/contributing/how-to-contribute/"
+      - title: "Grants Program"
+        url: "/contributing/grants-program/"
+      - title: "Bug Bounty"
+        url: "/contributing/bug-bounty/"
   - title: "Code of Conduct"
     url: "/code-of-conduct/"
