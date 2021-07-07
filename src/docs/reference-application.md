@@ -1,12 +1,12 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Reference Application"
-short_title: "Reference Application"
-permalink: /reference-application/
+title: "Boson Protocol: Docs: Leptonite"
+short_title: "Leptonite"
+permalink: /leptonite/
 ---
 
-# Leptonit application
+# Leptonite application
 
-The Leptonite application demonstrates how Boson Protocol could be used. The
+The Leptonite application is a demo marketplace which shows how Boson Protocol could be used. The
 Leptonite application can serve as a template or starting point for one's own
-application built on top of Boson Protocol.
+application(s) built on top of Boson Protocol.

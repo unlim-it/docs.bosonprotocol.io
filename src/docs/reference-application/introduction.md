@@ -1,17 +1,17 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Reference Application: Introduction"
+title: "Boson Protocol: Docs: Leptonite: Introduction"
 short_title: "Introduction"
-permalink: /reference-application/introduction/
+permalink: /leptonite/introduction/
 ---
 
 # Introduction to the Leptonite application
 
-The Leptonite applications shows you how to build a p2p marketplace powered by
+The Leptonite applications shows you how to build a peer-to-peer marketplace powered by
 Boson Protocol. Users can connect their wallets and list a set of items as a
 seller, as well as discover products that can be purchased as a buyer. The
 application also demonstrates how the transaction lifecycle can be tracked and
-co-ordinated by both parties.
+coordinated by both parties.
 
 1. **NFTs for Physical** - Sellers can create listings for physical items that
    can be discovered with pick-up location information added to metadata.
@@ -24,18 +24,18 @@ co-ordinated by both parties.
 ## Features
 
 1. Users can connect wallet from metamask or with wallet connect
-2. Seller can list an item, which mints an 1155 NFT
-3. Seller can view her listings and void any remaining quantities that haven't
+2. Seller can list an item, which mints an ERC-1155 NFT
+3. Seller can view their listings and void any remaining quantities that haven't
    been committed to
-4. Seller can track the lifecycle of her listings of minted 721 NFTs committed
+4. Seller can track the lifecycle of their listings of minted ERC-721 NFTs committed
    to by buyers
 5. Seller can cancel or admit fault on a commitment token if issues arise
 6. Buyer can discover NFTs for physical items, filtering by description or
    location based on metadata attached
-7. Buyer can commit to purchase a listed item with payment and a deposit going
-   into Boson Protocol's escrow
-8. Buyer can redeem his commitment token when he collects an item
-9. Buyer can request a refund if he chooses not to collect the item anymore
+7. Buyer can commit to purchase a listed item by transferring a deposit and item price which
+   is then held in Boson Protocol's escrow
+8. Buyer can redeem his commitment token when he collects an item from the Seller
+9. Buyer can request a refund (e.g. if he chooses not to collect the item)
 10. Buyer can let the commitment expire and have funds returned
 11. Buyer can complain on a commitment token if issues arise
 
@@ -45,7 +45,7 @@ The p2p marketplace is implemented as a full-stack application with a React
 front-end and a Node.js backend, both leveraging the Boson Protocol smart
 contracts.
 
-![Leptonite Architecture](/images/docs/eptonite-architecture.png)
+![Leptonite Architecture](/images/docs/leptonite-architecture.png)
 
 ### Technical features
 

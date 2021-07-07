@@ -39,6 +39,7 @@ run/logs/
 .sass-cache
 .jekyll-metadata
 src/.jekyll-cache
+.jekyll-cache/
 
 # npm
 node_modules/
