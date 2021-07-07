@@ -30,7 +30,7 @@ main:
     url: "/governance/"
   - title: "FAQs"
     url: "/faqs/"
-  - title: "Apps"
+  - title: "Applications"
     url: "/applications/"
     children:
       - title: "Leptonite"

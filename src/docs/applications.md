@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: "Boson Protocol: Docs: Apps"
-short_title: "Apps"
+title: "Boson Protocol: Docs: Applications"
+short_title: "Applications"
 permalink: /applications/
 ---
 
-# Fronend Operators
+# Frontend Operators
 
 Boson Protocol has not entered into any form of cooperation with Frontend Operators.
 
