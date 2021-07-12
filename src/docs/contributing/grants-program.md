@@ -66,7 +66,7 @@ interested in projects working in the following areas:
 
 We are looking to fund innovative approaches to decentralized commerce
 applications and projects extending the
-[dCommerce stack](https://bosonprotocol.io/images/docs_fe56dc73-a886-4c02-88b8-67b58c03d4bd_doc.pdf).
+[dCommerce stack](https://bosonprotocol.io/documents/docs_fe56dc73-a886-4c02-88b8-67b58c03d4bd_doc.pdf).
 This can range from user-facing front-ends, plug-ins to existing e-commerce
 platforms and infrastructure to enable dCommerce applications and experiences.
 
