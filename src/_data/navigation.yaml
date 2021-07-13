@@ -32,6 +32,11 @@ main:
     url: "/governance/"
   - title: "FAQs"
     url: "/faqs/"
+  - title: "Applications"
+    url: "/applications/"
+    children:
+      - title: "Leptonite"
+        url: "/applications/leptonite/"
   - title: "Contributing"
     url: "/contributing/"
     children:
