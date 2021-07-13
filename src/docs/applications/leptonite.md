@@ -7,14 +7,13 @@ permalink: /applications/leptonite/
 
 # Introduction to Leptonite
 
-**Description below provided by Frontend Operator, not Boson Protocol**
+_**Description below provided by Frontend Operator, not Boson Protocol**_
 
-The Leptonite application can be accessed [here](http://leptonite.io).
-It shows you how to build a p2p marketplace powered by
-Boson Protocol. Users can connect their wallets and list a set of items as a
-seller, as well as discover products that can be purchased as a buyer. The
-application also demonstrates how the transaction lifecycle can be tracked and
-co-ordinated by both parties.
+The Leptonite application can be accessed [here](http://leptonite.io). It shows
+you how to build a p2p marketplace powered by Boson Protocol. Users can connect
+their wallets and list a set of items as a seller, as well as discover products
+that can be purchased as a buyer. The application also demonstrates how the
+transaction lifecycle can be tracked and co-ordinated by both parties.
 
 1. **Digital to Physical** - Sellers can create listings for physical items that
    can be discovered with pick-up location information added to metadata.
@@ -59,15 +58,14 @@ contracts.
 Version 0.1.0 of the Leptonite application works with version 0.1.0 of the Boson
 Protocol smart contracts. See the [Repositories](#repositories) section below.
 
-
-# Development setup
+## Development setup
 
 In order to contribute to the Leptonite application or further develop your own
 forked copy of the Leptonite application, you will need to set up a local
-development environemnt. This page explains how to do that. These instructions
-assume a working knowledge of git and GitHub.
+development environemnt. This section explains how to do that. These
+instructions assume a working knowledge of git and GitHub.
 
-## Repositories
+### Repositories
 
 By default, v0.1.0 of the reference application points to v0.1.0 of the Boson
 Protocol smart contracts deployed to the Rinkeby testnet.
@@ -75,8 +73,10 @@ Protocol smart contracts deployed to the Rinkeby testnet.
 To run the Leptonite application locally while pointing to the smart contracts
 on the testnet, you will first need to clone the following repositories:
 
-* [PLACEHOLDER] [reference-frontend](link to v0.1.0 of the reference-frontend repo)
-* [PLACEHOLDER] [reference-backend](link to v0.1.0 of the reference-backend repo)
+- [PLACEHOLDER] [reference-frontend](link to v0.1.0 of the reference-frontend
+  repo)
+- [PLACEHOLDER] [reference-backend](link to v0.1.0 of the reference-backend
+  repo)
 
 Each of the repositories has a README that describes how to run the code
 locally.
