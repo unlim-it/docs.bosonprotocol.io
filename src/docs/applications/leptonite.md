@@ -7,6 +7,8 @@ permalink: /applications/leptonite/
 
 # Introduction to Leptonite
 
+**Description below provided by Frontend Operator, not Boson Protocol**
+
 The Leptonite application can be accessed [here](http://leptonite.io).
 It shows you how to build a p2p marketplace powered by
 Boson Protocol. Users can connect their wallets and list a set of items as a
