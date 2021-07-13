@@ -73,10 +73,8 @@ Protocol smart contracts deployed to the Rinkeby testnet.
 To run the Leptonite application locally while pointing to the smart contracts
 on the testnet, you will first need to clone the following repositories:
 
-- [PLACEHOLDER] [reference-frontend](link to v0.1.0 of the reference-frontend
-  repo)
-- [PLACEHOLDER] [reference-backend](link to v0.1.0 of the reference-backend
-  repo)
+- [reference-frontend](https://github.com/bosonprotocol/reference-frontend/releases/tag/v0.1.0)
+- [reference-backend](https://github.com/bosonprotocol/reference-backend/releases/tag/v0.1.0)
 
 Each of the repositories has a README that describes how to run the code
 locally.
@@ -84,7 +82,7 @@ locally.
 If you want to run your own local version of the Boson Protocol smart contracts,
 you will also need to clone the contracts repository:
 
-- [PLACEHOLDER] [contracts](link to v0.1.0 of contracts repo)
+- [contracts](https://github.com/bosonprotocol/contracts/releases/tag/v0.1.0)
 
 The contracts repository also has a README that describes how to run the code
 locally. You will need take a few extra steps to point your local
@@ -92,7 +90,17 @@ reference-frontend and reference-backend to the local version of the Boson
 Protocol smart contracts:
 
 1. reference-fronted: Change the smart contract addresses in
-   src/hooks/configs.js to match the local addresses displayed in the terminal
+   `src/hooks/configs.js` to match the local addresses displayed in the terminal
    after following the instructions for running locally in the contracts repo
    README
-2. reference-backend: [PLACEHOLDER]
+2. reference-backend:
+
+   1. Add the following keys to the `config/deployments/local-development.yaml`
+      file
+
+      - voucher_kernel_address: ""
+      - token_contact_address: ""
+      - boson_router_contact_address: ""
+      - cashier_address: ""
+
+   2. Change the key values to point to your local contract instance addresses
