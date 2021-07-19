@@ -61,7 +61,7 @@ resource "aws_cloudfront_distribution" "website_cdn" {
   viewer_certificate {
     acm_certificate_arn      = data.aws_acm_certificate.website.arn
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   aliases = concat([var.primary_address], var.other_addresses)
