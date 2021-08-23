@@ -66,7 +66,7 @@ contracts.
 
 ## Versioning
 
-Version 0.1.0 of the Leptonite application works with version 0.1.0 of the Boson
+Version 0.1.x of the Leptonite application works with version 0.1.0 of the Boson
 Protocol smart contracts. See the [Repositories](#repositories) section below.
 
 ## Development setup
@@ -78,13 +78,13 @@ instructions assume a working knowledge of git and GitHub.
 
 ### Repositories
 
-By default, v0.1.0 of the reference application points to v0.1.0 of the Boson
+By default, v0.1.x of the reference application points to v0.1.0 of the Boson
 Protocol smart contracts deployed to the Rinkeby testnet.
 
 To run the Leptonite application locally while pointing to the smart contracts
 on the testnet, you will first need to clone the following repositories:
 
-- [reference-frontend](https://github.com/bosonprotocol/reference-frontend/releases/tag/v0.1.0)
+- [reference-frontend](https://github.com/bosonprotocol/reference-frontend/releases/tag/v0.1.1)
 - [reference-backend](https://github.com/bosonprotocol/reference-backend/releases/tag/v0.1.0)
 
 Each of the repositories has a README that describes how to run the code
